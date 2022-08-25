@@ -1,8 +1,14 @@
-import React from 'react'
 
-const Input = () => {
+import './Input.scss'
+type inputProp = {
+    placeholder: string;
+    customStyle?:string
+}
+const Input = ({placeholder, customStyle}:inputProp) => {
   return (
-    <div>Input</div>
+    <div className={`Input--container ${customStyle}`}>
+        <input type="text" placeholder={placeholder}/>
+    </div>
   )
 }
 

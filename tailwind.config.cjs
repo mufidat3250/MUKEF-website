@@ -15,7 +15,8 @@ module.exports = {
         gray200:'#F0F0F0',
         gray300:'#D8D8D8',
         gray400:'#E7E6E6',
-        gray500:'#D5D5D5'
+        gray500:'#D5D5D5',
+        grayDark:'rgba(0, 0, 0, 0.3)'
         
 
       }
