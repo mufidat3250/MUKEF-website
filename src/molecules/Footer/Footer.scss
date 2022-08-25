@@ -1,0 +1,25 @@
+.Footer{
+    @apply bg-green900 w-screen;
+
+    .footer-wrapper{
+        @apply mx-auto max-w-[80%];
+        
+        .footer--content{
+            @apply flex pt-[3.9375rem] pb-[2.0625rem]  justify-between ;
+        }
+        
+    }
+    .activities{
+        @apply grid grid-cols-4 gap-x-[1.875rem];
+
+        .title{
+            @apply text-xl font-[500] text-white mb-5;
+        }
+        .subtext{
+            @apply text-lg font-[500] text-lighgray4 space-y-4;
+        }
+    }
+    .copywrite--social--links{
+        @apply flex justify-between items-center pb-[1.875rem];
+    }
+}
