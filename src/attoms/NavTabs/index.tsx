@@ -18,15 +18,15 @@ const NavTabs = ({tabs, tabIndex}:navbarProp) => {
   }
   return (
     <div className=' NavBar'>
-        <div className='flex items-center'>
+        <div className='flex items-center space-x-[2.0625rem]'>
           <div className=''>
             <img src='/public/images/MukefLogo1.png' alt="" />         
           </div>
-          <h1>MUKEF</h1>
+          <h1 className='font-[500] text-[#FFFFFF] text-[2.1255rem] cursor-pointer'>MUKEF</h1>
         </div>
    <div className='flex space-x-[7.4375rem]'>
    <div className='tabs'>
-     {tabs.map((tab:any, index:number)=><p  className={`tab ${active==index ? ' text-green-700':''}`} key={`nav${index} `} onClick={()=>handleNav(tab.link, index)}>{tab.title}</p>)}
+     {tabs.map((tab:any, index:number)=><p  className={`tab ${active==index ? 'opacity-[0.5]':'text-white'}`} key={`nav${index} `} onClick={()=>handleNav(tab.link, index)}>{tab.title}</p>)}
      </div>
       <div className='w-[8.0625rem]'>
       <Button title={'Login'} customStyle={'!font-[600] !text-[#0B8EC2] bg-white !rounded-[5px]'}/>

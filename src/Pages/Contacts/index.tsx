@@ -5,7 +5,7 @@ import { navData } from '../../data'
 const Contacts = () => {
   return (
  <div>
-    <NavTabs tabs={navData} tabIndex={3} />
+    <NavTabs tabs={navData} tabIndex={4} />
 
  </div>
   )

@@ -5,7 +5,7 @@ import { navData } from '../../data'
 const AboutUs = () => {
   return (
     <div>
-    <NavTabs tabs={navData} tabIndex={2} />
+    <NavTabs tabs={navData} tabIndex={3} />
 
     </div>
   )

@@ -4,7 +4,7 @@ import { navData } from '../../data'
 
 const Projects = () => {
   return (
-    <div className='text-black'>
+    <div className='bg-red-400'>
     <NavTabs tabs={navData} tabIndex={2} />
 
     </div>

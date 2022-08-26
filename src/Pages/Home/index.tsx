@@ -9,7 +9,7 @@ const HomePage = () => {
   return (
     <PageLayout>
 {/* <Button title='See all' customStyle={'!bg-[#070903]'} /> */}
-<NavTabs tabs={navData} />
+<NavTabs tabs={navData} tabIndex={0} />
 <Input placeholder={'Name'} />
     </PageLayout>
   )

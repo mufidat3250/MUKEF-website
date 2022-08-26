@@ -1,9 +1,9 @@
 .NavBar{
-    @apply flex text-black justify-between ;
+    @apply flex text-black justify-between items-center  py-8;
     .tabs{
-        @apply flex text-black;
+        @apply flex text-black items-center;
     }
     .tab{
-        @apply p-4 cursor-pointer;
+        @apply px-[1.6875rem] cursor-pointer text-white;
     }
 }
