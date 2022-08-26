@@ -62,3 +62,28 @@ export const recentNews =[
         message:'16'
     }
 ]
+
+export const navData = [
+    {
+        title:'Home',
+        link:'/'
+    },
+    {
+        title:'News',
+        link:'/news'
+    },
+    {
+        title:'Projects',
+        link:'/projects'
+    },
+    {
+        title:'About us',
+        link:'/aboutus'
+    },
+    {
+        title:'Contact',
+        link:'/contact'
+    },
+
+
+]

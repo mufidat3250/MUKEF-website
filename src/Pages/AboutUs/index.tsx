@@ -1,8 +1,13 @@
 import React from 'react'
+import NavTabs from '../../attoms/NavTabs'
+import { navData } from '../../data'
 
 const AboutUs = () => {
   return (
-    <div>AboutUs</div>
+    <div>
+    <NavTabs tabs={navData} tabIndex={2} />
+
+    </div>
   )
 }
 

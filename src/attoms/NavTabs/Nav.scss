@@ -1,0 +1,9 @@
+.NavBar{
+    @apply flex text-black justify-between ;
+    .tabs{
+        @apply flex text-black;
+    }
+    .tab{
+        @apply p-4 cursor-pointer;
+    }
+}
