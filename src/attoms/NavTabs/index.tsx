@@ -1,6 +1,9 @@
 import React from 'react'
 import './Nav.scss'
-const NavTabs = () => {
+type navbarProp = {
+  ta
+}
+const NavTabs = ({}) => {
   return (
     <div>NavTabs</div>
   )

@@ -31,3 +31,34 @@ export const socialIcon = [
         icon: TwitterIcon,
     }
 ]
+
+export const recentNews =[
+    {
+        img:'/public/images/image 79.png',
+        title:'Muhammad Kamaldeen university project',
+        desc:'Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature ...',
+        view:'360',
+        message:'16'
+    },
+    {
+        img:'/public/images/image 78.png',
+        title:'Muhammad Kamaldeen university project',
+        desc:'Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature ...',
+        view:'360',
+        message:'16'
+    },
+    {
+        img:'/public/images/image 80.png',
+        title:'Muhammad Kamaldeen university project',
+        desc:'Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature ...',
+        view:'360',
+        message:'16'
+    },
+    {
+        img:'/public/images/image 83.png',
+        title:'Muhammad Kamaldeen university project',
+        desc:'Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature ...',
+        view:'360',
+        message:'16'
+    }
+]
