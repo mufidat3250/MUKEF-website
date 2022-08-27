@@ -35,7 +35,7 @@ const Footer = () => {
                         </div>
                     </div>
                 </div>
-                    <div className='w-[98%] mx-auto h-[1px] bg-lighgray2 my-[1.875rem]' >
+                    <div className=' mx-auto h-[1px] bg-lighgray2 my-[1.875rem]' >
                     </div>
                     <div className='copywrite--social--links'>
                     <p>Copyright © 2020</p>

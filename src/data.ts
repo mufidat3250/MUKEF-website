@@ -84,6 +84,28 @@ export const navData = [
         title:'Contact',
         link:'/contact'
     },
+]
 
-
+export const newsData = [
+    {
+        img:'/public/images/image9.png',
+        title:`Muhammad Kamaldeen
+        University project`,
+        desc:'Hi. My name is Khoa. I am a Montreal-based filmmaker, stage director and video designer, author of feature films, documentaries, essays and video installations. I seek to create objects that blur the limits of the sacred.',
+        about:' - What you need to know.'
+    },
+    {
+        img:'/public/images/image9.png',
+        title:`Muhammad Kamaldeen
+        University project`,
+        desc:'Hi. My name is Khoa. I am a Montreal-based filmmaker, stage director and video designer, author of feature films, documentaries, essays and video installations. I seek to create objects that blur the limits of the sacred.',
+        about:' - What you need to know.'
+    },
+    {
+        img:'/public/images/image9.png',
+        title:`Muhammad Kamaldeen
+        University project`,
+        desc:'Hi. My name is Khoa. I am a Montreal-based filmmaker, stage director and video designer, author of feature films, documentaries, essays and video installations. I seek to create objects that blur the limits of the sacred.',
+        about:' - What you need to know.'
+    },
 ]

@@ -1,8 +1,8 @@
 .Footer{
-    @apply bg-green900 w-screen;
+    @apply bg-green900 w-full;
 
     .footer-wrapper{
-        @apply mx-auto max-w-[80%];
+        @apply mx-auto max-w-[88%];
         
         .footer--content{
             @apply flex pt-[3.9375rem] pb-[2.0625rem]  justify-between ;

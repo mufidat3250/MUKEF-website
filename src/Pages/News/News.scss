@@ -1,0 +1,28 @@
+.News{
+     @apply w-full;
+    .NewsWrapper{
+        @apply h-[25.25rem] w-full  bg-no-repeat;
+     background-image: url('/public//images/image11.png');
+     
+     background-size: cover;
+    }
+    .student{
+        @apply  flex justify-center flex-col -mt-[11.625rem] pl-[7.625rem] pr-[8rem];   
+       
+    }
+
+    .student--news{
+        @apply mt-[3.0625rem] bg-gray1200 pt-[6.9375rem];
+
+       
+    }
+
+    
+    .button--container{
+        @apply flex justify-end pb-[6.0625rem];
+    }
+}
+
+.news--card-wrapper{
+    @apply mb-[4.5625rem] flex space-x-[3.875rem] mt-[4.5625rem];
+}
