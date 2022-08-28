@@ -19,7 +19,7 @@ module.exports = {
         grayDark:'rgba(0, 0, 0, 0.3)',
         gray100:'#5F5F5F',
         gray1100:'#464646',
-        gray1200:'#F0F0F0'
+        gray1200:'#404040'
       }
     },
   },

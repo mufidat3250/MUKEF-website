@@ -109,3 +109,70 @@ export const newsData = [
         about:' - What you need to know.'
     },
 ]
+export const charity ={
+    title:'Charity will be a shade on the day of judgment',
+    caption:'The Prophet, upon be peace, said: “The believer’s shade on the Day of Resurrection will be his charity.” (Al-Tirmidhi)',
+    donaate:'Donate to support the good work'
+}
+
+export const ongoingProjects = [
+    {
+        title:'Project title goes here',
+        desc:'Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature ...Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature ...Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature ...Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature ...xt. It has roots in a piece of classical Latin literature ...Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature ...',
+        img:'/public/images/ongoingProject1.png'
+    },
+    {
+        title:'Project title goes here',
+        desc:'Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature ...Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature ...Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature ...Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature ...xt. It has roots in a piece of classical Latin literature ...Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature ...',
+        img:'/public/images/ongoingProject2.png'
+    }
+]
+
+export const completedProject = [
+    {
+        img:'/public/images/completedProject1.png',
+        title:'Muhammad Kamaldeen University project',
+        desc:' - Hi. My name is Khoa. I am a '
+    },
+    {
+        img:'/public/images/completedProject2.png',
+        title:'Muhammad Kamaldeen University project',
+        desc:' - Hi. My name is Khoa. I am a '
+    },
+    {
+        img:'/public/images/completedProject3.png',
+        title:'Muhammad Kamaldeen University project',
+        desc:' - Hi. My name is Khoa. I am a '
+    },
+    {
+        img:'/public/images/completedProject1.png',
+        title:'Muhammad Kamaldeen University project',
+        desc:' - Hi. My name is Khoa. I am a '
+    },
+    {
+        img:'/public/images/conpletedProject4.png',
+        title:'Muhammad Kamaldeen University project',
+        desc:' - Hi. My name is Khoa. I am a '
+    },
+    {
+        img:'/public/images/completedProject5.png',
+        title:'Muhammad Kamaldeen University project',
+        desc:' - Hi. My name is Khoa. I am a '
+    },
+    {
+        img:'/public/images/completedProject6.png',
+        title:'Muhammad Kamaldeen University project',
+        desc:' - Hi. My name is Khoa. I am a '
+    }, 
+    {
+        img:'/public/images/completedProject1.png',
+        title:'Muhammad Kamaldeen University project',
+        desc:' - Hi. My name is Khoa. I am a '
+    },
+    {
+        img:'/public/images/completedProject2.png',
+        title:'Muhammad Kamaldeen University project',
+        desc:' - Hi. My name is Khoa. I am a '
+    },
+
+]
