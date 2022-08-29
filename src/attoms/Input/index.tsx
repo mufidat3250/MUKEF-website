@@ -6,8 +6,8 @@ type inputProp = {
 }
 const Input = ({placeholder, customStyle}:inputProp) => {
   return (
-    <div className={`Input--container ${customStyle}`}>
-        <input type="text" placeholder={placeholder}/>
+    <div className={`Input--container text-black ${customStyle}`}>
+        <input type="text" placeholder={placeholder} />
     </div>
   )
 }

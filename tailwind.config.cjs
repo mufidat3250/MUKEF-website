@@ -17,10 +17,12 @@ module.exports = {
         gray100: "#5F5F5F",
         gray1100: "#464646",
         gray1200: "#404040",
+        gray1300:'rgba(255, 255, 255, 0.4)'
       },
       backgroundImage: (theme) => ({
         "Home-Image": "url('/public/images/firstPageImage.png')",
         "About-Image": "url('/public/images/image 11.png')",
+        'contact--image':'url(/public/images/googleMap.png)'
       }),
     },
   },

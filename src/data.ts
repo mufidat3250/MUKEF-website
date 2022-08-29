@@ -1,7 +1,9 @@
 import FaceBookIcon from "./attoms/Vectors/Facebook";
 import IntagramIcon from "./attoms/Vectors/Instagram";
 import TwitterIcon from "./attoms/Vectors/Twitter";
-
+import Gmail from "./attoms/Vectors/Gmailicon";
+import Phone from "./attoms/Vectors/Phone";
+import SupportCenter from "./attoms/Vectors/SupportCenter";
 export const activities = {
   events: {
     title: "Events",
@@ -297,3 +299,27 @@ export const cleric = [
     subtext: "Marvin McKinney",
   },
 ];
+
+export const contactUs = {
+  title:'Contact us',
+  location:'Muhammad Kamaldeen University Ilorin Kwara state',
+  name:' - Hi. My name is Khoa. I am a '
+}
+export const contacts = [
+  {
+    Icon:Gmail,
+    title:'info@mufek.com.ng',
+    desc:'lorem ispum lorem ispumlorem ispum lorem ispumdsaddsdddd',
+      
+  },
+  {
+    Icon:Phone,
+    title:'+234 8038 090 0938',
+    desc:'lorem ispum lorem ispumlorem ispum wwwedddd ispum'    
+  },
+  {
+    Icon:SupportCenter,
+    title:'lorem ispum lorem ispumlorem ispum lorem ispewwwum',
+    desc:'Support center -->'    
+  }
+]

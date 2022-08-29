@@ -32,7 +32,6 @@ const NewsCard = ({img, desc, title, about,}:newsCardProp) => {
          <span className='font-normal text-gray1000 text-[0.8332rem] leading-[1.4615rem]'>Co-founder</span>
        </div>
      </div>
-
     </div>
   )
 }
