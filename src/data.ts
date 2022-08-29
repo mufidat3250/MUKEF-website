@@ -176,3 +176,83 @@ export const completedProject = [
     },
 
 ]
+export const prospects = [
+    {
+        title:'Mukef',
+        img:'/public/vectors/munkef.svg',
+        subtext:'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Rhoncus quam non justo nibh laoreet accumsan ultrices. Vestibulum, neque nec egestas blandit natoque donec ipsum lorem. Pharetra urna, porta tristique blandit feugiat. At lacinia nisi nisi, nulla. Sed in ornare hac semper et vestibulum, vel feugiat leo. Faucibus at massa non orci enim quis ac pretium congue. Duis ultrices tortor amet, mattis sollicitudin posuere. Adipiscing vitae sem donec sollicitudin volutpat vivamus felis ipsum. Dignissim vel fames leo nisl.'
+    },
+    {
+        title:'our vision',
+        img:'/public/vectors/vision.svg',
+        subtext:'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Rhoncus quam non justo nibh laoreet accumsan ultrices. Vestibulum, neque nec egestas blandit natoque donec ipsum lorem. Pharetra urna, porta tristique blandit feugiat. At lacinia nisi nisi, nulla. Sed in ornare hac semper et vestibulum, vel feugiat leo. Faucibus at massa non orci enim quis ac pretium congue. Duis ultrices tortor amet, mattis sollicitudin posuere. Adipiscing vitae sem donec sollicitudin volutpat vivamus felis ipsum. Dignissim vel fames leo nisl.'
+    },
+    {
+        title:'our vision',
+        img:'/public/vectors/vision2.svg',
+        subtext:'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Rhoncus quam non justo nibh laoreet accumsan ultrices. Vestibulum, neque nec egestas blandit natoque donec ipsum lorem. Pharetra urna, porta tristique blandit feugiat. At lacinia nisi nisi, nulla. Sed in ornare hac semper et vestibulum, vel feugiat leo. Faucibus at massa non orci enim quis ac pretium congue. Duis ultrices tortor amet, mattis sollicitudin posuere. Adipiscing vitae sem donec sollicitudin volutpat vivamus felis ipsum. Dignissim vel fames leo nisl.'
+    }
+]
+
+export const cleric = [
+    {
+        img:'/public/images/cleric1.png',
+        title:'Marvin McKinney',
+        subtext:'Marvin McKinney'
+    },
+    {
+        img:'/public/images/cleric2.png',
+        title:'Marvin McKinney',
+        subtext:'Marvin McKinney'
+    },
+    {
+        img:'/public/images/cleric3.png',
+        title:'Marvin McKinney',
+        subtext:'Marvin McKinney'
+    },
+    {
+        img:'/public/images/cleric4.png',
+        title:'Marvin McKinney',
+        subtext:'Marvin McKinney'
+    },
+    {
+        img:'/public/images/cleric5.png',
+        title:'Marvin McKinney',
+        subtext:'Marvin McKinney'
+    },
+    {
+        img:'/public/images/cleric6.png',
+        title:'Marvin McKinney',
+        subtext:'Marvin McKinney'
+    },
+    {
+        img:'/public/images/cleric7.png',
+        title:'Marvin McKinney',
+        subtext:'Marvin McKinney'
+    },
+    {
+        img:'/public/images/cleric8.png',
+        title:'Marvin McKinney',
+        subtext:'Marvin McKinney'
+    },
+    {
+        img:'/public/images/cleric1.png',
+        title:'Marvin McKinney',
+        subtext:'Marvin McKinney'
+    },
+    {
+        img:'/public/images/cleric2.png',
+        title:'Marvin McKinney',
+        subtext:'Marvin McKinney'
+    },
+    {
+        img:'/public/images/cleric3.png',
+        title:'Marvin McKinney',
+        subtext:'Marvin McKinney'
+    },
+    {
+        img:'/public/images/cleric4.png',
+        title:'Marvin McKinney',
+        subtext:'Marvin McKinney'
+    },
+]

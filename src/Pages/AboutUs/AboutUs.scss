@@ -1,0 +1,11 @@
+.About--us{
+    @apply h-[25.0625rem] bg-no-repeat bg-cover relative;
+    background-image: url('/public//images/image11.png');
+
+    .title{
+        @apply text-center absolute text-[3.5rem] font-[700] left-[40%] top-[50%] ;
+    }   
+}
+.prospect{
+    @apply flex flex-col justify-center items-center pt-[12.9062rem] space-y-[6.25rem] pb-[6.25rem];
+}
