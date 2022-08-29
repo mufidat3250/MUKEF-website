@@ -1,4 +1,4 @@
-import React from 'react'
+
 import NavTabs from '../../attoms/NavTabs'
 import { navData } from '../../data'
 import PageLayout from '../../Layouts'
