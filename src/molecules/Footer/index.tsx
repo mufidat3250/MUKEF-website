@@ -2,7 +2,7 @@ import './Footer.scss'
 import { activities, socialIcon } from '../../data'
 const Footer = () => {
     return (
-        <div className='Footer'>
+        <div className='Footer_'>
             <div className='footer-wrapper'>
                 <div className='footer--content'>
                     <div className='self-start w-[6.3125rem] h-[5.8468rem]'>
