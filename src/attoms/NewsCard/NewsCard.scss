@@ -1,0 +1,25 @@
+.news--card{
+
+    .recent--news--container{
+        @apply  flex items-center;
+        .recent--news{
+            @apply text-gray1000 text-sm uppercase;
+        }
+        .dot{
+            @apply h-[0.1875rem] w-[0.1875rem] rounded-full bg-black mx-1;
+        }
+        .date{
+            @apply text-sm text-gray100;
+        }
+    }
+    .project--title{
+        @apply  text-[1.75rem] font-[bold] text-gray1000 mt-2 mb-4 max-w-[20rem];
+    }
+    .need--to--know{
+        @apply text-[1.375rem] text-gray100 mb-2;
+    }
+    .desc{
+        
+        @apply max-w-[20.1875rem] mb-[1.4375rem] text-gray1100;
+    }
+}

@@ -1,8 +1,13 @@
 import React from 'react'
+import NavTabs from '../../attoms/NavTabs'
+import { navData } from '../../data'
 
 const Contacts = () => {
   return (
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque ducimus tempora aut sapiente eos est laboriosam rerum debitis laudantium officiis, et id fugiat dolore, architecto magnam quasi eaque beatae possimus.</p>
+ <div>
+    <NavTabs tabs={navData} tabIndex={4} />
+
+ </div>
   )
 }
 

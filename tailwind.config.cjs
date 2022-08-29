@@ -14,6 +14,9 @@ module.exports = {
         gray400: "#E7E6E6",
         gray500: "#D5D5D5",
         grayDark: "rgba(0, 0, 0, 0.3)",
+        gray100: "#5F5F5F",
+        gray1100: "#464646",
+        gray1200: "#404040",
       },
       backgroundImage: (theme) => ({
         "Home-Image": "url('/public/images/firstPageImage.png')",
