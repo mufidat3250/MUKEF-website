@@ -1,0 +1,10 @@
+.first--page {
+  @apply h-screen flex flex-col justify-center items-center  bg-Home-Image bg-contain;
+}
+.profile--page {
+  @apply h-screen pt-[4.5rem] pl-[7.56rem];
+
+  .eachProfile {
+    @apply grid grid-cols-2 gap-x-[1.875rem];
+  }
+}
