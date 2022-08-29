@@ -25,7 +25,7 @@ const NewsCard = ({img, desc, title, about,}:newsCardProp) => {
      </p>
      <div className='flex space-x-[1.5rem]'>
        <div className="h-[3.5rem] w-[3.5rem]">
-       <img src="/public/images/Frame18.png" alt="" className="w-full h-full" />
+       <img src="/public/images/co-founder.svg" alt="" className="w-full h-full" />
        </div>
        <div className='flex flex-col'>
          <p className='text- text-lg text-gray1000'>Marvin McKinney</p>

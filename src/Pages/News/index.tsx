@@ -23,7 +23,7 @@ const News = () => {
         </div>
         <div className=' ml-5 mt-[2.5625rem]'>
           <ProjectNews/>
-     <div className='mb-[4.5625rem] flex space-x-[7.5rem] mt-[4.5625rem]'>
+     <div className='mb-[4.5625rem] flex justify-between mt-[4.5625rem]'>
       {newsData.map((data, index)=><NewsCard {...data} key={` news${index}`}/>)}
      </div>     
       </div>
