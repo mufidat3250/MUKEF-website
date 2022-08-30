@@ -24,6 +24,9 @@ module.exports = {
         "About-Image": "url('/public/images/image 11.png')",
         'contact--image':'url(/public/images/googleMap.png)'
       }),
+      boxShadow:{
+        '3xl':'-4px 10px 42px rgba(0, 0, 0, 0.25), -10px 4px 42px 18px rgba(103, 175, 216, 0.24)'
+      }
     },
   },
   plugins: [],

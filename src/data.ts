@@ -4,6 +4,10 @@ import TwitterIcon from "./attoms/Vectors/Twitter";
 import Gmail from "./attoms/Vectors/Gmailicon";
 import Phone from "./attoms/Vectors/Phone";
 import SupportCenter from "./attoms/Vectors/SupportCenter";
+import ProfileIcon from "./attoms/Vectors/Profile";
+import SupportProjectIcon from "./attoms/Vectors/SupportProject";
+import TransactionIcon from "./attoms/Vectors/Transactions";
+import LogoutIcon from "./attoms/Vectors/LogOutIcon";
 export const activities = {
   events: {
     title: "Events",
@@ -322,4 +326,28 @@ export const contacts = [
     title:'lorem ispum lorem ispumlorem ispum lorem ispewwwum',
     desc:'Support center -->'    
   }
+]
+
+export const sideNav =[
+  {
+    Icon:ProfileIcon,
+    title:'Profile',
+    link:'/dashboard/profile'
+  },
+  {
+    Icon:SupportProjectIcon,
+    title:'Support a project',
+    link:'/dashboard/support-project'
+  },
+  {
+    Icon:TransactionIcon,
+    title:'Transactions',
+    link:'/dashboard/transactions'
+
+  },
+  {
+    Icon:LogoutIcon,
+    title:'Logout',
+    link:''
+  },
 ]
