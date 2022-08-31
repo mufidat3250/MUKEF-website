@@ -7,7 +7,7 @@ type buttonProp = {
 };
 const Button = ({ title, customStyle, onClick }: buttonProp) => {
   return (
-    <button onClick={onClick} className={`Buttonb h-[3.125rem] ${customStyle}`}>
+    <button onClick={onClick} className={`Button h-[3.125rem] ${customStyle}`}>
       {title}
     </button>
   );

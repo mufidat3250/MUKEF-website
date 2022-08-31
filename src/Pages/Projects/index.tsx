@@ -27,8 +27,7 @@ const Projects = () => {
             <div className="w-[16.375rem] pb-[2rem]">
               <Button
                 title={"Donate now"}
-                customStyle={"!bg-white !text-gray900 !rounded-[5px]"}
-              />
+                customStyle={"!bg-white !text-gray900 !rounded-[5px]"} onClick={()=>{}}/>
             </div>
           </div>
         </div>
@@ -50,6 +49,7 @@ const Projects = () => {
               <Button
                 title={"See all"}
                 customStyle={"!bg-[#1D2319] rounded-[5px] text-white"}
+                onClick={()=>{}}
               />
             </div>
           </div>
@@ -69,6 +69,7 @@ const Projects = () => {
               <Button
                 title={"See all"}
                 customStyle={"!bg-[#1D2319] rounded-[5px] text-white"}
+                onClick={()=>{}}
               />
             </div>
           </div>
