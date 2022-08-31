@@ -13,7 +13,6 @@ const AboutUs = () => {
           <NavTabs tabs={navData} tabIndex={3} />
           <h1 className="title">About Mukef</h1>
         </div>
-        <div></div>
       </div>
       <div className="prospect">
         {prospects.map(({ img, title, subtext }, index) => {
