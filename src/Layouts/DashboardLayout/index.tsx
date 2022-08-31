@@ -30,8 +30,8 @@ const DashboardLayout = ({children, title}:{children:ReactNode, title?:string}) 
                      })
                    }
              </aside>
-             <main className='text-black pl-[4.1875rem]'>
-                  <div className='mt-[1.375rem] border-[#E7E7E7] border-[1px] rounded-[0.625rem] mr-[5.5rem] mb-[3.0625rem]'>
+             <main className='text-black'>
+                  <div className='mt-[1.375rem] border-[#E7E7E7] border-[1px] rounded-[0.625rem] ml-[4.1875rem] mr-[5.5rem] mb-[3.0625rem]'>
                         <div className='flex space-x-4 items-center py-[1.125rem] pl-[1.75rem]'>
                           <img src="/public/images/AbdulgannyOladosu.png" alt="" />
                           <div className='text-center'>

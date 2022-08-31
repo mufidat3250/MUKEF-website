@@ -6,7 +6,7 @@ type buttonProp = {
 }
 const Button = ({title, customStyle}:buttonProp) => {
   return (
-    <button className={`Button ${customStyle}`}>
+    <button className={`Button h-[3.125rem] ${customStyle}`}>
             {title}
     </button>
   )

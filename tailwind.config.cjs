@@ -13,11 +13,17 @@ module.exports = {
         gray300: "#D8D8D8",
         gray400: "#E7E6E6",
         gray500: "#D5D5D5",
+        gray600:'#F2F2F2',
         grayDark: "rgba(0, 0, 0, 0.3)",
         gray100: "#5F5F5F",
         gray1100: "#464646",
         gray1200: "#404040",
-        gray1300:'rgba(255, 255, 255, 0.4)'
+        gray1300:'rgba(255, 255, 255, 0.4)',
+        gray1400:'#858585',
+        gray1500:'#222222',
+        mainblack:'#100C2A',
+        gray1600:'#434343'
+
       },
       backgroundImage: (theme) => ({
         "Home-Image": "url('/public/images/firstPageImage.png')",

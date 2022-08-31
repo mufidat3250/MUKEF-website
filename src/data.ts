@@ -351,3 +351,59 @@ export const sideNav =[
     link:''
   },
 ]
+
+export const personalInfo =[
+  {
+    name:'Title',
+    desc:'Professor'
+  },
+  {
+    name:'Full name',
+    desc:'Abdul-Ganiyy Oladosu AGAS OON'
+  },{
+    name:'Email',
+    desc:'profagas@gmail.com'
+  },{
+    name:'Phone number',
+    desc:'080123456789'
+  },{
+    name:'Phone number 2',
+    desc:'080123456789'
+  },{
+    name:'Home address',
+    desc:'No 32 Sheikh Ganiyy Street GRA Ilorin'
+  },{
+    name:'State',
+    desc:'Kwara'
+  },{
+    name:'Nationality',
+    desc:'Nigerian'
+  },{
+    name:'Favourite quote',
+    desc:`إِنَّ سَعْيَكُمْ لَشَتَّىٰ`
+  },
+]
+
+export const transactiondata = [
+  {
+    payment:'Total yayment this year',
+    amount:'₦ 32,450,000'
+  },
+  {
+    payment:'Total payment lifetime',
+    amount:'₦ 32,450,000'
+  },
+]
+
+export const paymentMode = [
+  {
+    title:'Payment made',
+    amount:'₦576,000.00',
+    color:'#189D4D'
+  },
+  {
+    title:'To complete',
+    amount:'₦424,000.00',
+    color:'#999999'
+  }
+]
