@@ -1,0 +1,58 @@
+.Contacts{
+    @apply bg-contact--image bg-no-repeat bg-cover;
+.nav--container{
+    @apply ml-[3.4375rem] mr-[7.5625rem];
+}
+.contact--us{
+    @apply max-w-[70%] mx-auto;
+    .contact--title{
+        @apply text-[3rem] font-[700] mt-[2rem] mb-[2.375rem];
+    }
+    .contact-desc{
+        @apply flex space-x-[1.1562rem] justify-start items-start;
+
+        .location{
+            @apply max-w-[21.7556rem] text-xl mb-4 font-[600];
+        }
+        .name{
+            @apply text-[#D4D4D4] text-base;
+        }
+    }
+    .button--wrapper{
+        @apply w-[16.375rem] mt-10 pb-28;
+    }
+    
+}
+
+}
+.contact--form--wrapper{
+    @apply bg-gray500 pt-[4.8125rem] pb-[4.8125rem];
+
+    .contact--form--container{
+        @apply border-[1px] border-black mx-auto w-[80%] rounded-[1rem] pb-[5.875rem];
+        .contact--form--title{
+            @apply uppercase mt-[2.625rem] text-[2rem] text-[#1D2319] tracking-wider mb-[4.375rem] pl-[5rem];
+        }
+        .contact--form{
+            @apply grid grid-cols-[1.5fr,1fr] gap-[1.875rem] px-[4.75rem];
+            .form{
+                @apply space-y-[2.5rem];
+            }
+            .contact--list{
+                @apply bg-[#152018] rounded-[0.625rem] pt-[2.3125rem] pl-[2.8125rem] space-y-[2.5rem] pb-[5.6875rem];
+
+                .single--contact--container{
+                    @apply flex space-x-[1.5rem] items-center;
+                }
+
+                .single--contact{
+                    @apply h-[1.85rem] w-[1.85rem] bg-gray1300 rounded-full  grid place-items-center ;
+                }
+                .single--contact--details{
+                    @apply text-white max-w-[12.0625rem] text-[0.7928rem] ;
+                }
+            }
+            
+        }
+    }
+}

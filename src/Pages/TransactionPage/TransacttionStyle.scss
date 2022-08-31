@@ -1,0 +1,7 @@
+.transaction--container{
+    @apply mx-auto w-[80%];
+
+    .title{
+        @apply text-center font-[600] text-[#100C2A] text-[2rem] mb-[4.375rem];
+    }
+}

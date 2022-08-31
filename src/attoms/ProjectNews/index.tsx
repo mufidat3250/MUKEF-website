@@ -1,4 +1,3 @@
-import React from 'react'
 import './ProjectNews.scss'
 const ProjectNews = () => {
   return (
