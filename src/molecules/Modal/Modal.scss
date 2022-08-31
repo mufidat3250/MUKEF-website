@@ -1,0 +1,17 @@
+.modal-box {
+  @apply z-[20] bg-white p-[2rem] h-fit max-h-[87vh] overflow-auto rounded-[1rem] fixed top-[100vh] right-[calc(50%-15rem)] text-left;
+  transition: top 0.4s ease-in-out;
+  .head {
+    @apply flex items-center justify-between;
+
+    .headingText {
+      @apply mr-[auto];
+    }
+    button {
+      @apply ml-[auto];
+    }
+  }
+  &.open-modal {
+    top: 5rem;
+  }
+}

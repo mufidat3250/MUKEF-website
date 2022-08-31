@@ -1,7 +1,7 @@
-.Input--container{
-    @apply flex ;
+.Input--container {
+  @apply flex overflow-hidden bg-black;
 
-    input{
-        @apply outline-none border-none flex-grow py-[1.125rem] pl-5 ;
-    }
+  input {
+    @apply outline-none border-none flex-grow py-[1.125rem] pl-5 bg-transparent;
+  }
 }

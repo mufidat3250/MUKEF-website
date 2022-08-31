@@ -1,8 +1,12 @@
 .first--page {
-  @apply h-screen flex flex-col justify-center items-center  bg-Home-Image bg-contain;
+  @apply h-screen   bg-Home-Image bg-contain;
 }
+.nav--container {
+  @apply ml-[3.4375rem] mr-[7.5625rem];
+}
+
 .profile--page {
-  @apply h-screen pt-[4.5rem] pl-[7.56rem];
+  @apply h-[48.12rem] pt-[4.5rem] pl-[7.56rem];
 
   .eachProfile {
     @apply grid grid-cols-2 gap-x-[1.875rem];

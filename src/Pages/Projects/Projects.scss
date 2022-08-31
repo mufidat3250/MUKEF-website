@@ -1,31 +1,30 @@
-.Project{
-    
-    .charity{
-        @apply bg-no-repeat bg-cover;
-        background-image: url('/public//images/borehole.png');
+.Project {
+  .charity {
+    @apply bg-no-repeat bg-cover;
+    background-image: url("/public//images/borehole.png");
 
-        .nav--container{
-            @apply ml-[3.4375rem] mr-[7.5625rem];
-        }
-
-        .title{
-            @apply font-bold text-5xl max-w-[38.5rem] text-[#B9B6B6] tracking-[1.5px]; 
-        }
-        .caption{
-            @apply font-normal text-[2rem] max-w-[62.4375rem] leading-10 mt-4 tracking-[1.5px] mb-[1.875rem] text-[#F0F0F0];
-        }
-        .donate{
-            @apply text-[2rem] text-[#B9B6B6] mb-6 leading-[2.2187rem] font-[700] tracking-[1.5px];
-        }
+    .nav--container {
+      @apply ml-[3.4375rem] mr-[7.5625rem];
     }
-    .ongoing--project{
-        @apply pt-[8.875rem] px-[7.8125rem] bg-gray200;
 
-        .ongoing--project--title{
-            @apply text-5xl font-[400] text-gray1200 mb-[5rem] text-center;
-        }
-        .project--container{
-            @apply flex flex-col justify-center space-y-[6.25rem];
-        }
+    .title {
+      @apply font-bold text-5xl max-w-[38.5rem] text-[#B9B6B6] tracking-[1.5px];
     }
+    .caption {
+      @apply font-normal text-[2rem] max-w-[62.4375rem] leading-10 mt-4 tracking-[1.5px] mb-[1.875rem] text-[#F0F0F0];
+    }
+    .donate {
+      @apply text-[2rem] text-[#B9B6B6] mb-6 leading-[2.2187rem] font-[700] tracking-[1.5px];
+    }
+  }
+  .ongoing--project {
+    @apply pt-[8.875rem] px-[7.8125rem] bg-gray200;
+
+    .ongoing--project--title {
+      @apply text-5xl font-[400] text-gray1200 mb-[5rem] text-center;
+    }
+    .project--container {
+      @apply flex flex-col justify-center space-y-[6.25rem];
+    }
+  }
 }

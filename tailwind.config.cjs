@@ -17,6 +17,10 @@ module.exports = {
         gray100: "#5F5F5F",
         gray1100: "#464646",
         gray1200: "#404040",
+        greybutton: "#F2F2F2",
+        textbutton: "#858585",
+        haveaccount: "#696969",
+        bluebuttontext: "#0B8EC2",
       },
       backgroundImage: (theme) => ({
         "Home-Image": "url('/public/images/firstPageImage.png')",
