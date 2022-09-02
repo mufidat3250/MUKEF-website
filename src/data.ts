@@ -407,3 +407,30 @@ export const paymentMode = [
     color:'#999999'
   }
 ]
+
+export const paymentHistorydata =[
+  {
+    date: " Jun 30, 2021 ",
+    paymentType: "Building project support",
+    amount: "4000",
+    status: "Success",
+  },
+  {
+    date: "Jun 30, 2021",
+    paymentType: "Zakat",
+    amount: "5000",
+    status: "Success",
+  },
+  {
+    date: "Jun 30, 2021",
+    paymentType: "Orphanage support ",
+    amount: "6000",
+    status: "Success",
+  },
+  {
+    date: "Jun 30, 2021",
+    paymentType: "Water project support",
+    amount: "4000",
+    status: "Failed",
+  },
+]

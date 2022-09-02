@@ -20,7 +20,6 @@ const DashboardLayout = ({children, title}:{children:ReactNode, title?:string}) 
                    {
                      sideNav.map(({Icon, title, link}, index)=>{
                        let isActive = currentPath===link
-                       console.log(isActive, 'isActive')
                        return (
                         <div key={`sideNav${index}`} className={`single--tab ${isActive && 'bg-[rgba(119,_119,_119,_0.16)] '}`} onClick={()=> navigate(link)}>
                         <Icon/>
