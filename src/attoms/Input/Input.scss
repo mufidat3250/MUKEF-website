@@ -1,5 +1,5 @@
 .Input--container{
-    @apply flex overflow-hidden items-center;
+    @apply flex overflow-hidden items-center bg-[#ffffff];
 
   input {
     @apply outline-none border-none flex-grow py-[1.125rem] bg-transparent;

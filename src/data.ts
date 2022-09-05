@@ -434,3 +434,80 @@ export const paymentHistorydata =[
     status: "Failed",
   },
 ]
+
+export const projectSupportData = [
+  {
+    project:'water',
+    supportAccount:'₦ 32,450,000',
+    paidAmount:'₦ 450,000',
+    remainingAmount:'₦ 32,450,000',
+    date:'Jun 1 2022'
+  },
+  {
+    project:'water',
+    supportAccount:'₦ 32,450,000',
+    paidAmount:'₦ 450,000',
+    remainingAmount:'₦ 32,450,000',
+    date:'Jun 1 2022'
+  },
+  {
+    project:'water',
+    supportAccount:'₦ 32,450,000',
+    paidAmount:'₦ 450,000',
+    remainingAmount:'₦ 32,450,000',
+    date:'Jun 1 2022'
+  },
+  {
+    project:'water',
+    supportAccount:'₦ 32,450,000',
+    paidAmount:'₦ 450,000',
+    remainingAmount:'₦ 32,450,000',
+    date:'Jun 1 2022'
+  },
+]
+
+
+export const donationData =[
+  {
+    year:'2021',
+    targetAmount:'₦ 32,450,000',
+    paidAmount:'₦ 450,000',
+    remainingAmount:'₦ 32,450,000',
+    date:'Jun 1 2022'
+  },
+  {
+    year:'2021',
+    targetAmount:'₦ 32,450,000',
+    paidAmount:'₦ 450,000',
+    remainingAmount:'₦ 32,450,000',
+    date:'Jun 1 2022'
+  },
+  {
+    year:'2021',
+    targetAmount:'₦ 32,450,000',
+    paidAmount:'₦ 450,000',
+    remainingAmount:'₦ 32,450,000',
+    date:'Jun 1 2022'
+  },
+  {
+    year:'2021',
+    targetAmount:'₦ 32,450,000',
+    paidAmount:'₦ 450,000',
+    remainingAmount:'₦ 32,450,000',
+    date:'Jun 1 2022'
+  },
+  {
+    year:'2021',
+    targetAmount:'₦ 32,450,000',
+    paidAmount:'₦ 450,000',
+    remainingAmount:'₦ 32,450,000',
+    date:'Jun 1 2022'
+  },
+  {
+    year:'2021',
+    targetAmount:'₦ 32,450,000',
+    paidAmount:'₦ 450,000',
+    remainingAmount:'₦ 32,450,000',
+    date:'Jun 1 2022'
+  },
+]

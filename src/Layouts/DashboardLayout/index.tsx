@@ -12,9 +12,11 @@ const DashboardLayout = ({children, title}:{children:ReactNode, title?:string}) 
   return (
   <PageLayout >
       <div className='DashboardLayout' >
-            <div className='nav--container'>             
-             <NavTabs tabs={navData} logout={true} otherStyle={'!text-[#1D2319]'} color='#1D2319' tabIndex={10}/>
-            </div>
+      <div className='border-b-[#000000] border-[1px]'>
+      <div className='w-[90%] mx-auto'>
+        <NavTabs tabs={navData} logout={true} otherStyle={'!text-[#1D2319]'} color='#1D2319' tabIndex={10}/>
+        </div>
+      </div>
             <section className=''>
              <aside className='side--nav--container'> 
                    {
@@ -29,7 +31,7 @@ const DashboardLayout = ({children, title}:{children:ReactNode, title?:string}) 
                      })
                    }
              </aside>
-             <main className='text-black'>
+             <main className=''>
                   <div className='mt-[1.375rem] border-[#E7E7E7] border-[1px] rounded-[0.625rem] ml-[4.1875rem] mr-[5.5rem] mb-[3.0625rem]'>
                         <div className='flex space-x-4 items-center py-[1.125rem] pl-[1.75rem]'>
                           <img src="/public/images/AbdulgannyOladosu.png" alt="" />
@@ -39,7 +41,7 @@ const DashboardLayout = ({children, title}:{children:ReactNode, title?:string}) 
                           </div>
                         </div>
                   </div>
-                {title && <p className=' padding-b-[0.5862rem] text-xl font-normal text-[#111111] border-b-[1px] border-[#f5f5f5] mr-[7.6875rem]'>{title}</p>}
+                {title && <p className=' padding-b-[0.5862rem] ml-[4.1875rem] text-xl font-normal text-[#111111] border-b-[1px] border-[#f5f5f5] mr-[7.6875rem]'>{title}</p>}
              {children}
              </main>
             </section>

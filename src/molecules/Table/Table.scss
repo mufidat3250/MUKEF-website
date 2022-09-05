@@ -1,5 +1,5 @@
 .tableContainer{
-    @apply w-full flex-grow h-full overflow-y-auto flex flex-col mb-[9.5625rem];
+    @apply w-full flex-grow h-full overflow-y-auto flex flex-col;
 
     .tableWrapper{
       @apply flex-grow overflow-hidden flex flex-col;
@@ -8,10 +8,10 @@
         border-spacing:0;
 
         thead{
-       @apply bg-gray600 rounded-lg w-full h-12 flex px-4;
+       @apply bg-gray600 rounded-lg w-full h-12 flex ;
     }
     tbody{
-        @apply bg-white overflow-y-auto px-4;
+        @apply bg-white overflow-y-auto;
     }
     td,th{
         @apply text-left;
@@ -21,7 +21,7 @@
         @apply text-[#100C2A];
     }
     td{
-        @apply py-4 border-[#C5C5C5] border-b-[1px] text-[#565656];
+        @apply py-4 text-[#565656] cursor-pointer;
         
     }
     }

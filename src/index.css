@@ -34,6 +34,9 @@ textarea {
   display: none;
 }
 
+select{
+  -webkit-appearance: none;
+}
 @tailwind utilities;
 
 

@@ -1,9 +1,9 @@
 .DashboardLayout{
-    @apply grid grid-rows-[auto,1fr] h-full;
+    @apply grid grid-rows-[auto,1fr];
 
-    .nav--container{
-        @apply border-[1px] border-b-[#000000] pl-[3.4375rem] pr-[7.5625rem];
-    }
+    // .nav--container{
+    //     @apply border-[1px] border-b-[#000000]  pr-[7.5625rem] bg-red-400 w-full;
+    // }
     section{
         @apply grid grid-cols-[16.25rem,1fr];
 

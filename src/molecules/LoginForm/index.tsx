@@ -1,8 +1,10 @@
 import React from "react";
 import Button from "../../attoms/Button";
 import Input from "../../attoms/Input";
+import {Navigate, useNavigate} from 'react-router-dom'
 
-function index() {
+function LoginForm() {
+  const navigate = useNavigate()
   return (
     <>
       <div className="grid--input">
@@ -35,7 +37,7 @@ function index() {
       </div>
       <div className="flex justify-center">
         <Button
-          onClick={() => {}}
+          onClick={() => navigate('dashboard/profile')}
           title="Login"
           customStyle="bg-black mt-[1.48rem] w-[20.39rem] h-[2.6rem] rounded-[4.16px] font-bold text-white"
         />
@@ -53,4 +55,4 @@ function index() {
   );
 }
 
-export default index;
+export default LoginForm;
