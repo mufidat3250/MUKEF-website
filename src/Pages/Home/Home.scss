@@ -1,9 +1,9 @@
 .first--page {
-  @apply h-screen   bg-Home-Image bg-contain;
+  @apply h-screen bg-Home-Image bg-cover bg-no-repeat;
 }
-.nav--container {
-  @apply ml-[3.4375rem] mr-[7.5625rem];
-}
+// .nav--container {
+//   @apply ml-[3.4375rem] mr-[7.5625rem];
+// }
 
 .profile--page {
   @apply h-[48.12rem] pt-[4.5rem] pl-[7.56rem];

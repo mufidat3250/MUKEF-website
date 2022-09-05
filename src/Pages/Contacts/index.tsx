@@ -10,9 +10,7 @@ const Contacts = () => {
   return (
  <PageLayout>
  <div className='Contacts'>
-    <div className='nav--container'>
-    <NavTabs tabs={navData} tabIndex={4} />
-    </div>
+    <NavTabs tabs={navData} tabIndex={4} color='white' />
     <div className='contact--us'>
       <h1 className='contact--title'>{contactUs.title}</h1>
       <div className='contact-desc'>

@@ -9,6 +9,7 @@ import { useState } from "react";
 import PopForm from "../../molecules/PopForm/PopForm";
 import DonateForm from "../../molecules/DonationForm/index";
 import LoginForm from "../../molecules/LoginForm/index";
+import Button from "../../attoms/Button";
 
 const HomePage = () => {
   const [joinUsModal, setjoinUsModal] = useState(false);
@@ -18,44 +19,38 @@ const HomePage = () => {
     <>
       <PageLayout>
         <div className="first--page">
-          <div className="nav--container">
-            <NavTabs tabs={navData} tabIndex={0} />
-          </div>
-          <div className=" h-screen flex flex-col justify-center items-center">
-            <div className="w-[8.81rem] mt-[-23rem]">
+        <NavTabs tabs={navData} tabIndex={0}  color='white'/>
+          <div className=" h-screen flex flex-col justify-center  items-center">
+            <div className="mt-[-8rem] sm:w-[8.81rem] sm:mt-[-23rem]">
               <img
                 className="w-full"
                 src="/public/images/Mukef Logo.png"
                 alt="Logo"
               />
             </div>
-            <div className="w-[52rem] h-[9.45rem]  flex justify-center items-center">
-              <p className="text-[2rem] font-bold ">
+            <div className=" my-4  sm:w-[52rem] sm:h-[9.45rem]  text-center flex justify-center items-center">
+              <p className=" text-[1.5rem] sm:text-[2rem] font-bold ">
                 Muhammad Kamalud-Deen (Education) Foundation
               </p>
             </div>
-            <p>
+            <p className=" px-4 text-center">
               The most elegant expression of Apple Watch returns with two iconic
               materials — titanium and ceramic.
             </p>
-            <div className="flex mt-[3rem] ">
-              <button
-                onClick={() => {
+            <div className="flex  mt-[1.5rem] sm:mt-[3rem] space-y-[0.8rem] sm:space-x-[2.5rem] flex-col sm:flex sm:flex-row">
+              <div className="w-[16.37rem]">
+                <Button title={" Make an instant donation"} customStyle={" border-white border-[1px] text-white rounded-[4px]"}  onClick={() => {
                   setDonateModal(true);
-                }}
-                className="w-[16.37rem] h-[3.125rem] justify-center rounded-[4px] items-center border-[1px] border-white cursor-pointer"
-              >
-                Make an instant donation
-              </button>
-              <button
-                onClick={() => {
+                }}/>
+              </div>
+
+              <div className="w-[16.37rem]">
+                <Button title={"Join us"} customStyle={" border-white border-[1px] text-black rounded-[4px] bg-white"} onClick={() => {
                   setStage("signup");
                   setjoinUsModal(true);
-                }}
-                className=" rounded-[2px] bg-white w-[16.37rem] h-[3.125rem] justify-center items-center   ml-[2.56rem] text-black"
-              >
-                Join us
-              </button>
+                }}/>
+              </div>
+         
             </div>
           </div>
         </div>
