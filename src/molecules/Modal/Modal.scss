@@ -1,9 +1,5 @@
 .modal-box {
-<<<<<<< HEAD
-  @apply z-[20] bg-white p-[2rem] h-fit max-h-[87vh] overflow-auto rounded-[1rem] fixed top-[100vh] right-0 md:right-[calc(50%-9.2rem)]  text-left sm:w-full;
-=======
-  @apply z-[20] bg-white p-[2rem] h-fit max-h-[87vh] overflow-auto rounded-[1rem] fixed top-[100vh] right-[calc(50%-9.2rem)] sm:right-[calc(50%-15rem)] text-left sm:w-full ;
->>>>>>> ebe3b3ae9608c34864ccb347e2a498413c5e2256
+  @apply z-[20] bg-white p-[2rem] h-fit max-h-[87vh] overflow-auto rounded-[1rem] fixed top-[100vh] right-[0rem]  md:right-[calc(50%-9.2rem)]  text-left sm:w-full;
   transition: top 0.4s ease-in-out;
   .head {
     @apply flex items-center justify-between;
