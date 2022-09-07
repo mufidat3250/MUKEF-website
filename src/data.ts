@@ -305,105 +305,138 @@ export const cleric = [
 ];
 
 export const contactUs = {
-  title:'Contact us',
-  location:'Muhammad Kamaldeen University Ilorin Kwara state',
-  name:' - Hi. My name is Khoa. I am a '
-}
+  title: "Contact us",
+  location: "Muhammad Kamaldeen University Ilorin Kwara state",
+  name: " - Hi. My name is Khoa. I am a ",
+};
 export const contacts = [
   {
-    Icon:Gmail,
-    title:'info@mufek.com.ng',
-    desc:'lorem ispum lorem ispumlorem ispum lorem ispumdsaddsdddd',
-      
+    Icon: Gmail,
+    title: "info@mufek.com.ng",
+    desc: "lorem ispum lorem ispumlorem ispum lorem ispumdsaddsdddd",
   },
   {
-    Icon:Phone,
-    title:'+234 8038 090 0938',
-    desc:'lorem ispum lorem ispumlorem ispum wwwedddd ispum'    
+    Icon: Phone,
+    title: "+234 8038 090 0938",
+    desc: "lorem ispum lorem ispumlorem ispum wwwedddd ispum",
   },
   {
-    Icon:SupportCenter,
-    title:'lorem ispum lorem ispumlorem ispum lorem ispewwwum',
-    desc:'Support center -->'    
-  }
-]
+    Icon: SupportCenter,
+    title: "lorem ispum lorem ispumlorem ispum lorem ispewwwum",
+    desc: "Support center -->",
+  },
+];
 
-export const sideNav =[
+export const sideNav = [
   {
-    Icon:ProfileIcon,
-    title:'Profile',
-    link:'/dashboard/profile'
+    Icon: ProfileIcon,
+    title: "Profile",
+    link: "/dashboard/profile",
   },
   {
-    Icon:SupportProjectIcon,
-    title:'Support a project',
-    link:'/dashboard/support-project'
+    Icon: SupportProjectIcon,
+    title: "Support a project",
+    link: "/dashboard/support-project",
   },
   {
-    Icon:TransactionIcon,
-    title:'Transactions',
-    link:'/dashboard/transactions'
+    Icon: TransactionIcon,
+    title: "Transactions",
+    link: "/dashboard/transactions",
+  },
+  {
+    Icon: LogoutIcon,
+    title: "Logout",
+    link: "",
+  },
+];
 
+export const personalInfo = [
+  {
+    name: "Title",
+    desc: "Professor",
   },
   {
-    Icon:LogoutIcon,
-    title:'Logout',
-    link:''
-  },
-]
-
-export const personalInfo =[
-  {
-    name:'Title',
-    desc:'Professor'
+    name: "Full name",
+    desc: "Abdul-Ganiyy Oladosu AGAS OON",
   },
   {
-    name:'Full name',
-    desc:'Abdul-Ganiyy Oladosu AGAS OON'
-  },{
-    name:'Email',
-    desc:'profagas@gmail.com'
-  },{
-    name:'Phone number',
-    desc:'080123456789'
-  },{
-    name:'Phone number 2',
-    desc:'080123456789'
-  },{
-    name:'Home address',
-    desc:'No 32 Sheikh Ganiyy Street GRA Ilorin'
-  },{
-    name:'State',
-    desc:'Kwara'
-  },{
-    name:'Nationality',
-    desc:'Nigerian'
-  },{
-    name:'Favourite quote',
-    desc:`إِنَّ سَعْيَكُمْ لَشَتَّىٰ`
+    name: "Email",
+    desc: "profagas@gmail.com",
   },
-]
+  {
+    name: "Phone number",
+    desc: "080123456789",
+  },
+  {
+    name: "Phone number 2",
+    desc: "080123456789",
+  },
+  {
+    name: "Home address",
+    desc: "No 32 Sheikh Ganiyy Street GRA Ilorin",
+  },
+  {
+    name: "State",
+    desc: "Kwara",
+  },
+  {
+    name: "Nationality",
+    desc: "Nigerian",
+  },
+  {
+    name: "Favourite quote",
+    desc: `إِنَّ سَعْيَكُمْ لَشَتَّىٰ`,
+  },
+];
 
 export const transactiondata = [
   {
-    payment:'Total yayment this year',
-    amount:'₦ 32,450,000'
+    payment: "Total yayment this year",
+    amount: "₦ 32,450,000",
   },
   {
-    payment:'Total payment lifetime',
-    amount:'₦ 32,450,000'
+    payment: "Total payment lifetime",
+    amount: "₦ 32,450,000",
   },
-]
+];
 
 export const paymentMode = [
   {
-    title:'Payment made',
-    amount:'₦576,000.00',
-    color:'#189D4D'
+    title: "Payment made",
+    amount: "₦576,000.00",
+    color: "#189D4D",
   },
   {
-    title:'To complete',
-    amount:'₦424,000.00',
-    color:'#999999'
-  }
-]
+    title: "To complete",
+    amount: "₦424,000.00",
+    color: "#999999",
+  },
+];
+
+export const onProjectData = [
+  {
+    image: "/public/images/ongoingProject1.png",
+    title: "Project title goes here",
+    desc: "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature ",
+  },
+  {
+    image: "/public/images/ongoingProject2.png",
+    title: "Project title goes here",
+    desc: "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature ",
+  },
+  {
+    image: "/public/images/ongoingProject1.png",
+    title: "Project title goes here",
+    desc: "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature ",
+  },
+  {
+    image: "/public/images/ongoingProject2.png",
+    title: "Project title goes here",
+    desc: "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature ",
+  },
+  {
+    image: "/public/images/ongoingProject1.png",
+    title: "Project title goes here",
+    desc: "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature ",
+  },
+];

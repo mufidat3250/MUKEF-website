@@ -14,7 +14,7 @@ export interface ModalProps {
   icon?: ReactNode;
   headingCenter?: boolean;
   textAlign?: string;
-  HeaderText: string;
+  HeaderText?: string;
 }
 
 function Modal({

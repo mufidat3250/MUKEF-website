@@ -27,6 +27,7 @@ module.exports = {
         gray1500: "#222222",
         mainblack: "#100C2A",
         gray1600: "#434343",
+        bordergrey: "#F5F5F5",
       },
       backgroundImage: (theme) => ({
         "Home-Image": "url('/public/images/firstPageImage.png')",
