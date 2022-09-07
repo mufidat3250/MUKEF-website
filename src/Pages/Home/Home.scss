@@ -6,9 +6,9 @@
 // }
 
 .profile--page {
-  @apply h-[48.12rem] pt-[4.5rem] pl-[7.56rem];
+  @apply  pt-[4.5rem] px-4 sm:pl-[7.56rem];
 
   .eachProfile {
-    @apply grid grid-cols-2 gap-x-[1.875rem];
+    @apply grid grid-cols-1 sm:grid-cols-2 sm:gap-x-[1.875rem];
   }
 }

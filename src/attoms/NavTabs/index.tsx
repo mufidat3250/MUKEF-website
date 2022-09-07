@@ -84,7 +84,7 @@ const NavTabs = ({ tabs, logout, tabIndex, otherStyle, color }: navbarProp) => {
           <MenuIcon color="white" />
         </div>
        
-        <div className={`space-x-[7.4375rem] h-screen top-0 left-0 right-0 bottom-0 absolute sm:hidden bg-[#2D2D2D] flex flex-col pt-7 pr-6 ${menu ?'ml-0':'ml-[36rem]'}`}>
+        <div className={`space-x-[7.4375rem] h-screen top-0 left-0 right-0 bottom-0 absolute sm:hidden bg-[#2D2D2D] flex flex-col pt-7 pr-6 ${menu ?'ml-0':'ml-[50rem]'}`}>
            <div>
              <div className=" flex justify-end cursor-pointer">
              <CancelIcon color="white" onClick={()=>setMenu(false)}/>

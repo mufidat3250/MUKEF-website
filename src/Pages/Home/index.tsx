@@ -33,11 +33,11 @@ const HomePage = () => {
                 Muhammad Kamalud-Deen (Education) Foundation
               </p>
             </div>
-            <p className=" px-4 text-center">
+            <p className=" px-4 text-center sm:max-w-[25.8125rem] text-[1.375rem]">
               The most elegant expression of Apple Watch returns with two iconic
               materials — titanium and ceramic.
             </p>
-            <div className="flex  mt-[1.5rem] sm:mt-[3rem] space-y-[0.8rem] sm:space-x-[2.5rem] flex-col sm:flex sm:flex-row">
+            <div className="flex  mt-[1.5rem] sm:mt-[3rem] space-y-[0.8rem] sm:space-y-0 sm:space-x-[2.5rem] flex-col sm:flex sm:flex-row">
               <div className="w-[16.37rem]">
                 <Button title={" Make an instant donation"} customStyle={" border-white border-[1px] text-white rounded-[4px]"}  onClick={() => {
                   setDonateModal(true);
@@ -54,8 +54,8 @@ const HomePage = () => {
             </div>
           </div>
         </div>
-        <div className="profile--page">
-          <p className="text-black font-bold">Recent news</p>
+        <div className="profile--page ">
+          <p className="text-black font-bold  text-center sm:text-left">Recent news</p>
           <div className="eachProfile ">
             {profileData.map((data, dataIndex) => (
               <RecentProfile key={dataIndex} {...data} />
@@ -70,6 +70,7 @@ const HomePage = () => {
         HeaderText={stage == "signup" ? "Create an account" : "Login"}
         openModal={joinUsModal}
         closeModal={() => setjoinUsModal(false)}
+        
       >
         {stage == "signup" ? (
           <PopForm signUp={() => setStage("login")} />

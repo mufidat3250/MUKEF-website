@@ -5,18 +5,18 @@
         @apply mx-auto max-w-[88%];
         
         .footer--content{
-            @apply flex pt-[3.9375rem] pb-[2.0625rem]  justify-between ;
+            @apply flex pt-[3.9375rem] pb-[2.0625rem]  justify-between flex-col sm:flex-row;
         }
         
     }
     .activities{
-        @apply grid grid-cols-4 gap-x-[1.875rem];
+        @apply grid grid-cols-2 gap-y-4  sm:grid-cols-4 gap-x-[1.875rem];
 
         .title{
-            @apply text-xl font-[500] text-white mb-5;
+            @apply text-base sm:text-xl font-[500] text-white mb-5;
         }
         .subtext{
-            @apply text-lg font-[500] text-lighgray4 space-y-4;
+            @apply text-base sm:text-lg font-[500] text-lighgray4 space-y-4;
         }
     }
     .copywrite--social--links{

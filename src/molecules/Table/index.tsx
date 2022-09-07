@@ -68,7 +68,8 @@ const Table = ({
   tableDatastyle,
   tableHeadstyle,
   tdBg,
-  dropDown 
+  dropDown,
+  rowActions 
 }: PropTypes) => {
   return (
     <div className="tableContainer">
@@ -114,6 +115,7 @@ const Table = ({
                   </td>
                 ))}
               </tr>
+              {<div className="test bg-red-500">i am the test</div>}
             </>
             ))}
           </tbody>
