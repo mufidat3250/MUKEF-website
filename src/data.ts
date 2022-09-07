@@ -440,3 +440,106 @@ export const onProjectData = [
     desc: "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature ",
   },
 ];
+
+export const paymentHistorydata = [
+  {
+    date: " Jun 30, 2021 ",
+    paymentType: "Building project support",
+    amount: "4000",
+    status: "Success",
+  },
+  {
+    date: "Jun 30, 2021",
+    paymentType: "Zakat",
+    amount: "5000",
+    status: "Success",
+  },
+  {
+    date: "Jun 30, 2021",
+    paymentType: "Orphanage support ",
+    amount: "6000",
+    status: "Success",
+  },
+  {
+    date: "Jun 30, 2021",
+    paymentType: "Water project support",
+    amount: "4000",
+    status: "Failed",
+  },
+];
+
+export const projectSupportData = [
+  {
+    project: "water",
+    supportAccount: "₦ 32,450,000",
+    paidAmount: "₦ 450,000",
+    remainingAmount: "₦ 32,450,000",
+    date: "Jun 1 2022",
+  },
+  {
+    project: "water",
+    supportAccount: "₦ 32,450,000",
+    paidAmount: "₦ 450,000",
+    remainingAmount: "₦ 32,450,000",
+    date: "Jun 1 2022",
+  },
+  {
+    project: "water",
+    supportAccount: "₦ 32,450,000",
+    paidAmount: "₦ 450,000",
+    remainingAmount: "₦ 32,450,000",
+    date: "Jun 1 2022",
+  },
+  {
+    project: "water",
+    supportAccount: "₦ 32,450,000",
+    paidAmount: "₦ 450,000",
+    remainingAmount: "₦ 32,450,000",
+    date: "Jun 1 2022",
+  },
+];
+
+export const donationData = [
+  {
+    year: "2021",
+    targetAmount: "₦ 32,450,000",
+    paidAmount: "₦ 450,000",
+    remainingAmount: "₦ 32,450,000",
+    date: "Jun 1 2022",
+  },
+  {
+    year: "2021",
+    targetAmount: "₦ 32,450,000",
+    paidAmount: "₦ 450,000",
+    remainingAmount: "₦ 32,450,000",
+    date: "Jun 1 2022",
+  },
+  {
+    year: "2021",
+    targetAmount: "₦ 32,450,000",
+    paidAmount: "₦ 450,000",
+    remainingAmount: "₦ 32,450,000",
+    date: "Jun 1 2022",
+  },
+  {
+    year: "2021",
+    targetAmount: "₦ 32,450,000",
+    paidAmount: "₦ 450,000",
+    remainingAmount: "₦ 32,450,000",
+    date: "Jun 1 2022",
+  },
+  {
+    year: "2021",
+    targetAmount: "₦ 32,450,000",
+    paidAmount: "₦ 450,000",
+    remainingAmount: "₦ 32,450,000",
+    date: "Jun 1 2022",
+  },
+  {
+    year: "2021",
+    targetAmount: "₦ 32,450,000",
+    paidAmount: "₦ 450,000",
+    remainingAmount: "₦ 32,450,000",
+    date: "Jun 1 2022",
+  },
+];

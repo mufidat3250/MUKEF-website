@@ -2,14 +2,16 @@ import * as React from "react"
 import { SVGProps } from "react"
 type props = {
     color?:string;
+    width?:string;
+    height?: string;
 }&SVGProps<SVGSVGElement>
 
 const MunkefLogo = (props:props) => {
     console.log(props.color)
     return(
         <svg
-    width={55}
-    height={52}
+    width={ props.width||55}
+    height={props.height||52}
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
     {...props}

@@ -16,9 +16,7 @@ const Projects = () => {
     <PageLayout>
       <div className="Project">
         <div className="charity">
-          <div className="nav--container">
-            <NavTabs tabs={navData} tabIndex={2} />
-          </div>
+            <NavTabs tabs={navData} tabIndex={2} />          
           <div className="max-w-[75%] mx-auto mt-[2.375rem]">
             <h1 className="title">{charity.title}</h1>
             <p className="caption">{charity.caption}</p>

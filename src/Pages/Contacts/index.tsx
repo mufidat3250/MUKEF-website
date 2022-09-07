@@ -10,9 +10,7 @@ const Contacts = () => {
   return (
  <PageLayout>
  <div className='Contacts'>
-    <div className='nav--container'>
-    <NavTabs tabs={navData} tabIndex={4} />
-    </div>
+    <NavTabs tabs={navData} tabIndex={4} color='white' />
     <div className='contact--us'>
       <h1 className='contact--title'>{contactUs.title}</h1>
       <div className='contact-desc'>
@@ -23,7 +21,7 @@ const Contacts = () => {
         </div>       
       </div>
       <div className='button--wrapper'>
-          <Button title={'Donate now'} customStyle={'!bg-white text-gray900 font-[500] rounded-[5px]'}/>
+          <Button title={'Donate now'} customStyle={'!bg-white text-gray900 font-[500] rounded-[5px]'} onClick={()=>{}}/>
         </div>
     </div>
  </div>
@@ -53,7 +51,9 @@ const Contacts = () => {
           }
         </div>
         <div className='bg-green-500 rounded-[0.625rem]'>
-          <Button title={'Send'} customStyle={'!bg-[#152018] rounded-[10px] text-white font-[500] '}/>
+          <Button title={'Send'} customStyle={'!bg-[#152018] rounded-[10px] text-white font-[500] '} onClick={function (): void {
+                  throw new Error('Function not implemented.')
+                } }/>
         </div>
       </div>
    </div>

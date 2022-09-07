@@ -12,10 +12,8 @@ const News = () => {
     <PageLayout>
       <div className="News">
         <div className="">
-          <div className="NewsWrapper ">
-            <div className="ml-[3.4375rem] mr-[7.5625rem]">
-              <NavTabs tabs={navData} tabIndex={1} />
-            </div>
+          <div className="NewsWrapper">
+              <NavTabs tabs={navData} tabIndex={1} color='white' />            
           </div>
           <div className="student">
             <div className="">
@@ -37,8 +35,7 @@ const News = () => {
               <div className="w-[16.375rem]">
                 <Button
                   title={"See more news"}
-                  customStyle={"!bg-[#2D2D2D] !text-white !rounded-[5px]"}
-                />
+                  customStyle={"!bg-[#2D2D2D] !text-white !rounded-[5px]"} onClick={()=>{}}                />
               </div>
             </div>
           </div>
@@ -63,8 +60,7 @@ const News = () => {
                 <div className="w-[16.375rem]">
                   <Button
                     title={"See more news"}
-                    customStyle={"!bg-gray900 !rounded-[5px] text-white"}
-                  />
+                    customStyle={"!bg-gray900 !rounded-[5px] text-white"} onClick={()=>{}}                  />
                 </div>
               </div>
             </div>

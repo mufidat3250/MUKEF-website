@@ -8,11 +8,9 @@ import "./AboutUs.scss";
 const AboutUs = () => {
   return (
     <PageLayout>
-      <div className="About--us">
-        <div className="ml-[3.4375rem] mr-[7.5625rem]">
-          <NavTabs tabs={navData} tabIndex={3} />
+      <div className="About--us ">
+          <NavTabs tabs={navData} tabIndex={3}  color='white'/>
           <h1 className="title">About Mukef</h1>
-        </div>
       </div>
       <div className="prospect">
         {prospects.map(({ img, title, subtext }, index) => {

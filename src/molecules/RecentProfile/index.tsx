@@ -17,16 +17,16 @@ function RecentProfile({
   comments: string;
 }) {
   return (
-    <div className="flex mt-[2.5rem]">
-      <div className="h-[13.83rem] w-[13.83rem] bg-slate-500 rounded-[1.69rem]">
-        <img src={img} />
+    <div className="flex mt-[2.5rem] flex-col space-y-4 sm:space-y-0 items-center sm:flex-row  sm:space-x-[1.69rem] ">
+      <div className="   bg-slate-500 rounded-[1.69rem]">
+        <img src={img} className='w-[100%] h-[100%]' />
       </div>
-      <div className="h-[13.83rem] w-[18.98rem] ml-[1.69rem]">
-        <p className="text-lg font-bold text-black">{name}</p>
-        <p className="mt-[1.19rem] font-normal text-black">{desc}</p>
-        <div className="flex mt-[1.03rem]">
-          <div className=" flex justify-center items-center h-[2.27rem] w-[6.94rem] shadow-sm cursor-pointer">
-            <p className="text-black font-bold text-[0.86rem]">Read More</p>
+      <div className="">
+        <p className="text-sm  text-center  sm:text-left sm:text-2xl font-bold text-black">{name}</p>
+        <p className=" mt-[0.7rem] text-[12px] sm:text-base sm:mt-[1.19rem] font-normal text-black max-w-[18.9856rem] text-center sm:text-left">{desc}</p>
+        <div className="flex mt-[1.03rem] bg-red-500 sm:justify-start justify-center">
+          <div className=" flex justify-center items-center h-[2.27rem] w-[6.94rem] shadow-sm cursor-pointer ">
+            <p className="text-black font-bold  text-[0.86rem]">Read More</p>
             <span className="ml-[0.71rem]">
               <HeadIcon />
             </span>

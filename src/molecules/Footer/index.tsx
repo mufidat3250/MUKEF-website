@@ -5,8 +5,8 @@ const Footer = () => {
     <div className="Footer">
       <div className="footer-wrapper">
         <div className="footer--content">
-          <div className="self-start w-[6.3125rem] h-[5.8468rem]">
-            <img src="/public/images/Mukef Logo.png" alt="" />
+          <div className="hidden sm:self-start sm:block w-[6.3125rem] h-[5.8468rem]">
+            <img src="/public/images/Mukef Logo.png" alt=""  />
           </div>
           <div className="activities">
             <div>
@@ -57,7 +57,7 @@ const Footer = () => {
           <div className="flex gap-x-[0.625rem]">
             {socialIcon.map(({ icon: Icon }, index) => (
               <div
-                className=" grid place-items-center h-[3.125rem] w-[3.125rem] rounded-full bg-lighgray2"
+                className=" grid place-items-center h-[2rem] w-[2rem] sm:h-[3.125rem] sm:w-[3.125rem] rounded-full bg-lighgray2"
                 key={index}
               >
                 {<Icon />}

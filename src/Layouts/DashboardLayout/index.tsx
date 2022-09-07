@@ -16,6 +16,7 @@ const DashboardLayout = ({
   const [currentPath] = useState(window.location.pathname);
 
   return (
+<<<<<<< HEAD
     <PageLayout>
       <div className="DashboardLayout">
         <div className="nav--container">
@@ -74,5 +75,46 @@ const DashboardLayout = ({
     </PageLayout>
   );
 };
+=======
+  <PageLayout >
+      <div className='DashboardLayout' >
+      <div className='border-b-[#000000] border-[1px]'>
+      <div className='w-[90%] mx-auto'>
+        <NavTabs tabs={navData} logout={true} otherStyle={'!text-[#1D2319]'} color='#1D2319' tabIndex={10}/>
+        </div>
+      </div>
+            <section className=''>
+             <aside className='side--nav--container'> 
+                   {
+                     sideNav.map(({Icon, title, link}, index)=>{
+                       let isActive = currentPath===link
+                       return (
+                        <div key={`sideNav${index}`} className={`single--tab ${isActive && 'bg-[rgba(119,_119,_119,_0.16)] '}`} onClick={()=> navigate(link)}>
+                        <Icon/>
+                        <p>{title}</p>
+                      </div> 
+                       )
+                     })
+                   }
+             </aside>
+             <main className=''>
+                  <div className='mt-[1.375rem] border-[#E7E7E7] border-[1px] rounded-[0.625rem] ml-[4.1875rem] mr-[5.5rem] mb-[3.0625rem]'>
+                        <div className='flex space-x-4 items-center py-[1.125rem] pl-[1.75rem]'>
+                          <img src="/public/images/AbdulgannyOladosu.png" alt="" />
+                          <div className='text-center'>
+                            <h1 className='text-sm text-black font-[500]'>Prof. Abdul-Ganiyy Oladosu (AGAS) OON</h1>
+                            <p className='text-black text-xs font-[600] opacity-[0.5] tracking-[-0.444375px]'>Chief Imam of University of Ilorin</p>
+                          </div>
+                        </div>
+                  </div>
+                {title && <p className=' padding-b-[0.5862rem] ml-[4.1875rem] text-xl font-normal text-[#111111] border-b-[1px] border-[#f5f5f5] mr-[7.6875rem]'>{title}</p>}
+             {children}
+             </main>
+            </section>
+    </div>
+  </PageLayout>
+  )
+}
+>>>>>>> 2135a4fa883f52bda326d67fb41b482385636e7e
 
 export default DashboardLayout;
