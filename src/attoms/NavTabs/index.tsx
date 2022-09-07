@@ -28,11 +28,11 @@ const NavTabs = ({ tabs, logout, tabIndex, otherStyle, color }: navbarProp) => {
   };
   return (
     <>
-      <div className=" NavBar relative">
+      <div className=" NavBar relative ">
         <div className="flex items-center space-x-[0.7rem] sm:space-x-0 sm:gap-[2.0625rem] ">
           <div className=" w-[30px] h-[30px] sm:hidden">
-            <img src="/public/vectors/Group 48.svg" alt=""  />
-          </div> 
+            <img src="/public/vectors/Group 48.svg" alt="" />
+          </div>
           <div className="hidden sm:block">
             <MunkefLogo color={color} />
           </div>
@@ -42,8 +42,6 @@ const NavTabs = ({ tabs, logout, tabIndex, otherStyle, color }: navbarProp) => {
             MUKEF
           </h1>
         </div>
-
-
 
         <div className="hidden sm:flex sm:space-x-[7.4375rem]">
           <div className="tabs">
@@ -77,19 +75,26 @@ const NavTabs = ({ tabs, logout, tabIndex, otherStyle, color }: navbarProp) => {
             )}
           </div>
         </div>
-        <div className=" sm:hidden" onClick={() => {
-          console.log('i am clicked')
-          setMenu(true)
-        }}>
+        <div
+          className=" sm:hidden"
+          onClick={() => {
+            console.log("i am clicked");
+            setMenu(true);
+          }}
+        >
           <MenuIcon color="white" />
         </div>
-       
-        <div className={`space-x-[7.4375rem] h-screen top-0 left-0 right-0 bottom-0 absolute sm:hidden bg-[#2D2D2D] flex flex-col pt-7 pr-6 ${menu ?'ml-0':'ml-[50rem]'}`}>
-           <div>
-             <div className=" flex justify-end cursor-pointer">
-             <CancelIcon color="white" onClick={()=>setMenu(false)}/>
-             </div>
-           <div className="tabs flex flex-col self-center space-y-4 pt-6">
+
+        <div
+          className={`space-x-[7.4375rem] h-screen top-0 left-0 right-0 bottom-0 absolute sm:hidden bg-[#2D2D2D] flex z-50 flex-col pt-7 pr-6 ${
+            menu ? "ml-0" : "ml-[50rem]"
+          }`}
+        >
+          <div>
+            <div className=" flex justify-end cursor-pointer">
+              <CancelIcon color="white" onClick={() => setMenu(false)} />
+            </div>
+            <div className="tabs flex flex-col self-center space-y-4 pt-6">
               {tabs.map((tab: any, index: number) => (
                 <p
                   className={`tab ${
@@ -97,33 +102,33 @@ const NavTabs = ({ tabs, logout, tabIndex, otherStyle, color }: navbarProp) => {
                   } ${otherStyle}`}
                   key={`nav${index} `}
                   onClick={() => {
-                    handleNav(tab.link, index)
-                    setMenu(false)
+                    handleNav(tab.link, index);
+                    setMenu(false);
                   }}
                 >
                   {tab.title}
                 </p>
               ))}
             </div>
-           </div>
-            <div className="w-[8.0625rem]">
-              {!logout ? (
-                <Button
-                  title={"Login"}
-                  customStyle={
-                    "!font-[600] !text-[#0B8EC2] bg-white !rounded-[5px] hidden"
-                  }
-                  onClick={() => setLoginModal(true)}
-                />
-              ) : (
-                <Button
-                  title={"Login Out"}
-                  customStyle={`!font-[600] !text-white !bg-[#1D2319] !rounded-[5px]`}
-                  onClick={() => navigate("/")}
-                />
-              )}
-            </div>
           </div>
+          <div className="w-[8.0625rem]">
+            {!logout ? (
+              <Button
+                title={"Login"}
+                customStyle={
+                  "!font-[600] !text-[#0B8EC2] bg-white !rounded-[5px] hidden"
+                }
+                onClick={() => setLoginModal(true)}
+              />
+            ) : (
+              <Button
+                title={"Login Out"}
+                customStyle={`!font-[600] !text-white !bg-[#1D2319] !rounded-[5px]`}
+                onClick={() => navigate("/")}
+              />
+            )}
+          </div>
+        </div>
       </div>
 
       <Modal

@@ -1,3 +1,6 @@
+@tailwind base;
+@tailwind components;
+
 :root {
   font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
   font-size: 16px;
@@ -11,35 +14,36 @@
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
 }
-
-@tailwind base;
-@tailwind components;
+@media (max-width: 1024px) {
+  :root {
+    font-size: 14px;
+  }
+}
+@media (max-width: 650px) {
+  :root {
+    font-size: 12px;
+  }
+}
 
 body {
   width: 100vw;
   height: 100vh;
-  margin:0;
-  padding: 0;  
+  margin: 0;
+  padding: 0;
   overflow: hidden;
-
 }
 textarea {
   resize: none;
 }
 
-* *::before *::after{
+* *::before *::after {
   box-sizing: border-box;
 }
-::-webkit-scrollbar{
+::-webkit-scrollbar {
   display: none;
 }
 
-select{
+select {
   -webkit-appearance: none;
 }
 @tailwind utilities;
-
-
-
-
-

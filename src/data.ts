@@ -278,7 +278,7 @@ export const cleric = [
     subtext: "Marvin McKinney",
   },
   {
-    img: "/public/images/cleric8.png",
+    img: "/public/images/cleric2.png",
     title: "Marvin McKinney",
     subtext: "Marvin McKinney",
   },
