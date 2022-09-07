@@ -5,10 +5,10 @@ import Button from "../../attoms/Button";
 function PopForm({ signUp }: { signUp: Function }) {
   return (
     <form>
-      <div className="flex">
+      <div className="flex flex-col sm:flex">
         <Input
           placeholder="title"
-          customStyle="!bg-greybutton h-[2.59rem]  w-[7.25rem] rounded-[4.24px] text-textbutton"
+          customStyle="!bg-greybutton h-[2.59rem] w-[7.25rem] rounded-[4.24px] text-textbutton"
         />
         <Input
           placeholder="Other title"

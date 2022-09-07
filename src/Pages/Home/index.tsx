@@ -19,9 +19,15 @@ const HomePage = () => {
     <>
       <PageLayout>
         <div className="first--page">
+<<<<<<< HEAD
           <NavTabs tabs={navData} tabIndex={0} color="white" />
           <div className=" h-screen flex flex-col justify-center  items-center">
             <div className="mt-[-8rem] sm:w-[8.81rem] sm:mt-[-23rem]">
+=======
+        <NavTabs tabs={navData} tabIndex={0}  color='white'/>
+          <div className=" h-screen flex flex-col  space-y-10 sm:space-y-4 items-center justify-center ">
+            <div className=" mt-[-15rem] sm:w-[8.81rem] sm:mt-[-23rem] ">
+>>>>>>> ebe3b3ae9608c34864ccb347e2a498413c5e2256
               <img
                 className="w-full"
                 src="/public/images/Mukef Logo.png"
@@ -37,7 +43,7 @@ const HomePage = () => {
               The most elegant expression of Apple Watch returns with two iconic
               materials — titanium and ceramic.
             </p>
-            <div className="flex  mt-[1.5rem] sm:mt-[3rem] space-y-[0.8rem] sm:space-y-0 sm:space-x-[2.5rem] flex-col sm:flex sm:flex-row">
+            <div className="flex  mt-[1.5rem] sm:mt-[3rem] space-y-6 sm:space-y-0 sm:space-x-[2.5rem] flex-col sm:flex sm:flex-row">
               <div className="w-[16.37rem]">
                 <Button
                   title={" Make an instant donation"}
