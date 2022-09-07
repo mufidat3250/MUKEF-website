@@ -20,16 +20,16 @@ const HomePage = () => {
       <PageLayout>
         <div className="first--page">
         <NavTabs tabs={navData} tabIndex={0}  color='white'/>
-          <div className=" h-screen flex flex-col  space-y-10 sm:space-y-4 items-center justify-center ">
-            <div className=" mt-[-15rem] sm:w-[8.81rem] sm:mt-[-23rem] ">
+          <div className=" h-screen flex flex-col  space-y-10 sm:space-y-4  items-center justify-center md:justify-start md:mt-8 ">
+            <div className=" mt-[-12rem] md:mt-[0rem] sm:w-[8.81rem] sm:mt-[-23rem] ">
               <img
                 className="w-full"
                 src="/public/images/Mukef Logo.png"
                 alt="Logo"
               />
             </div>
-            <div className=" my-4  sm:w-[52rem] sm:h-[9.45rem]  text-center flex justify-center items-center">
-              <p className=" text-[1.5rem] sm:text-[2rem] font-bold ">
+            <div className="text-center flex justify-center items-center">
+              <p className=" text-[1.5rem] sm:text-[50px] md:leading-10  font-bold sm:font-normal ">
                 Muhammad Kamalud-Deen (Education) Foundation
               </p>
             </div>

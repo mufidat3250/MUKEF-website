@@ -28,7 +28,7 @@ const NavTabs = ({ tabs, logout, tabIndex, otherStyle, color }: navbarProp) => {
   };
   return (
     <>
-      <div className=" NavBar relative">
+      <div className=" NavBar relative ">
         <div className="flex items-center space-x-[0.7rem] sm:space-x-0 sm:gap-[2.0625rem] ">
           <div className=" w-[30px] h-[30px] sm:hidden">
             <img src="/public/vectors/Group 48.svg" alt=""  />
@@ -45,7 +45,7 @@ const NavTabs = ({ tabs, logout, tabIndex, otherStyle, color }: navbarProp) => {
 
 
 
-        <div className="hidden sm:flex sm:space-x-[7.4375rem]">
+        <div className="hidden sm:flex sm:space-x-0 md:space-x-[7.4375rem]">
           <div className="tabs">
             {tabs.map((tab: any, index: number) => (
               <p

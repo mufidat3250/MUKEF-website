@@ -1,5 +1,5 @@
 .NavBar{
-    @apply flex text-black justify-between items-center px-4 sm:px-0 w-[100%] sm:w-[85%]  mx-auto py-8;
+    @apply flex text-black justify-between items-center px-4 sm:px-0 md:w-[85%] sm:w-[100%]  md:bg-black mx-auto py-8;
     .tabs{
         @apply flex text-black items-center;
     }
