@@ -1,15 +1,18 @@
 import "./PopForm.scss";
 import Input from "../../attoms/Input";
 import Button from "../../attoms/Button";
+import Select from "../../attoms/Select";
 
 function PopForm({ signUp }: { signUp: Function }) {
   return (
     <form>
-      <div className="flex flex-col sm:flex">
-        <Input
-          placeholder="title"
-          customStyle="!bg-greybutton h-[2.59rem] w-[7.25rem] rounded-[4.24px] text-textbutton"
-        />
+      <div className="flex justify-center items-center ">
+        <div className="w-28 items-center justify-center rounded-[4.24px] bg-black">
+          <Select
+            initial="Sheikh"
+            options={["Sheikh", "Alhaji", "Alhaja", "Prof."]}
+          />
+        </div>
         <Input
           placeholder="Other title"
           customStyle="!bg-greybutton h-[2.59rem] w-[13.90rem] rounded-[4.24px] text-textbutton ml-[1.01rem]"
@@ -18,7 +21,7 @@ function PopForm({ signUp }: { signUp: Function }) {
       <div className="grid--input">
         <Input
           placeholder="Full name"
-          customStyle="!bg-greybutton h-[2.59rem]  mt-[1.55rem] rounded-[4.24px] text-textbutton"
+          customStyle="!bg-greybutton h-[2.59rem]   rounded-[4.24px] text-textbutton"
         />
         <Input
           placeholder="Email"

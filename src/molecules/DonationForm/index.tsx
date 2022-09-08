@@ -1,15 +1,17 @@
 import React from "react";
 import Button from "../../attoms/Button";
 import Input from "../../attoms/Input";
+import Select from "../../attoms/Select";
 import Stroke from "../../attoms/Vectors/stroke";
 
 function index() {
   return (
     <div className="grid--input">
-      <Input
+      {/* <Input
         placeholder="Payment method"
         customStyle="!bg-greybutton h-[2.59rem]  mt-[1.55rem] rounded-[4.24px] text-textbutton"
-      />
+      /> */}
+      <Select initial="Matercard" options={["Mastercard", "Visa", "PayPal"]} />
       <Input
         placeholder="Card number"
         customStyle="!bg-greybutton h-[2.59rem] mt-[1.55rem]  rounded-[4.24px] text-textbutton"

@@ -1,10 +1,10 @@
 import React from "react";
 import Button from "../../attoms/Button";
 import Input from "../../attoms/Input";
-import {Navigate, useNavigate} from 'react-router-dom'
+import { Navigate, useNavigate } from "react-router-dom";
 
 function LoginForm() {
-  const navigate = useNavigate()
+  const navigate = useNavigate();
   return (
     <>
       <div className="grid--input">
@@ -37,7 +37,7 @@ function LoginForm() {
       </div>
       <div className="flex justify-center">
         <Button
-          onClick={() => navigate('dashboard/profile')}
+          onClick={() => navigate("dashboard/profile")}
           title="Login"
           customStyle="bg-black mt-[1.48rem] w-[20.39rem] h-[2.6rem] rounded-[4.16px] font-bold text-white"
         />
