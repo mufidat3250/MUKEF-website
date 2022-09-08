@@ -33,12 +33,12 @@ const NavTabs = ({ tabs, logout, tabIndex, otherStyle, color }: navbarProp) => {
   return (
     <>
       <div className=" NavBar relative">
-        <div className="flex items-center space-x-[0.7rem] sm:space-x-0 sm:gap-[2.0625rem] ">
+        <div className="flex items-center space-x-[0.7rem] sm:space-x-0 sm:gap-[2.0625rem]">
           <div className=" w-[30px] h-[30px] md:hidden">
             <img src="/public/vectors/Group 48.svg" alt="" />
           </div>
           <div className="hidden md:block">
-            <MunkefLogo color={color} />
+            <MunkefLogo color={'white'} />
           </div>
           <h1
             className={`font-[500] text-[#FFFFFF] text-[1.1255rem] sm:text-[2.1255rem] cursor-pointer ${otherStyle}`}
@@ -103,7 +103,7 @@ const NavTabs = ({ tabs, logout, tabIndex, otherStyle, color }: navbarProp) => {
               {tabs.map((tab: any, index: number) => (
                 <p
                   className={`tab ${
-                    active == index ? "opacity-[0.5]" : "text-white "
+                    active == index ? "text-gray-400" : "text-white "
                   } ${otherStyle}`}
                   key={`nav${index} `}
                   onClick={() => {

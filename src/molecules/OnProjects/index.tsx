@@ -22,7 +22,7 @@ function OnProject({
         <p className="text-black text-[24px] font-bold mt-[1.2rem] ">{title}</p>
         <div className="w-full justify-between  mt-[19.3px] flex">
           <div className="w-[40.19rem]  ">
-            <p className="text-[18px] ">{desc}</p>
+            <p className="text-[18px] text-black">{desc}</p>
           </div>
 
           <Button
