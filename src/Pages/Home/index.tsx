@@ -19,21 +19,21 @@ const HomePage = () => {
     <>
       <PageLayout>
         <div className="first--page">
-          <NavTabs tabs={navData} tabIndex={0} color="white" />
-          <div className=" h-screen flex flex-col  space-y-10 sm:space-y-4 items-center justify-center ">
-            <div className=" mt-[-15rem] sm:w-[8.81rem] sm:mt-[-23rem] ">
+        <NavTabs tabs={navData} tabIndex={0}  color='white'/>
+          <div className=" h-screen flex flex-col  space-y-10  sm:space-y-4  items-center justify-center md:justify-start md:mt-8">
+            <div className=" mt-[-12rem] md:mt-[0rem] sm:w-[8.81rem] sm:mt-[-23rem] ">
               <img
                 className="w-full"
                 src="/public/images/Mukef Logo.png"
                 alt="Logo"
               />
             </div>
-            <div className=" my-4  sm:w-[52rem] sm:h-[9.45rem]  text-center flex justify-center items-center">
-              <p className=" text-[1.5rem] sm:text-[2rem] font-bold ">
+            <div className="text-center flex justify-center items-center">
+              <p className=" text-[1.5rem] md:text-[50px] font-bold sm:font-normal md:max-w-[650px] md:leading-none">
                 Muhammad Kamalud-Deen (Education) Foundation
               </p>
             </div>
-            <p className=" px-4 text-center sm:max-w-[25.8125rem] text-[1.375rem]">
+            <p className=" px-4 text-center sm:max-w-[25.8125rem]  text-[1.375rem]">
               The most elegant expression of Apple Watch returns with two iconic
               materials — titanium and ceramic.
             </p>
@@ -66,10 +66,10 @@ const HomePage = () => {
           </div>
         </div>
         <div className="profile--page ">
-          <p className="text-black font-bold  text-center sm:text-left">
+          <p className="text-black font-bold text-center sm:text-left sm:text-6xl md:text-base">
             Recent news
           </p>
-          <div className="eachProfile ">
+          <div className="eachProfile">
             {profileData.map((data, dataIndex) => (
               <RecentProfile key={dataIndex} {...data} />
             ))}

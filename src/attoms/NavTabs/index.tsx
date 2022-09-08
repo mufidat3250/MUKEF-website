@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useRef, useState } from "react";
 import "./Nav.scss";
 import { useNavigate } from "react-router-dom";
 import Button from "../Button";
@@ -7,6 +7,7 @@ import LoginForm from "../../molecules/LoginForm/index";
 import Modal from "../../molecules/Modal";
 import MenuIcon from "../Vectors/MenuIcon";
 import CancelIcon from "../Vectors/CancelIcon";
+import {useClickAway} from 'react-use'
 
 type navbarProp = {
   tabs: Array<object>;
@@ -22,18 +23,21 @@ const NavTabs = ({ tabs, logout, tabIndex, otherStyle, color }: navbarProp) => {
   const [active, setActivetab] = useState(tabIndex || 0);
   const [loginModal, setLoginModal] = useState(false);
   const [menu, setMenu] = useState(false);
+  const ref = useRef(null)
+  useClickAway(ref, ()=>{()=>setMenu(false)})
+
   const handleNav = (tab: string, value: number) => {
     setActivetab(value);
     navigate(tab);
   };
   return (
     <>
-      <div className=" NavBar relative ">
-        <div className="flex items-center space-x-[0.7rem] sm:space-x-0 sm:gap-[2.0625rem] ">
-          <div className=" w-[30px] h-[30px] sm:hidden">
+      <div className=" NavBar relative">
+        <div className="flex items-center space-x-[0.7rem] sm:space-x-0 sm:gap-[2.0625rem]">
+          <div className=" w-[30px] h-[30px] md:hidden">
             <img src="/public/vectors/Group 48.svg" alt="" />
           </div>
-          <div className="hidden sm:block">
+          <div className="hidden md:block">
             <MunkefLogo color={color} />
           </div>
           <h1
@@ -43,7 +47,7 @@ const NavTabs = ({ tabs, logout, tabIndex, otherStyle, color }: navbarProp) => {
           </h1>
         </div>
 
-        <div className="hidden sm:flex sm:space-x-[7.4375rem]">
+        <div className=" tabs-container hidden  lg:flex md:space-x-[4rem] lg:space-x-[5.4375rem]">
           <div className="tabs">
             {tabs.map((tab: any, index: number) => (
               <p
@@ -76,7 +80,7 @@ const NavTabs = ({ tabs, logout, tabIndex, otherStyle, color }: navbarProp) => {
           </div>
         </div>
         <div
-          className=" sm:hidden"
+          className=" lg:hidden"
           onClick={() => {
             console.log("i am clicked");
             setMenu(true);
@@ -86,19 +90,20 @@ const NavTabs = ({ tabs, logout, tabIndex, otherStyle, color }: navbarProp) => {
         </div>
 
         <div
-          className={`space-x-[7.4375rem] h-screen top-0 left-0 right-0 bottom-0 absolute sm:hidden bg-[#2D2D2D] flex z-50 flex-col pt-7 pr-6 ${
-            menu ? "ml-0" : "ml-[50rem]"
+          className={`space-y-4  h-fit  top-0  pl-10 pb-8 right-0 bottom-0 absolute lg:hidden bg-[#2D2D2D] rounded-b-lg flex z-50 flex-col pt-7 pr-6 ${
+            menu ? "ml-0" : "right-[-50rem]"
           }`}
+          ref={ref}
         >
           <div>
             <div className=" flex justify-end cursor-pointer">
-              <CancelIcon color="white" onClick={() => setMenu(false)} />
+              <CancelIcon color="white" onClick={() => setMenu(!menu)} />
             </div>
             <div className="tabs flex flex-col self-center space-y-4 pt-6">
               {tabs.map((tab: any, index: number) => (
                 <p
                   className={`tab ${
-                    active == index ? "opacity-[0.5]" : "text-white "
+                    active == index ? "text-gray-400" : "text-white "
                   } ${otherStyle}`}
                   key={`nav${index} `}
                   onClick={() => {
@@ -116,7 +121,7 @@ const NavTabs = ({ tabs, logout, tabIndex, otherStyle, color }: navbarProp) => {
               <Button
                 title={"Login"}
                 customStyle={
-                  "!font-[600] !text-[#0B8EC2] bg-white !rounded-[5px] hidden"
+                  "!font-[600] !text-[#0B8EC2] bg-white !rounded-[5px]"
                 }
                 onClick={() => setLoginModal(true)}
               />

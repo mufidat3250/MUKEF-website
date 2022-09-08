@@ -18,7 +18,6 @@ const Support = () => {
               key={dataIndex}
               {...data}
               onClick={() => {
-                console.log("Hello");
                 setSupportModal(true);
               }}
             />

@@ -13,8 +13,10 @@ const Contacts = () => {
     <NavTabs tabs={navData} tabIndex={4} color='white' />
     <div className='contact--us'>
       <h1 className='contact--title'>{contactUs.title}</h1>
-      <div className='contact-desc'>
-        <img src="/public/vectors/Icon.svg" alt="" />
+      <div className='contact-desc '>
+       <div className='w-[20px] h-[20px] md:w-[30px] md:h-[30px]'>
+       <img src="/public/vectors/Icon.svg" alt="" className=' md:w-full md:h-full' />
+       </div>
         <div className=''>
           <p className='location'>{contactUs.location}</p>
           <span className='name'>{contactUs.name}</span>          
@@ -36,7 +38,7 @@ const Contacts = () => {
         <Input placeholder={'Subject'} customStyle={'rounded-[10px]'} />
         <textarea name="Input Text"  id="" cols={30} rows={10} placeholder='Input Text' className='w-full outline-none border-none rounded-[10px] px-4  py-3 text-black'></textarea>
       </form>
-      <div className=' flex flex-col justify-between'>
+      <div className=' flex flex-col gap-5 justify-between'>
         <div className='contact--list'>
           {
             contacts.map(({Icon, title, desc}, index)=> <div className='single--contact--container'>            

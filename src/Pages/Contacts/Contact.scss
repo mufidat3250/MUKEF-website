@@ -29,12 +29,12 @@
     @apply bg-gray500 pt-[4.8125rem] pb-[4.8125rem];
 
     .contact--form--container{
-        @apply border-[1px] border-black mx-auto w-[80%] rounded-[1rem] pb-[5.875rem];
+        @apply border-[1px] border-black mx-auto w-[80%] rounded-[1rem] lg:pb-[5.875rem] pb-[2rem] px-4;
         .contact--form--title{
-            @apply uppercase mt-[2.625rem] text-[2rem] text-[#1D2319] tracking-wider mb-[4.375rem] pl-[5rem];
+            @apply uppercase mt-[2.625rem] text-[2rem] text-[#1D2319] tracking-wider mb-[2rem] lg:mb-[4.375rem] text-center lg:text-left lg:pl-[5rem];
         }
         .contact--form{
-            @apply grid grid-cols-[1.5fr,1fr] gap-[1.875rem] px-[4.75rem];
+            @apply grid  lg:grid-cols-[1.5fr,1fr] gap-[1.875rem] lg:px-[4.75rem];
             .form{
                 @apply space-y-[2.5rem];
             }

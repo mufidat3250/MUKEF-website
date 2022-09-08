@@ -4,6 +4,7 @@ import { navData, sideNav } from "../../data";
 import NavTabs from "../../attoms/NavTabs";
 import PageLayout from "../../Layouts";
 import { useNavigate } from "react-router-dom";
+import MunkefLogo from "../../attoms/Vectors/MunkefLogo";
 
 const DashboardLayout = ({
   children,
@@ -18,8 +19,7 @@ const DashboardLayout = ({
   return (
     <PageLayout>
       <div className="DashboardLayout">
-        <div className="border-b-[#000000] border-[1px]">
-          <div className="w-[90%] mx-auto">
+        <div className="border-b-[#000000] hidden lg:block border-[1px]">
             <NavTabs
               tabs={navData}
               logout={true}
@@ -27,7 +27,22 @@ const DashboardLayout = ({
               color="#1D2319"
               tabIndex={10}
             />
+        
+        </div>
+        <div className="text-black border-b-gray500 border-[1px] lg:hidden">
+        <div className="flex items-center space-x-[0.7rem] sm:space-x-0 sm:gap-[2.0625rem]">
+          {/* <div className=" w-[30px] h-[30px] md:hidden">
+            <img src="/public/vectors/Group 48.svg" alt="" />
+          </div> */}
+          <div className="">
+            <MunkefLogo color={'black'} />
           </div>
+          <h1
+            className={`font-[500] text-black text-[1.1255rem] sm:text-[2.1255rem] cursor-pointer`}
+          >
+            MUKEF
+          </h1>
+        </div>       
         </div>
         <section className="">
           <aside className="side--nav--container">
@@ -42,13 +57,13 @@ const DashboardLayout = ({
                   onClick={() => navigate(link)}
                 >
                   <Icon />
-                  <p>{title}</p>
+                  <p className="hidden lg:block">{title}</p>
                 </div>
               );
             })}
           </aside>
           <main className="">
-            <div className="mt-[1.375rem] border-[#E7E7E7] border-[1px] rounded-[0.625rem] ml-[4.1875rem] mr-[5.5rem] mb-[3.0625rem]">
+            <div className="mt-[1.375rem] border-[#E7E7E7] border-[1px] rounded-[0.625rem] lg:ml-[4.1875rem] lg:mr-[5.5rem] mb-[3.0625rem] mx-4 lg:m-0 ">
               <div className="flex space-x-4 items-center py-[1.125rem] pl-[1.75rem]">
                 <img src="/public/images/AbdulgannyOladosu.png" alt="" />
                 <div className="text-center">
@@ -62,7 +77,7 @@ const DashboardLayout = ({
               </div>
             </div>
             {title && (
-              <p className=" padding-b-[0.5862rem] ml-[4.1875rem] text-xl font-normal text-[#111111] border-b-[1px] border-[#f5f5f5] mr-[7.6875rem]">
+              <p className=" padding-b-[0.5862rem] lg:ml-[4.1875rem] text-xl font-normal text-[#111111] border-b-[1px] border-[#f5f5f5] mr-[7.6875rem]">
                 {title}
               </p>
             )}
