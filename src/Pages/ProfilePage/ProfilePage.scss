@@ -1,3 +1,3 @@
 .ProfilePage{
-    @apply flex flex-col pt-[2.7812rem] space-y-[1.25rem] pl-[4.1875rem] pr-[5.9375rem] bg-black;
+    @apply flex flex-col pt-[2.7812rem] h-screen overflow-hidden space-y-[1.25rem] px-[1.5rem]  lg:pl-[4.1875rem] lg:pr-[5.9375rem];
 }

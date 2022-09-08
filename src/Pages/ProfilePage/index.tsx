@@ -119,8 +119,12 @@ const ProfilePage = () => {
   }));
 
   return (
-    <DashboardLayout title="Personal Information">
-      <div className="ProfilePage">
+    <DashboardLayout title="">
+      <div className="">
+      <div className="ProfilePage h-screen overflow-auto pb-72">
+      <p className=" padding-b-[0.5862rem] text-xl font-normal text-[#111111] border-b-[1px] border-[#f5f5f5]">
+                Personal Information
+              </p>
         {personalInfo.map(({ name, desc }, index) => {
           return (
             <div className="flex space-x-[3rem]" key={index}>
@@ -189,6 +193,7 @@ const ProfilePage = () => {
       {/* <Modal HeaderText={"Cancel Change"} openModal={changeNotification} closeModal={setChangeNotification}>
         <NotificationChange/>
       </Modal> */}
+      </div>
     </DashboardLayout>
   );
 };

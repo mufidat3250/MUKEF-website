@@ -16,7 +16,7 @@ const Projects = () => {
     <PageLayout>
       <div className="Project">
         <div className="charity">
-            <NavTabs tabs={navData} tabIndex={2} />          
+            <NavTabs tabs={navData} tabIndex={2} color='white' />          
           <div className="charity--container">
             <h1 className="title">{charity.title}</h1>
             <p className="caption">{charity.caption}</p>

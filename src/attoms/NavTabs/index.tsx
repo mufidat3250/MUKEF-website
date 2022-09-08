@@ -38,7 +38,7 @@ const NavTabs = ({ tabs, logout, tabIndex, otherStyle, color }: navbarProp) => {
             <img src="/public/vectors/Group 48.svg" alt="" />
           </div>
           <div className="hidden md:block">
-            <MunkefLogo color={'white'} />
+            <MunkefLogo color={color} />
           </div>
           <h1
             className={`font-[500] text-[#FFFFFF] text-[1.1255rem] sm:text-[2.1255rem] cursor-pointer ${otherStyle}`}
