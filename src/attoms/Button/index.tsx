@@ -6,7 +6,7 @@ type buttonProp = {
   onClick: () => void;
 };
 const Button = ({ title, customStyle, onClick }: buttonProp) => {
-  return (            
+  return (
     <button onClick={onClick} className={`Button h-[3.125rem] ${customStyle}`}>
       {title}
     </button>

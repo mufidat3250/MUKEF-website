@@ -5,8 +5,8 @@ const Footer = () => {
     <div className="Footer">
       <div className="footer-wrapper">
         <div className="footer--content">
-          <div className="hidden sm:self-start sm:block w-[6.3125rem] h-[5.8468rem]">
-            <img src="/public/images/Mukef Logo.png" alt=""  />
+          <div className="hidden sm:self-start lg:block w-[6.3125rem] h-[5.8468rem]">
+            <img src="/public/images/Mukef Logo.png" alt=""/>
           </div>
           <div className="activities">
             <div>

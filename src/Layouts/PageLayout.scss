@@ -1,3 +1,8 @@
-.PageLayout{
-    @apply h-screen overflow-auto;
+.PageLayout {
+  @apply h-screen overflow-x-hidden w-screen overflow-auto;
+
+  @media (min-width: 1999px) {
+    max-width: 1999px;
+    margin: auto;
+  }
 }
