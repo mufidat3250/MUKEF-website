@@ -1,18 +1,18 @@
-.DashboardLayout{
-    @apply grid grid-rows-[auto,1fr] h-screen overflow-hidden;
+.DashboardLayout {
+  @apply w-screen grid grid-rows-[auto,1fr] h-screen overflow-hidden;
 
-    // .nav--container{
-    //     @apply border-[1px] border-b-[#000000]  pr-[7.5625rem] bg-red-400 w-full;
-    // }
-    section{
-        @apply grid grid-cols-[auto,1fr] lg:grid-cols-[16.25rem,1fr];
+  // .nav--container{
+  //     @apply border-[1px] border-b-[#000000]  pr-[7.5625rem] bg-red-400 w-full;
+  // }
+  section {
+    @apply w-full grid grid-cols-[auto,1fr] lg:grid-cols-[16.25rem,1fr];
 
-        .side--nav--container{
-            @apply text-black shadow-3xl pt-[2.5rem] lg:pt-[4.9218rem] px-1 lg:px-[1.5625rem] space-y-2;
+    .side--nav--container {
+      @apply text-black shadow-3xl pt-[2.5rem] lg:pt-[4.9218rem] px-1 lg:px-[1.5625rem] space-y-2;
 
-            .single--tab{
-                @apply flex text-[#434343] text-base tracking-[0.2px] font-normal py-3 px-4 space-x-4 rounded-[5px] cursor-pointer;
-            }
-        }
-    }   
+      .single--tab {
+        @apply flex text-[#434343] text-base tracking-[0.2px] font-normal py-3 px-4 space-x-4 rounded-[5px] cursor-pointer;
+      }
+    }
+  }
 }

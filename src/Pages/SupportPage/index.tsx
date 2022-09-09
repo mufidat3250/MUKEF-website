@@ -12,7 +12,7 @@ const Support = () => {
   return (
     <>
       <DashboardLayout title="Ongoing projects">
-        <div className="projects--con">
+        <div className="projects--con ">
           {onProjectData.map((data, dataIndex) => (
             <OnProject
               key={dataIndex}
