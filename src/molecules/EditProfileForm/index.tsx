@@ -1,4 +1,5 @@
 
+import Button from "../../attoms/Button";
 import Input from "../../attoms/Input";
 import Select from "../../attoms/Select";
 import "./EditProfile.scss";
@@ -66,6 +67,36 @@ const EditProfile = () => {
           placeholder={"إِنَّ سَعْيَكُمْ لَشَتَّىٰ"}
           customStyle="bg-gray600 h-[2.7418rem]"
         />
+      </div>
+      <div className="h-[1px] w-full bg-[#DFDFDF] mt-[2.5rem] mb-[1.8125rem] flex">
+      </div>
+      <div>
+      <div className="grid grid-cols-2 space-x-4">
+        <Input
+          title="Password"
+          placeholder={"Password"}
+          customStyle="bg-gray600 h-[2.7418rem]"
+        />
+        <Input
+          title="Confirm Password"
+          placeholder={"Confirm Password"}
+          customStyle="bg-gray600 h-[2.7418rem]"
+        />
+      </div>
+      <div className="mt-[2.9375rem] flex justify-between space-x-[0.84625rem]">
+      <p>check</p>
+      <Button
+          onClick={() => {}}
+          title="Receive update form us"
+          customStyle="bg-transparent text-black w-[13.5575rem] h-[2.7418rem] rounded-[4.16px] font-bold"
+        />
+      <Button
+          onClick={() => {}}
+          title="Save"
+          customStyle="bg-black w-[13.5575rem] h-[2.7418rem] rounded-[4.16px] font-bold text-white"
+        />
+        
+      </div>
       </div>
     </div>
   );

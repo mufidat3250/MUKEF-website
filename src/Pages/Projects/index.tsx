@@ -21,12 +21,12 @@ const Projects = () => {
             <h1 className="title">{charity.title}</h1>
             <p className="caption">{charity.caption}</p>
             <p className="donate">{charity.donaate}</p>
-
-            <div className="w-[16.375rem] pb-[2rem] button">
+            <div className="w-[16.375rem] pb-[2rem] button ">
               <Button
                 title={"Donate now"}
                 customStyle={"!bg-white !text-gray900 !rounded-[5px]"} onClick={()=>{}}/>
             </div>
+            
           </div>
         </div>
         <div className="ongoing--project">
@@ -43,7 +43,7 @@ const Projects = () => {
             ))}
           </div>
           <div className="grid place-items-center lg:place-items-end mt-[4.25rem] pb-[5.8125rem]">
-            <div className="w-[16.375rem] mr-4">
+            <div className="w-[16.375rem] mr-4 lg:mr-0">
               <Button
                 title={"See all"}
                 customStyle={"!bg-[#1D2319] rounded-[5px] text-white"}

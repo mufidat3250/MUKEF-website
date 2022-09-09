@@ -2,26 +2,28 @@
     @apply w-full flex-grow h-full overflow-y-auto flex flex-col;
 
     .tableWrapper{
-      @apply flex-grow overflow-hidden flex flex-col;
+      @apply flex-grow  h-full overflow-x-auto md:w-full flex flex-col;
        table.table{
-            @apply flex-grow overflow-y-hidden w-full h-full grid grid-rows-[auto,1fr];
+            @apply flex-grow overflow-y-hidden w-full h-full grid grid-rows-[auto,1fr] overflow-x-auto;
         border-spacing:0;
 
         thead{
-       @apply bg-gray600 rounded-lg w-full h-12 flex ;
+       @apply bg-gray600 rounded-lg w-full h-12 flex  text-xs overflow-auto;
+
+     
     }
     tbody{
-        @apply bg-white overflow-y-auto;
+        @apply bg-white overflow-y-auto h-3/4 overflow-x-auto  lg:w-full;
     }
     td,th{
-        @apply text-left;
+        @apply text-left whitespace-nowrap ;
     }
 
     th{
-        @apply text-[#100C2A];
+        @apply text-[#100C2A] w-[10rem];
     }
     td{
-        @apply py-4 text-[#565656] cursor-pointer;
+        @apply py-4 text-[#565656] cursor-pointer w-[10rem];
         
     }
     }

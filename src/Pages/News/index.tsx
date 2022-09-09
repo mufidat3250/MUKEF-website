@@ -13,7 +13,7 @@ const News = () => {
       <div className="News">
         <div className="">
           <div className="NewsWrapper">
-              <NavTabs tabs={navData} tabIndex={1} color='white' />            
+            <NavTabs tabs={navData} tabIndex={1} color="white" />
           </div>
           <div className="student">
             <div className="">
@@ -23,9 +23,9 @@ const News = () => {
                 className="w-full h-full"
               />
             </div>
-            <div className=" ml-5 mt-[2.5625rem]">
+            <div className=" ml-5 md:mt-[7rem] mt-[6.5625rem]  ">
               <ProjectNews />
-              <div className="mb-[4.5625rem] flex justify-between mt-[4.5625rem]">
+              <div className="mb-[4.5625rem] flex justify-between mt-[4.5625rem] flex-col md:gap-10 md:flex-row">
                 {newsData.map((data, index) => (
                   <NewsCard {...data} key={` news${index}`} />
                 ))}
@@ -35,7 +35,9 @@ const News = () => {
               <div className="w-[16.375rem]">
                 <Button
                   title={"See more news"}
-                  customStyle={"!bg-[#2D2D2D] !text-white !rounded-[5px]"} onClick={()=>{}}                />
+                  customStyle={"!bg-[#2D2D2D] !text-white !rounded-[5px]"}
+                  onClick={() => {}}
+                />
               </div>
             </div>
           </div>
@@ -49,9 +51,9 @@ const News = () => {
                 className="w-full h-full"
               />
             </div>
-            <div className=" ml-[7.375rem] mt-[2.5625rem]">
+            <div className=" ml-auto md:ml-[7.375rem] lg:p-0 mt-[2.5625rem]">
               <ProjectNews />
-              <div className="news--card-wrapper ">
+              <div className="news--card-wrapper flex-col md:flex-row md:gap-10">
                 {newsData.map((data, index) => (
                   <NewsCard {...data} key={` news${index}`} />
                 ))}
@@ -60,7 +62,9 @@ const News = () => {
                 <div className="w-[16.375rem]">
                   <Button
                     title={"See more news"}
-                    customStyle={"!bg-gray900 !rounded-[5px] text-white"} onClick={()=>{}}                  />
+                    customStyle={"!bg-gray900 !rounded-[5px] text-white"}
+                    onClick={() => {}}
+                  />
                 </div>
               </div>
             </div>
