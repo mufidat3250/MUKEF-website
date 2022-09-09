@@ -1,5 +1,6 @@
 
 import Button from "../../attoms/Button";
+import CheckBox from "../../attoms/CheckBox";
 import Input from "../../attoms/Input";
 import Select from "../../attoms/Select";
 import "./EditProfile.scss";
@@ -7,21 +8,18 @@ import "./EditProfile.scss";
 const EditProfile = () => {
   return (
     <div className="flex flex-col space-y-[1.25rem]">
-      <div className="flex space-x-4 ">
-        <div className="w-[30%]">
+      <div className="grid grid-cols-[35%,1fr] space-x-4 ">
           <Select
             initial="Select Title"
             options={["Mr", "Mrs", "Miss", "Prof"]}
             title="Title"
           />
-        </div>
-        <div className=" w-[70%]">
           <Input
             placeholder={"Abdul"}
             title="Title"
             customStyle="bg-gray600 h-[2.7418rem]"
           />
-        </div>
+        
       </div>
       <div>
         <Input
@@ -83,13 +81,8 @@ const EditProfile = () => {
           customStyle="bg-gray600 h-[2.7418rem]"
         />
       </div>
-      <div className="mt-[2.9375rem] flex justify-between space-x-[0.84625rem]">
-      <p>check</p>
-      <Button
-          onClick={() => {}}
-          title="Receive update form us"
-          customStyle="bg-transparent text-black w-[13.5575rem] h-[2.7418rem] rounded-[4.16px] font-bold"
-        />
+      <div className="mt-[2.9375rem] flex justify-between items-center space-x-[0.84625rem]">
+      <CheckBox text='Receive update form us' customStyle="font- text-gray1500"/>     
       <Button
           onClick={() => {}}
           title="Save"

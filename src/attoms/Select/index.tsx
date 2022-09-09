@@ -8,7 +8,7 @@ const Select = ({
   initial?: string;
 }) => {
   return (
-    <div className=" flex flex-col">
+    <div className=" flex flex-col space-y-2">
       <p className=" text-[#858585] text-sm">{title}</p>
       <div className="w-full flex h-[2.59rem] relative">
         <select

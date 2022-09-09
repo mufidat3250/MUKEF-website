@@ -1,9 +1,18 @@
-import React from 'react'
-
-const CheckBox = () => {
-  return (
-    <div>CheckBox</div>
-  )
-}
-
-export default CheckBox
+const Checkbox = ({
+    text,
+    onClick,
+    customStyle
+  }: {
+    text: string;
+    onClick?: () => void;
+    customStyle?:string
+  }) => {
+    return (
+      <label onClick={onClick}>
+        <input type="checkbox" /> <span className={`${customStyle}`}>{text}</span>
+        <span className="checkmark"></span>
+      </label>
+    );
+  };
+  
+  export default Checkbox;

@@ -2,9 +2,9 @@ import React, { ReactNode, useState } from "react";
 import "./Dashboard.scss";
 import { navData, sideNav } from "../../data";
 import NavTabs from "../../attoms/NavTabs";
-import PageLayout from "../../Layouts";
 import { useNavigate } from "react-router-dom";
 import MunkefLogo from "../../attoms/Vectors/MunkefLogo";
+import Footer from "../../molecules/Footer";
 
 const DashboardLayout = ({
   children,
@@ -17,8 +17,7 @@ const DashboardLayout = ({
   const [currentPath] = useState(window.location.pathname);
 
   return (
-    <PageLayout>
-      <div className="DashboardLayout">
+      <div className="DashboardLayout overflow-auto">
         <div className="border-b-[#000000] hidden lg:block border-[1px]">
           <NavTabs
             tabs={navData}
@@ -61,8 +60,8 @@ const DashboardLayout = ({
               );
             })}
           </aside>
-          <main className="w-full">
-            <div className="mt-[1.375rem] border-[#E7E7E7] border-[1px] rounded-[0.625rem] lg:mx-[2.5rem] xl:ml-[4.1875rem] xl:mr-[5.5rem] mb-[3.0625rem] mx-4 lg:m-0 ">
+          <main className="w-full h-screen overflow-auto">
+            <div className="mt-[1.375rem] border-[#E7E7E7] border-[1px] rounded-[0.625rem] lg:mx-[2.5rem] xl:ml-[4.1875rem] xl:mr-[5.5rem] mb-[3.0625rem] mx-4 lg:mx-0 ">
               <div className="flex space-x-4 items-center py-[1.125rem] pl-[1.75rem]">
                 <img src="/public/images/AbdulgannyOladosu.png" alt="" />
                 <div className="text-center">
@@ -83,8 +82,8 @@ const DashboardLayout = ({
             {children}
           </main>
         </section>
+        <Footer/>
       </div>
-    </PageLayout>
   );
 };
 

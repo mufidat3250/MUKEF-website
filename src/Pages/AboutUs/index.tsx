@@ -1,4 +1,3 @@
-import React from "react";
 import NavTabs from "../../attoms/NavTabs";
 import { navData, prospects, cleric } from "../../data";
 import PageLayout from "../../Layouts";

@@ -11,7 +11,9 @@ import {
 import PageLayout from "../../Layouts";
 import OngoingProject from "../../molecules/OngoingProject";
 import "./Projects.scss";
+import {useNavigate} from 'react-router-dom'
 const Projects = () => {
+  const navigate = useNavigate()
   return (
     <PageLayout>
       <div className="Project">
@@ -23,10 +25,9 @@ const Projects = () => {
             <p className="donate">{charity.donaate}</p>
             <div className="w-[16.375rem] pb-[2rem] button ">
               <Button
-                title={"Donate now"}
-                customStyle={"!bg-white !text-gray900 !rounded-[5px]"} onClick={()=>{}}/>
-            </div>
-            
+                title={"Support Project"}
+                customStyle={"!bg-white !text-gray900 !rounded-[5px]"} onClick={()=>navigate('/dashboard/support-project')}/>
+            </div>            
           </div>
         </div>
         <div className="ongoing--project">
