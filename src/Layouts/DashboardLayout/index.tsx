@@ -20,29 +20,28 @@ const DashboardLayout = ({
     <PageLayout>
       <div className="DashboardLayout">
         <div className="border-b-[#000000] hidden lg:block border-[1px]">
-            <NavTabs
-              tabs={navData}
-              logout={true}
-              otherStyle={"!text-[#1D2319]"}
-              color="#1D2319"
-              tabIndex={10}
-            />
-        
+          <NavTabs
+            tabs={navData}
+            logout={true}
+            otherStyle={"!text-[#1D2319]"}
+            color="#1D2319"
+            tabIndex={10}
+          />
         </div>
         <div className="text-black border-b-gray500 border-[1px] lg:hidden py-4 px-4">
-        <div className="flex items-center space-x-[0.7rem] lg:gap-[2.0625rem]">
-          <div className=" w-[30px] h-[30px] lg:hidden">
-            <img src="/public/vectors/munkefLogoBlack.svg" alt="" />
+          <div className="flex items-center space-x-[0.7rem] lg:gap-[2.0625rem]">
+            <div className=" w-[30px] h-[30px] lg:hidden">
+              <img src="/public/vectors/munkefLogoBlack.svg" alt="" />
+            </div>
+            <div className="hidden lg:block">
+              <MunkefLogo color={"black"} />
+            </div>
+            <h1
+              className={`font-[500] text-black text-[1.1255rem] lg:text-[2.1255rem] cursor-pointer`}
+            >
+              MUKEF
+            </h1>
           </div>
-          <div className="hidden lg:block">
-            <MunkefLogo color={'black'} />
-          </div>
-          <h1
-            className={`font-[500] text-black text-[1.1255rem] lg:text-[2.1255rem] cursor-pointer`}
-          >
-            MUKEF
-          </h1>
-        </div>       
         </div>
         <section className="">
           <aside className="side--nav--container">

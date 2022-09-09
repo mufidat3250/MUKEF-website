@@ -20,5 +20,5 @@
 }
 
 .news--card-wrapper {
-  @apply mb-[4.5625rem] flex  justify-between mt-[4.5625rem];
+  @apply mb-[4.5625rem] flex  justify-between mt-[4.5625rem] flex-col md:flex-row md:gap-10;
 }
