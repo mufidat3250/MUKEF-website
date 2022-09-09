@@ -51,9 +51,9 @@ const News = () => {
                 className="w-full h-full"
               />
             </div>
-            <div className=" ml-auto md:ml-[rem] lg:p-0 mt-[2.5625rem]">
+            <div className=" ml-auto md:ml-[7.375rem] lg:p-0 mt-[2.5625rem]">
               <ProjectNews />
-              <div className="news--card-wrapper ">
+              <div className="news--card-wrapper flex-col md:flex-row md:gap-10">
                 {newsData.map((data, index) => (
                   <NewsCard {...data} key={` news${index}`} />
                 ))}
