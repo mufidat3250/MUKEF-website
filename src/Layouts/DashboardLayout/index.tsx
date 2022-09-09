@@ -20,28 +20,29 @@ const DashboardLayout = ({
     <PageLayout>
       <div className="DashboardLayout">
         <div className="border-b-[#000000] hidden lg:block border-[1px]">
-          <NavTabs
-            tabs={navData}
-            logout={true}
-            otherStyle={"!text-[#1D2319]"}
-            color="#1D2319"
-            tabIndex={10}
-          />
+            <NavTabs
+              tabs={navData}
+              logout={true}
+              otherStyle={"!text-[#1D2319]"}
+              color="#1D2319"
+              tabIndex={10}
+            />
+        
         </div>
         <div className="text-black border-b-gray500 border-[1px] lg:hidden py-4 px-4">
-          <div className="flex items-center space-x-[0.7rem] lg:gap-[2.0625rem]">
-            <div className=" w-[30px] h-[30px] lg:hidden">
-              <img src="/public/vectors/munkefLogoBlack.svg" alt="" />
-            </div>
-            <div className="hidden lg:block">
-              <MunkefLogo color={"black"} />
-            </div>
-            <h1
-              className={`font-[500] text-black text-[1.1255rem] lg:text-[2.1255rem] cursor-pointer`}
-            >
-              MUKEF
-            </h1>
+        <div className="flex items-center space-x-[0.7rem] lg:gap-[2.0625rem]">
+          <div className=" w-[30px] h-[30px] lg:hidden">
+            <img src="/public/vectors/munkefLogoBlack.svg" alt="" />
           </div>
+          <div className="hidden lg:block">
+            <MunkefLogo color={'black'} />
+          </div>
+          <h1
+            className={`font-[500] text-black text-[1.1255rem] lg:text-[2.1255rem] cursor-pointer`}
+          >
+            MUKEF
+          </h1>
+        </div>       
         </div>
         <section className="">
           <aside className="side--nav--container">
@@ -61,7 +62,7 @@ const DashboardLayout = ({
               );
             })}
           </aside>
-          <main className="">
+          <main className=" order-1 ">
             <div className="mt-[1.375rem] border-[#E7E7E7] border-[1px] rounded-[0.625rem] lg:mx-[2.5rem] xl:ml-[4.1875rem] xl:mr-[5.5rem] mb-[3.0625rem] mx-4 lg:m-0 ">
               <div className="flex space-x-4 items-center py-[1.125rem] pl-[1.75rem]">
                 <img src="/public/images/AbdulgannyOladosu.png" alt="" />

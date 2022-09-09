@@ -8,7 +8,7 @@
         @apply grid grid-cols-[auto,1fr] lg:grid-cols-[16.25rem,1fr];
 
         .side--nav--container{
-            @apply text-black shadow-3xl pt-[2.5rem] lg:pt-[4.9218rem] px-1 lg:px-[1.5625rem] space-y-2;
+            @apply text-black shadow-3xl pt-[2.5rem] lg:pt-[4.9218rem] px-1 lg:px-[1.5625rem] ;
 
             .single--tab{
                 @apply flex text-[#434343] text-base tracking-[0.2px] font-normal py-3 px-4 space-x-4 rounded-[5px] cursor-pointer;
