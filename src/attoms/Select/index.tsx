@@ -9,12 +9,12 @@ const Select = ({
 }) => {
   return (
     <div className=" flex flex-col">
-      <p className="mb-2 text-[#858585] text-sm">{title}</p>
-      <div className="w-full flex h-[2.7125rem] relative">
+      <p className=" text-[#858585] text-sm">{title}</p>
+      <div className="w-full flex h-[2.59rem] relative">
         <select
           name=""
           id=""
-          className="flex-grow pl-4 outline-none border-none cursor-pointer bg-gray600 font-bold text-[#222222] "
+          className="flex-grow pl-4 h-full outline-none border-none cursor-pointer bg-gray600 rounded-[5px] font-bold text-[#222222]"
         >
           <option value="" selected>
             {initial}
@@ -26,7 +26,7 @@ const Select = ({
         <img
           src="/public/vectors/angle-down.svg"
           alt=""
-          className="absolute right-2 top-[12px]"
+          className="absolute right-2 top-[8px]"
         />
       </div>
     </div>

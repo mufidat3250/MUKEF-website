@@ -6,8 +6,8 @@ import Select from "../../attoms/Select";
 function PopForm({ signUp }: { signUp: Function }) {
   return (
     <form>
-      <div className="flex justify-center items-center ">
-        <div className="w-28 items-center justify-center rounded-[4.24px] bg-black">
+      <div className="flex justify-center items-center">
+        <div className="w-full items-center justify-center ">
           <Select
             initial="Sheikh"
             options={["Sheikh", "Alhaji", "Alhaja", "Prof."]}

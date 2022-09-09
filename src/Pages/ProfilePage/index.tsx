@@ -10,10 +10,7 @@ import "./ProfilePage.scss";
 import { useClickAway } from "react-use";
 import DropDown from "../../molecules/Dropdowns/TableDropDown";
 import Modal from "../../molecules/Modal";
-import Input from "../../attoms/Input";
-import Select from "../../attoms/Select";
 import EditProfile from "../../molecules/EditProfileForm";
-import NotificationChange from "../../molecules/NotificationChange";
 import { useNavigate } from "react-router-dom";
 
 const ProfilePage = () => {
@@ -121,14 +118,14 @@ const ProfilePage = () => {
   return (
     <DashboardLayout title="">
       <div className="">
-      <div className="ProfilePage h-screen overflow-auto pb-72">
+      <div className="ProfilePage h-screen overflow-auto pb-80">
       <p className=" padding-b-[0.5862rem] text-xl font-normal text-[#111111] border-b-[1px] border-[#f5f5f5]">
                 Personal Information
               </p>
         {personalInfo.map(({ name, desc }, index) => {
           return (
-            <div className="flex space-x-[3rem]" key={index}>
-              <p className="w-[8.25rem] text-gray1400 text-[1.0204rem] font-normal">
+            <div className="grid grid-cols-[7rem,1fr] gap-x-3 lg:space-x-[3rem]" key={index}>
+              <p className="lg:w-[8.25rem] text-gray1400 text-[1.0204rem] font-normal">
                 {name}
               </p>
               <p className="text-[gray1500] text-lg font-normal tracking-[-0.311981px] text-black">
@@ -153,6 +150,7 @@ const ProfilePage = () => {
               headings={projectSupportHeading}
               tableData={projectTableData}
               tdBg={true}
+              tableHeadstyle='bg-red-500'
             />
           </div>
           <div className="w-[13.5575rem] self-end">
@@ -173,6 +171,7 @@ const ProfilePage = () => {
               tableData={donationTableData}
               tdBg={true}
               ClickRowAction={(index:any) => setValue(index)}
+              tableHeadstyle='bg-green-500'
             />
           </div>
 

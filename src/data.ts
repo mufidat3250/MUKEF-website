@@ -346,7 +346,7 @@ export const sideNav = [
   {
     Icon: LogoutIcon,
     title: "Logout",
-    link: "",
+    link: "/",
   },
 ];
 

@@ -68,22 +68,21 @@ const Table = ({
   tableDatastyle,
   tableHeadstyle,
   tdBg,
-  dropDown,
-  rowActions 
 }: PropTypes) => {
   return (
     <div className="tableContainer">
       <div className="tableWrapper">
-        <table className="table">
-          <thead className={`${tableHeadstyle}`}>
-            <tr>
+     <div className="overflow-auto w-full">
+     <table className="table">
+          <thead className={`${tableHeadstyle} text-xs`}>
+            <tr className="text-base">
               {headings.map((heading, headingIndex) => (
                 <th
                   key={`-heading${headingIndex}`}
                   style={{ width: heading.width }}
                 >
                   <div className="flex items-center mx-4">
-                    <span>{heading.name}</span>
+                    <span className=" text-xs lg:text-base">{heading.name}</span>
                   </div>
                 </th>
               ))}
@@ -102,24 +101,24 @@ const Table = ({
                     key={`col-index${colIndex}`}
                   >
                     {ClickRowAction ? (
-                      <div className="flex items-center mx-4" onClick={()=>{
+                      <div className="flex items-center mx-4  text-sm xl:text-base" onClick={()=>{
                         ClickRowAction(rowIndex)
                       }}>
                         {row[col.key]}                      
                       </div>
                     ) : (
-                      <div className="flex items-center mx-4">
+                      <div className="flex items-center lg:mx-4">
                        {row[col.key]}                      
                       </div>
                     )}
                   </td>
                 ))}
               </tr>
-              {<div className="test bg-red-500">i am the test</div>}
             </>
             ))}
           </tbody>
         </table>
+     </div>
       </div>
     </div>
   );

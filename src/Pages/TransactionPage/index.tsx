@@ -37,12 +37,12 @@ const TransactionPage = () => {
     <DashboardLayout>
       <div className="transaction--container">
         <h1 className="title">Transaction History</h1>
-        <div className="grid grid-rows-[auto,1fr] gap-y-[4.375rem]">
-          <div className="grid grid-cols-[1fr,1fr] gap-x-[3.625rem]">
+        <div className="  grid grid-rows-[auto,1fr] gap-y-[4.375rem]">
+          <div className="flex flex-col gap-4 lg:grid lg:grid-cols-[1fr,1fr] gap-x-[3.625rem]">
             {transactiondata.map((transaction, index) => (
               <div
                 key={`transaction${index}`}
-                className="bg-gray600 pt-6 pl-10 space-y-6 pb-10 rounded-[0.625rem] "
+                className="bg-gray600 pt-6 pl-4 lg:pl-10 space-y-6 pb-10 rounded-[0.625rem] "
               >
                 <p className="bg-[rgba(7,_6,_13,_0.08)] py-2 px-3 w-fit rounded-[5px] font-[500] ">
                   {transaction.payment}
@@ -53,10 +53,10 @@ const TransactionPage = () => {
               </div>
             ))}
           </div>
-          <div className=" bg-gray600 px-10 pt-[1.375rem] mb-[4.375rem]">
-            <div className=" flex justify-between mb-[1.875rem] ">
+          <div className=" bg-gray600 px-4 lg:px-10 pt-[1.375rem] mb-[4.375rem]">
+            <div className=" flex flex-col lg:flex-row lg:justify-between mb-[1.875rem] ">
               <div className="space-y-2">
-                <h1 className="font-[500] text-2xl">
+                <h1 className="font-[500] text-2xl text-gray1200">
                   Target Payment Information
                 </h1>
                 <div className="flex items-center">
@@ -75,11 +75,11 @@ const TransactionPage = () => {
                 </p>
               </div>
             </div>
-            <div className=" flex space-x-[3.125rem] items-end ">
+            <div className=" flex lg:space-x-[3.125rem] flex-col lg:flex-row items-center lg:items-end ">
               <div className="w-[250px]">
                 <RadialBar />
               </div>
-              <div className="flex mb-12 space-x-[7.375rem]">
+             <div className="flex mb-12 space-x-[7.375rem] self-center lg:self-end ">
                 {paymentMode.map(({ title, amount, color }, index) => (
                   <div key={index} className="flex space-x-2">
                     <div>
@@ -97,14 +97,15 @@ const TransactionPage = () => {
                   </div>
                 ))}
               </div>
+            
             </div>
           </div>
         </div>
-        <div className="flex justify-between pb-[2.8125rem] items-center">
+        <div className="flex justify-between px-4 lg:px-0 pb-[2.8125rem] items-center">
           <h1 className=" text-xl font-semibold text-[#100C2A]">
             Payment history
           </h1>
-          <div className="w-[18.75rem]">
+          <div className="lg:w-[18.75rem]">
             <Input
               customStyle="bg-gray600 rounded-[5px]"
               icon={true}
