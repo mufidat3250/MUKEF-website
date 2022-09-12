@@ -85,9 +85,7 @@ const EditProfile = ({editForm}:{editForm?:Function}) => {
       <div className="mt-[2.9375rem] flex justify-between items-center space-x-[0.84625rem]">
       <CheckBox text='Receive update form us' customStyle="font- text-gray1500"/>     
       <Button
-          onClick={() => {
-            console.log('i am clicked')
-          }}
+          onClick={() => editForm()}
           title="Save"
           customStyle="bg-black w-[13.5575rem] h-[2.7418rem] rounded-[4.16px] font-bold text-white"
         />

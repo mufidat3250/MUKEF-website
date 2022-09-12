@@ -13,6 +13,7 @@ import Modal from "../../molecules/Modal";
 import EditProfile from "../../molecules/EditProfileForm";
 import { useNavigate } from "react-router-dom";
 import NotificationChange from "../../molecules/NotificationChange";
+import LogOutMessage from "../../molecules/LogoutMessage";
 
 const ProfilePage = () => {
   const [toggleIcon, setToggleIcon] = useState(false);
@@ -118,26 +119,26 @@ const ProfilePage = () => {
   return (
     <DashboardLayout title="">
       <div className="">
-        <div className="ProfilePage h-screen overflow-auto pb-80">
-          <p className=" padding-b-[0.5862rem] text-xl font-normal text-[#111111] border-b-[1px] border-[#f5f5f5]">
+        <div className="ProfilePage">
+          <p className="personal--info">
             Personal Information
           </p>
           {personalInfo.map(({ name, desc }, index) => {
             return (
               <div
-                className="grid grid-cols-[7rem,1fr] gap-x-3 lg:space-x-[3rem]"
+                className="info"
                 key={index}
               >
-                <p className="lg:w-[8.25rem] text-gray1400 text-[1.0204rem] font-normal">
+                <p className="info--title">
                   {name}
                 </p>
-                <p className="text-[gray1500] text-lg font-normal tracking-[-0.311981px] text-black">
+                <p className="info--desc">
                   {desc}
                 </p>
               </div>
             );
           })}
-          <div className="w-[13.5575rem] self-end mb-[3.5706rem]">
+          <div className="edit--button">
             <Button
               title={"Edit"}
               customStyle={
@@ -148,7 +149,7 @@ const ProfilePage = () => {
           </div>
           <div className="flex flex-col pb-[2.3206rem]">
             <div className="mb-[5rem]">
-              <h1 className="pb-[0.5862rem] border-b-[1px] border-[#F5F5F5] font-normal mb-[2rem] text-[#111111]">
+              <h1 className="project--support">
                 Project support history
               </h1>
               <Table
@@ -170,7 +171,7 @@ const ProfilePage = () => {
           </div>
           <div className="flex flex-col pb-[1.6331rem]">
             <div className="mb-[5rem]">
-              <h1 className="pb-[0.5862rem] border-b-[1px] border-[#F5F5F5] font-normal mb-[2rem] text-[#111111]">
+              <h1 className="donatation--history">
                 Donation history
               </h1>
               <Table
@@ -194,14 +195,16 @@ const ProfilePage = () => {
           </div>
         </div>
         <Modal
-          HeaderText={"Cancel Notification"}
+          HeaderText={`${stage == 'edit' ?'Edit Profile':'Cancel Changes' }`}
           openModal={editModal}
           closeModal={setEditModal}
           width="32.75rem"
         >
-          {/* <EditProfile /> */}
-          {/* <p className="text-black">ldkdjd</p> */}
-          <NotificationChange/>
+         {
+           stage === 'edit'?  <EditProfile editForm={()=>setStage('notification')} />: <NotificationChange/>
+         }
+         
+       
         </Modal>
         {/* <Modal HeaderText={"Cancel Change"} openModal={changeNotification} closeModal={setChangeNotification}>
         <NotificationChange/>
