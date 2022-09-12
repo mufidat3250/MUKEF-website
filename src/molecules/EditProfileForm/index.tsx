@@ -95,5 +95,4 @@ const EditProfile = ({editForm}:{editForm:Function}) => {
     </div>
   );
 };
-
 export default EditProfile;
