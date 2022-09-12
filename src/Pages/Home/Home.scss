@@ -1,14 +1,31 @@
-.first--page {
+.first--page--image {
   @apply h-screen bg-Home-Image bg-cover bg-no-repeat;
 }
-// .nav--container {
-//   @apply ml-[3.4375rem] mr-[7.5625rem];
-// }
 
 .profile--page {
-  @apply  pt-[4.5rem] px-4 xl:pl-[7.56rem];
+  @apply pt-[4.5rem] px-4 xl:pl-[7.56rem];
 
   .eachProfile {
     @apply grid grid-cols-1 md:grid-cols-2 sm:gap-x-[1.875rem];
   }
+}
+
+.first--page {
+  @apply h-screen flex flex-col  space-y-10  sm:space-y-4  items-center justify-center md:justify-start md:mt-8;
+}
+
+.first--page--contents {
+  @apply mt-[-12rem] md:mt-[0rem] sm:w-[8.81rem] sm:mt-[-23rem];
+}
+
+.foundation--name {
+  @apply text-[1.5rem] md:text-[50px] font-bold sm:font-normal md:max-w-[650px] md:leading-none;
+}
+
+.foundation--contents {
+  @apply px-4 text-center sm:max-w-[25.8125rem]  text-[1.375rem];
+}
+
+.button--container {
+  @apply flex  mt-[1.5rem] sm:mt-[3rem] space-y-6 sm:space-y-0 sm:space-x-[2.5rem] flex-col sm:flex sm:flex-row;
 }

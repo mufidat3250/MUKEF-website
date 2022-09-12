@@ -1,4 +1,4 @@
-import React from "react";
+import "./DonationForm.scss";
 import Button from "../../attoms/Button";
 import Input from "../../attoms/Input";
 import Select from "../../attoms/Select";
@@ -7,10 +7,6 @@ import Stroke from "../../attoms/Vectors/stroke";
 function index() {
   return (
     <div className="grid--input">
-      {/* <Input
-        placeholder="Payment method"
-        customStyle="!bg-greybutton h-[2.59rem]  mt-[1.55rem] rounded-[4.24px] text-textbutton"
-      /> */}
       <Select initial="Matercard" options={["Mastercard", "Visa", "PayPal"]} />
       <Input
         placeholder="Card number"
@@ -20,7 +16,7 @@ function index() {
         placeholder="Cardholder"
         customStyle="!bg-greybutton h-[2.59rem]  mt-[1.55rem] rounded-[4.24px] text-textbutton"
       />
-      <div className="h-[2.63rem] mt-[1.55rem] rounded-[4.24px] bg-greybutton flex justify-between items-center pl-5 pr-5">
+      <div className="expiry--input--container">
         <p className="text-textbutton">Expiry</p>
         <div className="flex justify-between items-center w-[8rem]">
           <Input

@@ -18,10 +18,10 @@ const HomePage = () => {
   return (
     <>
       <PageLayout>
-        <div className="first--page">
-        <NavTabs tabs={navData} tabIndex={0}  color='white'/>
-          <div className=" h-screen flex flex-col  space-y-10  sm:space-y-4  items-center justify-center md:justify-start md:mt-8">
-            <div className=" mt-[-12rem] md:mt-[0rem] sm:w-[8.81rem] sm:mt-[-23rem] ">
+        <div className="first--page--image">
+          <NavTabs tabs={navData} tabIndex={0} color="white" />
+          <div className="first--page">
+            <div className="first--page--contents">
               <img
                 className="w-full"
                 src="/public/images/Mukef Logo.png"
@@ -29,11 +29,11 @@ const HomePage = () => {
               />
             </div>
             <div className="text-center flex justify-center items-center">
-              <p className=" text-[1.5rem] md:text-[50px] font-bold sm:font-normal md:max-w-[650px] md:leading-none">
+              <p className="foundation--name">
                 Muhammad Kamalud-Deen (Education) Foundation
               </p>
             </div>
-            <p className=" px-4 text-center sm:max-w-[25.8125rem]  text-[1.375rem]">
+            <p className="foundation--contents">
               The most elegant expression of Apple Watch returns with two iconic
               materials — titanium and ceramic.
             </p>
@@ -73,9 +73,11 @@ const HomePage = () => {
             {profileData.map((data, dataIndex) => (
               <RecentProfile key={dataIndex} {...data} />
             ))}
-            <button className="text-black w-[9.3rem] h-[2.62rem] ml-[77rem] rounded-[0.3rem] border-[1px] border-#E5E5E5-600">
-              View all articless
-            </button>
+            <Button
+              title="View all articless"
+              customStyle="text-black w-[9.3rem] h-[2.62rem] ml-[77rem] rounded-[0.3rem] border-[1px] border-#E5E5E5-600"
+              onClick={() => {}}
+            />
           </div>
         </div>
       </PageLayout>

@@ -1,4 +1,4 @@
-import React from "react";
+import "./PopAddDonation.scss";
 import Button from "../../attoms/Button";
 import Input from "../../attoms/Input";
 import Stroke from "../../attoms/Vectors/stroke";
@@ -6,7 +6,7 @@ import Stroke from "../../attoms/Vectors/stroke";
 function PopAddDonation() {
   return (
     <div className="flex mt-[-43px] mr-[23px]">
-      <div className=" flex flex-col w-[20.39rem] h-[35.37rem] border-r-[3px] border-bordergrey">
+      <div className="first--pagee">
         <p className="text-xl text-black font-bold">Support this project</p>
         <p className="mt-[3.37rem] text-black text-[1.12rem]">
           Project title goes here
@@ -29,7 +29,7 @@ function PopAddDonation() {
         <div className="grid--input">
           <Input
             placeholder="Amount"
-            customStyle="!bg-greybutton h-[2.75rem]  mt-[1.55rem] rounded-[4.24px] text-textbutton"
+            customStyle="!bg-greybutton h-[2.75rem]   rounded-[4.24px] text-textbutton"
           />
           <Input
             placeholder="Payment method"
@@ -47,7 +47,7 @@ function PopAddDonation() {
             placeholder="CVC"
             customStyle="!bg-greybutton h-[2.75rem]  mt-[1.55rem] rounded-[4.24px] text-textbutton"
           />
-          <div className="h-[2.63rem] mt-[1.55rem] rounded-[4.24px] bg-greybutton flex justify-between items-center pl-5 pr-5">
+          <div className="expiry--input--container">
             <p className="text-textbutton">Expiry</p>
             <div className="flex justify-between items-center w-[8rem]">
               <Input
@@ -64,16 +64,12 @@ function PopAddDonation() {
         </div>
         <div className="flex mt-[1.24rem]  items-center border-t-2 border-bordergrey pt-6">
           <div className="h-[1rem] w-[1rem]">
-            <input
-              className="h-[1rem] w-[1rem]"
-              type="checkbox"
-              id="vehicle1"
-              name="vehicle1"
-              value="Bike"
-            />
+            <label className="">
+              <input type="checkbox" />
+            </label>
           </div>
           <p className="text-black text-[14.18px] font-medium ml-[0.78rem]">
-            Save my details for donationq
+            Save my details for donation
           </p>
         </div>
         <div className="flex justify-center">
