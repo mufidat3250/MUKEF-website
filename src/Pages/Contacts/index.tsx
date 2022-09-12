@@ -13,8 +13,8 @@ const Contacts = () => {
     <NavTabs tabs={navData} tabIndex={4} color='white' />
     <div className='contact--us'>
       <h1 className='contact--title'>{contactUs.title}</h1>
-      <div className='contact-desc '>
-       <div className='w-[20px] h-[20px] md:w-[30px] md:h-[30px]'>
+      <div className='contact-desc'>
+       <div className='img'>
        <img src="/public/vectors/Icon.svg" alt="" className=' md:w-full md:h-full' />
        </div>
         <div className=''>
@@ -36,7 +36,7 @@ const Contacts = () => {
         <Input placeholder={'Name'}  customStyle={'rounded-[10px]'}/>        
         <Input placeholder={'Email'} customStyle={'rounded-[10px]'}/>
         <Input placeholder={'Subject'} customStyle={'rounded-[10px]'} />
-        <textarea name="Input Text"  id="" cols={30} rows={10} placeholder='Input Text' className='w-full outline-none border-none rounded-[10px] px-4  py-3 text-black'></textarea>
+        <textarea name="Input Text"  id="" cols={30} rows={10} placeholder='Input Text' className='textarea'></textarea>
       </form>
       <div className=' flex flex-col gap-5 justify-between'>
         <div className='contact--list'>
@@ -52,7 +52,7 @@ const Contacts = () => {
             </div>)
           }
         </div>
-        <div className='bg-green-500 rounded-[0.625rem]'>
+        <div className='rounded-[0.625rem]'>
           <Button title={'Send'} customStyle={'!bg-[#152018] rounded-[10px] text-white font-[500] '} onClick={function (): void {
                   throw new Error('Function not implemented.')
                 } }/>

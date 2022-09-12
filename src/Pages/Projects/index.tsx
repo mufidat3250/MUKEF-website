@@ -43,7 +43,7 @@ const Projects = () => {
               />
             ))}
           </div>
-          <div className="grid place-items-center lg:place-items-end mt-[4.25rem] pb-[5.8125rem]">
+          <div className="button--wrapper">
             <div className="w-[16.375rem] mr-4 lg:mr-0">
               <Button
                 title={"See all"}
@@ -53,17 +53,20 @@ const Projects = () => {
             </div>
           </div>
         </div>
-        <div className="lg:pt-[8.875rem] lg:px-[7.8125rem]">
-          <h1 className="text-gray1200 text-3xl lg:text-5xl font-[400] text-center tracking-wider py-5 lg:mb-20">
+
+
+        
+        <div className="completed--project">
+          <h1 className="title">
             Some of our Ongoing projects
           </h1>
 
-          <div className="grid md:grid-cols-2   lg:grid-cols-3 px-4 lg:px-0 gap-[4.8562rem] pb-[4.2418rem]">
+          <div className="project--wrapper">
             {completedProject.map((project, index) => (
               <CompletedProject {...project} key={index} />
             ))}
           </div>
-          <div className="grid place-items-center lg:place-items-end pb-[5.75rem]">
+          <div className="button--container">
             <div className="w-[16.375rem] mr-4 lg:mr-0">
               <Button
                 title={"See all"}
