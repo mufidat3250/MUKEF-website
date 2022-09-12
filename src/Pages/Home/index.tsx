@@ -24,7 +24,7 @@ const HomePage = () => {
             <div className=" mt-[-12rem] md:mt-[0rem] sm:w-[8.81rem] sm:mt-[-23rem] ">
               <img
                 className="w-full"
-                src="/public/images/Mukef Logo.png"
+                src="/images/Mukef Logo.png"
                 alt="Logo"
               />
             </div>

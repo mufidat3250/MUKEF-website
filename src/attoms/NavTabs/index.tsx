@@ -8,6 +8,7 @@ import Modal from "../../molecules/Modal";
 import MenuIcon from "../Vectors/MenuIcon";
 import CancelIcon from "../Vectors/CancelIcon";
 import {useClickAway} from 'react-use'
+import LogOutMessage from "../../molecules/LogoutMessage";
 
 type navbarProp = {
   tabs: Array<object>;
@@ -22,6 +23,7 @@ const NavTabs = ({ tabs, logout, tabIndex, otherStyle, color }: navbarProp) => {
   const navigate = useNavigate();
   const [active, setActivetab] = useState(tabIndex || 0);
   const [loginModal, setLoginModal] = useState(false);
+  const [logOutModal, setLogOutModal] = useState(false)
   const [menu, setMenu] = useState(false);
   const ref = useRef(null)
   useClickAway(ref, ()=>{()=>setMenu(false)})
@@ -52,7 +54,7 @@ const NavTabs = ({ tabs, logout, tabIndex, otherStyle, color }: navbarProp) => {
             {tabs.map((tab: any, index: number) => (
               <p
                 className={`tab ${
-                  active == index ? "opacity-[0.5]" : "text-white "
+                  active == index ? "opacity-[0.5]" : ""
                 } ${otherStyle}`}
                 key={`nav${index} `}
                 onClick={() => handleNav(tab.link, index)}
@@ -74,7 +76,7 @@ const NavTabs = ({ tabs, logout, tabIndex, otherStyle, color }: navbarProp) => {
               <Button
                 title={"Login Out"}
                 customStyle={`!font-[600] !text-white !bg-[#1D2319] !rounded-[5px]`}
-                onClick={() => navigate("/")}
+                onClick={() => setLogOutModal(true)}
               />
             )}
           </div>
@@ -128,7 +130,7 @@ const NavTabs = ({ tabs, logout, tabIndex, otherStyle, color }: navbarProp) => {
               <Button
                 title={"Login Out"}
                 customStyle={`!font-[600] !text-white !bg-[#1D2319] !rounded-[5px]`}
-                onClick={() => navigate("/")}
+                onClick={() => setLogOutModal(true)}
               />
             )}
           </div>
@@ -142,6 +144,14 @@ const NavTabs = ({ tabs, logout, tabIndex, otherStyle, color }: navbarProp) => {
         width="403.04px"
       >
         <LoginForm />
+      </Modal>
+      <Modal 
+        HeaderText="Log Out ?"
+        openModal={logOutModal}
+        closeModal={()=>setLogOutModal(false)}
+        width='23.875rem'
+      >
+        <LogOutMessage/>
       </Modal>
     </>
   );
