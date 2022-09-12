@@ -1,3 +1,4 @@
+import CoFounder from '../CoFounderWidget'
 import './ProjectNews.scss'
 const ProjectNews = () => {
   return (
@@ -11,13 +12,14 @@ const ProjectNews = () => {
      <p className='desc'>
      Hi. My name is Khoa. I am a Montreal-based filmmaker, stage director and video designer, author of feature films, documentaries, essays and video installations. I seek to create objects that blur the limits of the sacred.Hi. My name is Khoa. I am a Montreal-based filmmaker, stage director and video designer, author of feature films, documentaries, essays and video installations. I seek to create objects that 
      </p>
-     <div className='flex space-x-4'>
+     {/* <div className='project--news--img'>
        <img src="/public/images/co-founder.svg" alt="" />
        <div className='flex flex-col'>
          <p className='text- text-lg text-gray1000'>Marvin McKinney</p>
          <span className='font-normal text-gray1000 text-[0.8332rem] leading-[1.4615rem]'>Co-founder</span>
        </div>
-     </div>
+     </div> */}
+     <CoFounder/>
     </div>
   )
 }

@@ -20,4 +20,7 @@
   .desc {
     @apply w-full md:max-w-[59.9375rem] mb-[1.4375rem] text-gray1100;
   }
+  .project--news--img{
+    @apply flex space-x-4;
+  }
 }

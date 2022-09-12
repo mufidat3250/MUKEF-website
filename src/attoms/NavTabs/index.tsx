@@ -32,22 +32,22 @@ const NavTabs = ({ tabs, logout, tabIndex, otherStyle, color }: navbarProp) => {
   };
   return (
     <>
-      <div className=" NavBar relative">
-        <div className="flex items-center space-x-[0.7rem] sm:space-x-0 sm:gap-[2.0625rem]">
-          <div className=" w-[30px] h-[30px] md:hidden">
+      <div className=" NavBar">
+        <div className="navbar--logo--container">
+          <div className="mobile--logo">
             <img src="/public/vectors/Group 48.svg" alt="" />
           </div>
-          <div className="hidden md:block">
+          <div className="desktop--logo">
             <MunkefLogo color={color} />
           </div>
           <h1
-            className={`font-[500] text-[#FFFFFF] text-[1.1255rem] sm:text-[2.1255rem] cursor-pointer ${otherStyle}`}
+            className={`logoText ${otherStyle}`}
           >
             MUKEF
           </h1>
         </div>
 
-        <div className=" tabs-container hidden  lg:flex md:space-x-[4rem] lg:space-x-[5.4375rem]">
+        <div className="tabs-container">
           <div className="tabs">
             {tabs.map((tab: any, index: number) => (
               <p
@@ -82,7 +82,6 @@ const NavTabs = ({ tabs, logout, tabIndex, otherStyle, color }: navbarProp) => {
         <div
           className=" lg:hidden"
           onClick={() => {
-            console.log("i am clicked");
             setMenu(true);
           }}
         >
@@ -90,16 +89,16 @@ const NavTabs = ({ tabs, logout, tabIndex, otherStyle, color }: navbarProp) => {
         </div>
 
         <div
-          className={`space-y-4  h-fit  top-0  pl-10 pb-8 right-0 bottom-0 absolute lg:hidden bg-[#2D2D2D] rounded-b-lg flex z-50 flex-col pt-7 pr-6 ${
+          className={`space-y-4 h-fit top-0 pl-10 pb-8 right-0 bottom-0 absolute lg:hidden bg-[#2D2D2D] rounded-b-lg flex z-50 flex-col pt-7 pr-6 ${
             menu ? "ml-0" : "right-[-50rem]"
           }`}
           ref={ref}
         >
           <div>
-            <div className=" flex justify-end cursor-pointer">
+            <div className="icon--wrapper">
               <CancelIcon color="white" onClick={() => setMenu(!menu)} />
             </div>
-            <div className="tabs flex flex-col self-center space-y-4 pt-6">
+            <div className="tabs mobile--tabs ">
               {tabs.map((tab: any, index: number) => (
                 <p
                   className={`tab ${

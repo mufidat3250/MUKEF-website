@@ -1,7 +1,17 @@
-.Input--container{
-    @apply flex overflow-hidden items-center bg-[#ffffff];
+.Input--wrapper{
+  @apply flex  flex-col h-fit;
 
+  .Input--container{
+    @apply flex overflow-hidden items-center bg-[#ffffff];
+    .input--title{
+      @apply text-[#858585] text-sm mb-2;
+    }
+    .search--icon{
+      @apply pl-[0.888rem] pr-[0.6226rem];
+    }
   input {
     @apply outline-none border-none flex-grow py-[1.125rem] bg-transparent;
   }
+}
+
 }

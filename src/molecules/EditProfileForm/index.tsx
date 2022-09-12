@@ -5,9 +5,10 @@ import Input from "../../attoms/Input";
 import Select from "../../attoms/Select";
 import "./EditProfile.scss";
 
-const EditProfile = () => {
+const EditProfile = ({editForm}:{editForm?:Function}) => {
+ 
   return (
-    <div className="flex flex-col space-y-[1.25rem]">
+    <div className="flex flex-col space-y-[1.25rem]" >
       <div className="grid grid-cols-[35%,1fr] space-x-4 ">
           <Select
             initial="Select Title"
@@ -84,7 +85,9 @@ const EditProfile = () => {
       <div className="mt-[2.9375rem] flex justify-between items-center space-x-[0.84625rem]">
       <CheckBox text='Receive update form us' customStyle="font- text-gray1500"/>     
       <Button
-          onClick={() => {}}
+          onClick={() => {
+            console.log('i am clicked')
+          }}
           title="Save"
           customStyle="bg-black w-[13.5575rem] h-[2.7418rem] rounded-[4.16px] font-bold text-white"
         />

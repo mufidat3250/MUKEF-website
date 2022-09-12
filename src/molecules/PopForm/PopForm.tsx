@@ -51,7 +51,7 @@ function PopForm({ signUp }: { signUp: Function }) {
             value="Bike"
           />
         </div>
-        <p className="text-black font-nromal ml-[0.78rem]">
+        <p className="text-black font-normal ml-[0.78rem]">
           Receive update form us
         </p>
       </div>

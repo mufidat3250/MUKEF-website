@@ -1,0 +1,13 @@
+.co-founder--widget{
+    @apply flex space-x-[1.5rem];
+
+    .co-founder--img{
+      @apply h-[3.5rem] w-[3.5rem] mb-[2rem] md:mb-0;
+    }
+    .founder--name{
+      @apply text-lg text-gray1000;
+    }
+    .co-founder--title{
+      @apply font-normal text-gray1000 text-[0.8332rem] leading-[1.4615rem];
+    }
+  }

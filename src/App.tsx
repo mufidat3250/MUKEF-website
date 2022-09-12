@@ -19,12 +19,9 @@ function App() {
         <Route path="/projects" element={<Projects />} />
         <Route path="/aboutus" element={<AboutUs />} />
         <Route path="/contact" element={<Contacts />} />
-        <Route path= '/dashboard'>
-          <Route path='profile' element={<ProfilePage/>}/>
-          <Route path='support-project' element={<Support/>}/>
-          <Route path='transactions' element={<TransactionPage/>}/>
-
-        </Route>
+          <Route path='/dashboard/profile' element={<ProfilePage/>}/>
+          <Route path='/dashboard/support-project' element={<Support/>}/>
+          <Route path='/dashboard/transactions' element={<TransactionPage/>}/>
       </Routes>
     </div>
   );

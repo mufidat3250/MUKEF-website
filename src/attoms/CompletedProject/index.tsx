@@ -1,14 +1,26 @@
-import React from 'react'
+import React from "react";
+import "./CompletedProject.scss";
 
-const CompletedProject = ({img, title, desc}:{img:string, title:string, desc:string}) => {
+const CompletedProject = ({
+  img,
+  title,
+  desc,
+}: {
+  img: string;
+  title: string;
+  desc: string;
+}) => {
   return (
-    <div className='w-[100%] flex flex-col'>
-        <div>
-            <img src={img} alt="" className='w-full'/>
-        </div>
-        <p className=' max-w-[21.7556rem] mt-4 self-center md:self-start md:text-left text-center lg:text-left'><strong className='text-[#1D2319]  text-xl'>{title}</strong> <span className='text-[#5F5F5F] font-normal text-base'>{desc}</span></p>
+    <div className="completed--project--container">
+      <div>
+        <img src={img} alt="" className="img" />
+      </div>
+      <p className="completed--project--wrapper">
+        <strong className="completed--project--title">{title}</strong>{" "}
+        <span className="completed--project--desc">{desc}</span>
+      </p>
     </div>
-  )
-}
+  );
+};
 
-export default CompletedProject
+export default CompletedProject;

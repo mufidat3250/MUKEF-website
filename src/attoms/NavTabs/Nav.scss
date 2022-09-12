@@ -1,11 +1,33 @@
 .NavBar {
-  @apply flex text-black justify-between items-center px-4 md:w-[100%] xl:w-[85%] sm:w-[100%] mx-auto py-8;
+  @apply flex text-black justify-between relative items-center px-4 md:w-[100%] xl:w-[85%] sm:w-[100%] mx-auto py-8;
+  .navbar--logo--container{
+    @apply flex items-center space-x-[0.7rem] sm:space-x-0 sm:gap-[2.0625rem];
+
+    .mobile--logo{
+      @apply w-[30px] h-[30px] md:hidden;
+    }
+    .desktop--logo{
+      @apply hidden md:block;
+    }
+    .logoText{
+      @apply font-[500] text-[#FFFFFF] text-[1.1255rem] sm:text-[2.1255rem] cursor-pointer;
+    }
+  }
+
+
   .tabs-container {
+    @apply hidden  lg:flex md:space-x-[4rem] lg:space-x-[5.4375rem];
     .tabs {
       @apply flex text-black items-center;
     }
     .tab {
       @apply px-[1.6875rem] cursor-pointer text-white;
     }
+  }
+  .icon--wrapper{
+    @apply  flex justify-end cursor-pointer;
+  }
+  .mobile--tabs{
+    @apply flex flex-col self-center pt-6 space-y-4;
   }
 }

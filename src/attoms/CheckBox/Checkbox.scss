@@ -1,31 +1,28 @@
 label{
-    display: block;
-    position: relative;
-    padding-left: 35px;
-    cursor: pointer;
+    @apply  block relative pl-[2.1875rem] cursor-pointer text-black ;
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
-    color: black;
   
     input {
-      position: absolute;
-      opacity: 0;
-      cursor: pointer;
-      height: 0;
-      width: 0;
+      @apply absolute opacity-0 cursor-pointer h-0 w-0;
+      // position: absolute;
+      // opacity: 0;
+      // cursor: pointer;
+      // height: 0;
+      // width: 0;
       &:checked ~ .checkmark {
-        background-color:lightgray;
+        @apply bg-[lightgray]
       }
     }
     .checkmark {
-      position: absolute;
-      top: 0;
-      left: 0;
-      height: 1.52rem;
-      width: 1.64rem;
-      background-color: #F2F2F2;
+      @apply absolute top-0 left-0 h-[1.52rem] w-[1.64rem] bg-[#F2F2F2];
+      // position: absolute;
+      // top: 0;
+      // left: 0;
+      // height: 1.52rem;
+      // width: 1.64rem;
     }
 
     .checkmark:after {
@@ -34,17 +31,15 @@ label{
       display: none;
     }
     input:checked ~ .checkmark:after {
-      display: block;
+      @apply block
     }
     .checkmark:after {
-      left: 9px;
-      top: 3px;
-      width: 8px;
-      height: 14px;
+      @apply left-[0.5625rem] top-[3px] w-2 h-[0.875rem] 
       border: 1px solid white;
       border-width: 0 3px 3px 0;
       -webkit-transform: rotate(45deg);
       -ms-transform: rotate(45deg);
       transform: rotate(45deg);
+
     }
 }

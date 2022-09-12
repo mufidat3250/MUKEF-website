@@ -1,0 +1,17 @@
+.completed--project--container{
+    @apply w-[100%] flex flex-col;
+
+    .img{
+        @apply w-full;
+    }
+    .completed--project--wrapper{
+        @apply max-w-[21.7556rem] mt-4 self-center md:self-start md:text-left text-center lg:text-left;
+
+        .completed--project--title{
+            @apply text-[#1D2319]  text-xl;
+        }
+        .completed--project--desc{
+            @apply text-[#5F5F5F] font-normal text-base;
+        }
+    }
+}
