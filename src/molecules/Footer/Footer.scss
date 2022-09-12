@@ -7,6 +7,9 @@
         .footer--content{
             @apply flex pt-[3.9375rem] pb-[2.0625rem]  justify-between flex-col sm:flex-row;
         }
+        .footer--logo{
+            @apply hidden sm:self-start lg:block w-[6.3125rem] h-[5.8468rem];
+        }
         
     }
     .activities{
@@ -21,5 +24,12 @@
     }
     .copywrite--social--links{
         @apply flex justify-between items-center pb-[1.875rem];
+
+        .social--icon--wrapper{
+            @apply flex gap-x-[0.625rem];
+        }
+        .social--icon{
+            @apply grid place-items-center h-[2rem] w-[2rem] sm:h-[3.125rem] sm:w-[3.125rem] rounded-full bg-lighgray2;
+        }
     }
 }

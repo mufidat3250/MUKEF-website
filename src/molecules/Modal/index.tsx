@@ -23,6 +23,7 @@ function Modal({
   HeaderText,
   closeModal = () => {},
   width = "423px",
+
 }: ModalProps) {
   const ref = useRef(null);
   useClickAway(ref, () => closeModal());
@@ -31,15 +32,17 @@ function Modal({
     <>
       {openModal && <ModalOverlay></ModalOverlay>}
 
-    <div   className={`flex w-full z-[100] absolute  h-full  justify-center items-center transition-all duration-300 ${openModal ? "bottom-0 " : "-bottom-[150%] duration-300"}`}>
+    <div   className={`flex w-full z-20 absolute   h-[100vh] justify-center  items-center transition-all duration-300 ${openModal ? "top-0  z-[100] " : "top-[-1200%] duration-300"}`}>
     <div
-        className={`modal-box  ${openModal ? "open-modal" : ""}`}
+        className={`modal-box w-fit  ${openModal ? "open-modal" : ""}`}
         style={{ width: width }}
         ref={ref}
       >
         <div className="head">
           <h3 className="text-black font-bold">{HeaderText}</h3>
-          <button onClick={() => closeModal()}>
+          <button onClick={() => {
+            closeModal()
+          }}>
             <CancelIcon />
           </button>
         </div>

@@ -10,7 +10,9 @@
     }
     .contact-desc{
         @apply flex space-x-[1.1562rem] justify-start items-start;
-
+        & .img{
+            @apply w-[20px] h-[20px] md:w-[30px] md:h-[30px];
+        }
         .location{
             @apply max-w-[21.7556rem] text-xl mb-4 font-[600];
         }
@@ -37,6 +39,10 @@
             @apply grid  lg:grid-cols-[1.5fr,1fr] gap-[1.875rem] lg:px-[4.75rem];
             .form{
                 @apply space-y-[2.5rem];
+
+                & .textarea{
+                    @apply w-full outline-none border-none rounded-[10px] px-4  py-3 text-black;
+                }
             }
             .contact--list{
                 @apply bg-[#152018] rounded-[0.625rem] pt-[2.3125rem] pl-[2.8125rem] space-y-[2.5rem] pb-[5.6875rem];

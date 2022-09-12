@@ -241,7 +241,7 @@ export const prospects = [
   },
 ];
 
-export const cleric = [
+export const partners = [
   {
     img: "/public/images/cleric1.png",
     title: "Marvin McKinney",

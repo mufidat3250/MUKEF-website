@@ -7,10 +7,10 @@
       @apply  max-w-[96%] md:max-w-[75%] mx-auto mt-[2.375rem] flex flex-col;
 
       .title {
-        @apply font-bold text-3xl lg:text-5xl max-w-[38.5rem] text-[#B9B6B6] tracking-[1.5px] text-center md:text-left sm:text-left;
+        @apply font-bold text-3xl lg:text-5xl max-w-[33.5rem] self-center sm:self-start text-[#B9B6B6] tracking-[1.5px] text-center md:text-left sm:text-left sm:max-w-[38.5rem];
       }
       .caption {
-        @apply font-normal text-base lg:text-[2rem] lg:max-w-[62.4375rem] lg:leading-10 mt-4 tracking-[1.5px] mb-[1.875rem] text-[#F0F0F0] text-center sm:text-left max-w-[42.4375rem];
+        @apply font-normal text-base lg:text-[2rem] lg:max-w-[62.4375rem] lg:leading-10 mt-4 tracking-[1.5px] mb-[1.875rem] text-[#F0F0F0] text-center sm:text-left max-w-[30.4375rem] self-center sm:self-start sm:max-w-[42.4375rem];
       }
       .donate {
         @apply text-[2rem] text-[#B9B6B6] mb-6 leading-[2.2187rem] text-center sm:text-left font-[600] tracking-[1.5px];
@@ -29,6 +29,23 @@
     }
     .project--container {
       @apply flex flex-col justify-center space-y-[6.25rem];
+    }
+    .button--wrapper{
+      @apply grid place-items-center lg:place-items-end mt-[4.25rem] pb-[5.8125rem];
+    }
+  }
+
+  .completed--project{
+    @apply lg:pt-[8.875rem] lg:px-[7.8125rem];
+
+    & .title{
+      @apply text-gray1200 text-3xl lg:text-5xl font-[400] text-center tracking-wider py-5 lg:mb-20;
+    }
+    & .project--wrapper{
+      @apply grid md:grid-cols-2   lg:grid-cols-3 px-4 lg:px-0 gap-[4.8562rem] pb-[4.2418rem];
+    }
+    .button--container{
+      @apply grid place-items-center lg:place-items-end pb-[5.75rem];
     }
   }
 }

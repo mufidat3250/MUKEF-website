@@ -1,0 +1,13 @@
+.log--out{
+    @apply space-y-[2.8537rem];
+    .log-out--message{
+        @apply space-x-[1.6568rem] flex items-center;
+    }
+
+    .log-out-desc{
+        @apply max-w-[17.6956rem] space-x-[1.415rem] text-[#5c5c5c];
+    }
+    .button--wrapper{
+        @apply flex justify-between;
+    }
+}

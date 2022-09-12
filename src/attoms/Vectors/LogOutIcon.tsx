@@ -1,10 +1,14 @@
-import * as React from "react"
-import { SVGProps } from "react"
 
-const LogoutIcon = (props: SVGProps<SVGSVGElement>) => (
+import { SVGProps } from "react"
+type props ={
+  wd?: string;
+  ht?:string
+}&SVGProps<SVGSVGElement>
+
+const LogoutIcon = (props:props) => (
   <svg
-    width={17}
-    height={16}
+    width={props.wd|| 17}
+    height={props.ht|| 16}
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
     {...props}

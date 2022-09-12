@@ -2,8 +2,9 @@ import "./PopForm.scss";
 import Input from "../../attoms/Input";
 import Button from "../../attoms/Button";
 import Select from "../../attoms/Select";
-
+import {useNavigate} from 'react-router-dom'
 function PopForm({ signUp }: { signUp: Function }) {
+  const navigate = useNavigate()
   return (
     <form>
       <div className="flex justify-center items-center">
@@ -50,13 +51,13 @@ function PopForm({ signUp }: { signUp: Function }) {
             value="Bike"
           />
         </div>
-        <p className="text-black font-nromal ml-[0.78rem]">
+        <p className="text-black font-normal ml-[0.78rem]">
           Receive update form us
         </p>
       </div>
       <div className="flex justify-center">
         <Button
-          onClick={() => {}}
+          onClick={() => navigate('/dashboard/profile') }
           title="Subscribe"
           customStyle="bg-black mt-[1.48rem] w-[13.95rem] h-[2.6rem] rounded-[4.16px] font-bold text-white"
         />

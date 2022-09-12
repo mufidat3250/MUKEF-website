@@ -1,0 +1,17 @@
+.select--container{
+    @apply flex flex-col space-y-2;
+
+    .select--title{
+        @apply text-[#858585] text-sm;
+    }
+    .select--wrapper{
+        @apply w-full flex h-[2.59rem] relative;
+        
+        .select{
+            @apply flex-grow pl-4 h-full outline-none border-none cursor-pointer bg-gray600 rounded-[5px] font-bold text-[#222222];
+        }
+    }
+    .dropDown--img{
+        @apply absolute right-2 top-[8px];
+    }
+}

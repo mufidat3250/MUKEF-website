@@ -10,7 +10,7 @@ function LoginForm() {
       <div className="grid--input">
         <Input
           placeholder="Payment method"
-          customStyle="!bg-greybutton h-[2.59rem]  mt-[1.55rem] rounded-[4.24px] text-textbutton"
+          customStyle="!bg-greybutton bg-red-500 h-[2.59rem]  mt-[1.55rem] rounded-[4.24px] text-textbutton"
         />
         <Input
           placeholder="Card number"

@@ -1,3 +1,4 @@
+import './Select.scss'
 const Select = ({
   options,
   title,
@@ -8,13 +9,13 @@ const Select = ({
   initial?: string;
 }) => {
   return (
-    <div className=" flex flex-col">
-      <p className=" text-[#858585] text-sm">{title}</p>
-      <div className="w-full flex h-[2.59rem] relative">
+    <div className="select--container">
+      <p className="select--title">{title}</p>
+      <div className="select--wrapper">
         <select
           name=""
           id=""
-          className="flex-grow pl-4 h-full outline-none border-none cursor-pointer bg-gray600 rounded-[5px] font-bold text-[#222222]"
+          className="select"
         >
           <option value="" selected>
             {initial}
@@ -26,7 +27,7 @@ const Select = ({
         <img
           src="/public/vectors/angle-down.svg"
           alt=""
-          className="absolute right-2 top-[8px]"
+          className="dropDown--img"
         />
       </div>
     </div>
