@@ -1,3 +1,4 @@
+import { DatePicker } from "@mui/x-date-pickers/DatePicker";
 import React from "react";
 import Button from "../../attoms/Button";
 import Checkbox from "../../attoms/CheckBox";
@@ -16,7 +17,7 @@ const AddDonation = () => {
           customStyle="h-[2.7362rem]"
           prefixIcon={<span className="amount">₦</span>}
         />
-        <Input placeholder="Date picker" customStyle="h-[2.7362rem]" />
+       <DatePicker/>
       </div>
       <div className="checkbox">
         <Checkbox
