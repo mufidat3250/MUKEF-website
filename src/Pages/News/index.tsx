@@ -18,7 +18,7 @@ const News = () => {
           <div className="student">
             <div className="">
               <img
-                src="/public/images/image14.png"
+                src="/images/image14.png"
                 alt=""
                 className="news--img"
               />
@@ -46,7 +46,7 @@ const News = () => {
           <div className="w-[88%] mx-auto">
             <div className="">
               <img
-                src="/public/images/image14.png"
+                src="/images/image14.png"
                 alt=""
                 className="w-full h-full"
               />

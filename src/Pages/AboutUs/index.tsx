@@ -8,7 +8,7 @@ const AboutUs = () => {
   return (
     <PageLayout>
       <div className="About--us ">
-      <NavTabs tabs={navData} tabIndex={1} color="white" />
+      <NavTabs tabs={navData} tabIndex={3} color="white" />
       
 
         <h1 className="title">About Mukef</h1>

@@ -23,7 +23,7 @@ const NewsCard = ({ img, desc, title, about }: newsCardProp) => {
       <div className="co-founder--widget">
         <div className="co-founder-img">
           <img
-            src="/public/images/co-founder.svg"
+            src="/images/co-founder.svg"
             alt=""
             className="w-full h-full"
           />

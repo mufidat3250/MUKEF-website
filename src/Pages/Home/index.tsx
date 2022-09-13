@@ -24,7 +24,7 @@ const HomePage = () => {
             <div className="first--page--contents">
               <img
                 className="w-full"
-                src="/public/images/Mukef Logo.png"
+                src="/images/Mukef Logo.png"
                 alt="Logo"
               />
             </div>

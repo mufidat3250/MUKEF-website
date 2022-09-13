@@ -5,7 +5,7 @@ import Input from "../../attoms/Input";
 import Select from "../../attoms/Select";
 import "./EditProfile.scss";
 
-const EditProfile = ({editForm}:{editForm?:Function}) => {
+const EditProfile = ({editForm}:{editForm:Function}) => {
  
   return (
     <div className="flex flex-col space-y-[1.25rem]" >
@@ -95,5 +95,4 @@ const EditProfile = ({editForm}:{editForm?:Function}) => {
     </div>
   );
 };
-
 export default EditProfile;

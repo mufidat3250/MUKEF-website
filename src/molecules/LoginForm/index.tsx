@@ -37,7 +37,7 @@ function LoginForm() {
       </div>
       <div className="flex justify-center">
         <Button
-          onClick={() => navigate("dashboard/profile")}
+          onClick={() => navigate("/dashboard/profile")}
           title="Login"
           customStyle="bg-black mt-[1.48rem] w-[20.39rem] h-[2.6rem] rounded-[4.16px] font-bold text-white"
         />

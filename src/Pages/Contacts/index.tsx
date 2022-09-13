@@ -15,7 +15,7 @@ const Contacts = () => {
       <h1 className='contact--title'>{contactUs.title}</h1>
       <div className='contact-desc'>
        <div className='img'>
-       <img src="/public/vectors/Icon.svg" alt="" className=' md:w-full md:h-full' />
+       <img src="/vectors/Icon.svg" alt="" className=' md:w-full md:h-full' />
        </div>
         <div className=''>
           <p className='location'>{contactUs.location}</p>
