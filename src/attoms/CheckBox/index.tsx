@@ -1,3 +1,4 @@
+import './Checkbox.scss'
 const Checkbox = ({
     text,
     onClick,
@@ -9,7 +10,7 @@ const Checkbox = ({
   }) => {
     return (
       <label onClick={onClick}>
-        <input type="checkbox" /> <span className={`${customStyle}`}>{text}</span>
+        <input type="checkbox" /> <span className={`${customStyle} text-[#222222]`}>{text}</span>
         <span className="checkmark"></span>
       </label>
     );

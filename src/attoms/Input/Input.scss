@@ -2,7 +2,7 @@
   @apply flex  flex-col h-fit;
 
   .Input--container{
-    @apply flex overflow-hidden items-center bg-[#ffffff];
+    @apply flex overflow-hidden items-center bg-gray600 ;
     .input--title{
       @apply text-[#858585] text-sm mb-2;
     }

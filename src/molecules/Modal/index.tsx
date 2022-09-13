@@ -32,7 +32,7 @@ function Modal({
     <>
       {openModal && <ModalOverlay></ModalOverlay>}
 
-    <div   className={`flex w-full z-20 absolute   h-[100vh] justify-center  items-center transition-all duration-300 ${openModal ? "top-0  z-[100] " : "top-[-1200%] duration-300"}`}>
+    <div   className={`flex w-full z-20 absolute   h-[100vh] justify-center  items-center transition-all duration-300 ${openModal ? "bottom-0  z-[100] " : "bottom-[-1200%] duration-300"}`}>
     <div
         className={`modal-box w-fit  ${openModal ? "open-modal" : ""}`}
         style={{ width: width }}

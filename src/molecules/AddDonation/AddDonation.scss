@@ -1,0 +1,17 @@
+.AddDonation{
+    @apply flex flex-col;
+
+    .Amount-year{
+        @apply grid grid-cols-2 space-x-[2.5rem];
+
+        & .amount{
+            @apply font-[Poppins] font-normal text-[0.9729rem];
+        }
+    }
+    .checkbox{
+        @apply flex items-center my-[1.875rem] space-x-[0.675rem];
+    }
+    .line{
+        @apply h-[1px] w-full bg-bordergrey mb-[1.24rem] ; 
+    }
+}

@@ -6,7 +6,7 @@ label{
     user-select: none;
   
     input {
-      @apply absolute opacity-0 cursor-pointer h-0 w-0;
+      @apply absolute opacity-0 cursor-pointer h-0 w-0 text-sm;
       // position: absolute;
       // opacity: 0;
       // cursor: pointer;
@@ -31,10 +31,10 @@ label{
       display: none;
     }
     input:checked ~ .checkmark:after {
-      @apply block
+      @apply block;
     }
     .checkmark:after {
-      @apply left-[0.5625rem] top-[3px] w-2 h-[0.875rem] 
+      @apply left-[0.5625rem] top-[3px] w-2 h-[0.875rem]; 
       border: 1px solid white;
       border-width: 0 3px 3px 0;
       -webkit-transform: rotate(45deg);
