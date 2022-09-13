@@ -37,7 +37,7 @@ const NavTabs = ({ tabs, logout, tabIndex, otherStyle, color }: navbarProp) => {
       <div className=" NavBar">
         <div className="navbar--logo--container">
           <div className="mobile--logo">
-            <img src="/public/vectors/Group 48.svg" alt="" />
+            <img src="/vectors/Group 48.svg" alt="" />
           </div>
           <div className="desktop--logo">
             <MunkefLogo color={color} />

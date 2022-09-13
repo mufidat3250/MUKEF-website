@@ -3,6 +3,7 @@ import Button from "../../attoms/Button";
 import Input from "../../attoms/Input";
 import Select from "../../attoms/Select";
 import Stroke from "../../attoms/Vectors/stroke";
+import TwoInput from "../../attoms/TwoInput";
 
 function index() {
   return (
@@ -16,20 +17,7 @@ function index() {
         placeholder="Cardholder"
         customStyle="!bg-greybutton h-[2.59rem]  mt-[1.55rem] rounded-[4.24px] text-textbutton"
       />
-      <div className="expiry--input--container">
-        <p className="text-textbutton">Expiry</p>
-        <div className="flex justify-between items-center w-[8rem]">
-          <Input
-            placeholder="M"
-            customStyle="!bg-textbutton  h-[1.63rem] w-[2.68rem] rounded-[4.2px] flex  items-center !pl-0"
-          />
-          <Stroke />
-          <Input
-            placeholder="Y"
-            customStyle="!bg-textbutton h-[1.63rem] w-[2.68rem] rounded-[4.2px]  items-center"
-          />
-        </div>
-      </div>
+      <TwoInput text="Expiry" />
       <Input
         placeholder="CVC"
         customStyle="!bg-greybutton h-[2.59rem]  mt-[1.55rem] rounded-[4.24px] text-textbutton"

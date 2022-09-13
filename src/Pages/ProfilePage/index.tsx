@@ -14,12 +14,13 @@ import EditProfile from "../../molecules/EditProfileForm";
 import { useNavigate } from "react-router-dom";
 import NotificationChange from "../../molecules/NotificationChange";
 import LogOutMessage from "../../molecules/LogoutMessage";
+import AddDonation from "../../molecules/AddDonation";
 
 const ProfilePage = () => {
   const [toggleIcon, setToggleIcon] = useState(false);
   const [editModal, setEditModal] = useState(false);
   const [value, setValue] = useState(0);
-  const [changeNotification, setChangeNotification] = useState(false);
+  const [addDonation, setAddDonation] = useState(false)
   const ref = useRef(null);
   useClickAway(ref, () => setToggleIcon(false));
   const navigate = useNavigate();
@@ -189,7 +190,7 @@ const ProfilePage = () => {
                 customStyle={
                   "!bg-[#1D2319] text-white rounded-[5px] !h-[2.7418rem]"
                 }
-                onClick={() => {}}
+                onClick={() => setAddDonation(true)}
               />
             </div>
           </div>
@@ -206,9 +207,10 @@ const ProfilePage = () => {
          
        
         </Modal>
-        {/* <Modal HeaderText={"Cancel Change"} openModal={changeNotification} closeModal={setChangeNotification}>
-        <NotificationChange/>
-      </Modal> */}
+       <Modal HeaderText="Add donation" openModal={addDonation} closeModal={()=>setAddDonation(false)} 
+       width=''>
+         <AddDonation/>
+       </Modal>
       </div>
     </DashboardLayout>
   );
