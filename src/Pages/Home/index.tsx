@@ -37,7 +37,7 @@ const HomePage = () => {
               The most elegant expression of Apple Watch returns with two iconic
               materials — titanium and ceramic.
             </p>
-            <div className="flex  mt-[1.5rem] sm:mt-[3rem] space-y-6 sm:space-y-0 sm:space-x-[2.5rem] flex-col sm:flex sm:flex-row">
+            <div className="button--container">
               <div className="w-[16.37rem]">
                 <Button
                   title={" Make an instant donation"}
