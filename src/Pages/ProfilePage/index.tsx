@@ -111,7 +111,7 @@ const ProfilePage = () => {
             setToggleIcon(!toggleIcon);
           }}
         >
-         <span onClick={()=>dispatch('show')}> {state.dropDown ? <SubtractIcon /> : <AddIcon />}</span>
+         <span onClick={()=>dispatch('toggle')}> {state.dropDown  && index === selected ? <SubtractIcon /> : <AddIcon />}</span>
   
           {/* <div ref={ref}> */}
             {/* {toggleIcon && index == value ? (
@@ -192,6 +192,8 @@ const ProfilePage = () => {
                 ClickRowAction={(index: any) => setValue(index)}
                 tableHeadstyle="bg-green-500"
                 rowAction={true}
+                selected={selected}
+                setSelected={setselected}
               />
             </div>
 

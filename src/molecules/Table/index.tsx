@@ -12,8 +12,9 @@ interface PropTypes {
   tableHeadstyle?: string;
   tableDatastyle?: string;
   tdBg?: boolean;
-  select?: number;
   rowAction?:Boolean;
+  selected?: Number,
+  setSelected?:Function;
 }
 const tableHeading = [
   {
@@ -70,13 +71,15 @@ const Table = ({
   tableDatastyle,
   tableHeadstyle,
   tdBg,
-  rowAction
+  rowAction,
+  setSelected =()=>{},
+  selected
 }: PropTypes) => {
-  const [selected, setSelected] = useState(0);
+  // const [selected, setSelected] = useState(0);
 
   const { state, dispatch } = useContent();
   const handlerowClick = () => {
-    dispatch("show");
+    dispatch("toggle");
   };
   return (
     <div className="tableContainer">
@@ -109,7 +112,8 @@ const Table = ({
                     key={`rowIndex--${rowIndex}`}
                     onClick={() => {
                       setSelected(rowIndex);
-                      handlerowClick();
+                      selected ===  rowIndex &&
+                      handlerowClick() 
                     }}
                   >
                     {headings.map((col, colIndex) => (
@@ -128,7 +132,7 @@ const Table = ({
                   </tr>
                   {
                     rowAction && <tr>
-                    {state.dropDown && rowIndex == 2 ? (
+                    {state.dropDown && rowIndex === selected ? (
                       <div className="text-red-500"> thinking table</div>
                     ) : (
                       ""
