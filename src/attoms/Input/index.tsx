@@ -1,7 +1,7 @@
 import { ReactNode } from "react";
 import SearchIcon from "../Vectors/SearchIcon";
 import "./Input.scss";
-type inputProp = {
+type Prop = {
   placeholder: string;
   customStyle?: string;
   sufixIcon?:boolean;
@@ -10,8 +10,8 @@ type inputProp = {
   title?:string;
   prefixIcon?:ReactNode
   
-};
-const Input = ({ placeholder, onChange,customStyle, sufixIcon, value, title , prefixIcon}: inputProp) => {
+}& React.InputHTMLAttributes<HTMLInputElement>;
+const Input = ({ placeholder, onChange,customStyle, sufixIcon, value, title , prefixIcon}: Prop) => {
   return (
     <div className={`Input--wrapper`}>
     {title && <span className="input--title">{title}</span>}
