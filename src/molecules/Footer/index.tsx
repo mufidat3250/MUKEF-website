@@ -6,7 +6,7 @@ const Footer = () => {
       <div className="footer-wrapper">
         <div className="footer--content">
           <div className="footer--logo">
-            <img src="/public/images/Mukef Logo.png" alt=""/>
+            <img src="/images/Mukef Logo.png" alt=""/>
           </div>
           <div className="activities">
             <div>
