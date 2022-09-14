@@ -108,7 +108,7 @@ const TransactionPage = () => {
           <div className="lg:w-[18.75rem]">
             <Input
               customStyle="bg-gray600 rounded-[5px]"
-              icon={true}
+              sufixIcon={true}
               placeholder={"Search for anything..."}
               onChange={(e: any) => setFiltered(e.target.value)}
             />
