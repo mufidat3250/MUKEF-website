@@ -131,13 +131,13 @@ const Table = ({
                     ))}
                   </tr>
                   {
-                    rowAction && <tr>
+                    rowAction && <div>
                     {state.dropDown && rowIndex === selected ? (
                       <div className="text-red-500"> thinking table</div>
                     ) : (
                       ""
                     )}
-                  </tr>
+                  </div>
                   }
                 </>
               ))}
