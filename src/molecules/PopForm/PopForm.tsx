@@ -64,12 +64,11 @@ function PopForm({ signUp }: { signUp: Function }) {
       </div>
       <div className=" flex mt-[1.36rem] justify-center">
         <p className="text-haveaccount w-auto font-bold">Have account ?</p>
-        <button
-          className="text-bluebuttontext font-medium h-[25px] w-[43px] ml-[1.29rem]"
+        <Button
+          title="Login"
+          customStyle="text-bluebuttontext font-medium h-[25px] w-[43px] ml-[1.29rem]"
           onClick={() => signUp()}
-        >
-          Login
-        </button>
+        />
       </div>
     </form>
   );

@@ -20,8 +20,7 @@ const Input = ({ placeholder, onChange,customStyle, sufixIcon, value, title , pr
      {sufixIcon ? <span className="search--icon"><SearchIcon/></span>:''}     
      </div>
       <input type="text"  className={`${!sufixIcon && 'pl-5'} text-[#222222]`} placeholder={placeholder} value={value} onChange={onChange}/>
-    {prefixIcon && <span className="">{prefixIcon}</span>}
-
+    {prefixIcon && <span className="mr-4">{prefixIcon}</span>}
     </div>
     </div>
   );

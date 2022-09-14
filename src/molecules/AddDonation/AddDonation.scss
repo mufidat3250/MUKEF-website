@@ -2,10 +2,10 @@
     @apply flex flex-col;
 
     .Amount-year{
-        @apply grid grid-cols-2 space-x-[2.5rem];
+        @apply grid md:grid-cols-2 gap-[2.5rem];
 
         & .amount{
-            @apply font-[Poppins] font-normal text-[0.9729rem];
+            @apply font-[Poppins] font-normal text-[0.9729rem] text-gray1600;
         }
     }
     .checkbox{

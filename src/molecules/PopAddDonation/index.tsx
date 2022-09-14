@@ -1,19 +1,20 @@
-import React from "react";
+import "./PopAddDonation.scss";
 import Button from "../../attoms/Button";
 import Input from "../../attoms/Input";
 import Stroke from "../../attoms/Vectors/stroke";
+import TwoInput from "../../attoms/TwoInput";
 
 function PopAddDonation() {
   return (
-    <div className="flex mt-[-43px] mr-[23px]">
-      <div className=" flex flex-col w-[20.39rem] h-[35.37rem] border-r-[3px] border-bordergrey">
+    <div className="flex flex-col place-items-center mt-[-43px]  mr-[23px]  sm:flex-row ">
+      <div className="first--pagee">
         <p className="text-xl text-black font-bold">Support this project</p>
         <p className="mt-[3.37rem] text-black text-[1.12rem]">
           Project title goes here
         </p>
-        <div className="w-[16.81rem] h-[14.12rem] rounded-[10px] mt-[12px]">
+        <div className="h-[14.12rem] rounded-[10px] mt-[12px]">
           <img
-            className=" h-full w-full "
+            className=" h-full w-full"
             src="/public/images/ongoingProject1.png"
             alt="ongoingProject"
           />
@@ -24,59 +25,41 @@ function PopAddDonation() {
           belief, Lorem Ipsum is not simply random .
         </p>
       </div>
-      <div className="w-[20.39rem] h-[35.37rem]  pl-[40px]">
-        <p className="text-black text-[13.62px] mt-2">Payment information</p>
-        <div className="grid--input">
-          <Input
-            placeholder="Amount"
-            customStyle="!bg-greybutton h-[2.75rem]  mt-[1.55rem] rounded-[4.24px] text-textbutton"
-          />
-          <Input
-            placeholder="Payment method"
-            customStyle="!bg-greybutton h-[2.75rem] mt-[1.55rem]  rounded-[4.24px] text-textbutton"
-          />
-          <Input
-            placeholder="Cardholder"
-            customStyle="!bg-greybutton h-[2.75rem]  mt-[1.55rem] rounded-[4.24px] text-textbutton"
-          />
-          <Input
-            placeholder="Card number"
-            customStyle="!bg-greybutton h-[2.75rem] mt-[1.55rem]  rounded-[4.24px] text-textbutton"
-          />
-          <Input
-            placeholder="CVC"
-            customStyle="!bg-greybutton h-[2.75rem]  mt-[1.55rem] rounded-[4.24px] text-textbutton"
-          />
-          <div className="h-[2.63rem] mt-[1.55rem] rounded-[4.24px] bg-greybutton flex justify-between items-center pl-5 pr-5">
-            <p className="text-textbutton">Expiry</p>
-            <div className="flex justify-between items-center w-[8rem]">
-              <Input
-                placeholder="M"
-                customStyle="!bg-textbutton  h-[1.63rem] w-[2.68rem] rounded-[4.2px] flex  items-center !pl-0"
-              />
-              <Stroke />
-              <Input
-                placeholder="Y"
-                customStyle="!bg-textbutton h-[1.63rem] w-[2.68rem] rounded-[4.2px]  items-center"
-              />
-            </div>
-          </div>
-        </div>
+      <div className="w-[20.39rem] h-[35.37rem] pl-0 md:pl-[40px]  ">
+        <p className="text-black text-[13.62px] mb-2">Payment information</p>
+
+        <Input
+          placeholder="Amount"
+          customStyle="!bg-greybutton h-[2.75rem]   rounded-[4.24px] text-textbutton"
+        />
+        <Input
+          placeholder="Payment method"
+          customStyle="!bg-greybutton h-[2.75rem] mt-[1.55rem]  rounded-[4.24px] text-textbutton"
+        />
+        <Input
+          placeholder="Cardholder"
+          customStyle="!bg-greybutton h-[2.75rem]  mt-[1.55rem] rounded-[4.24px] text-textbutton"
+        />
+        <Input
+          placeholder="Card number"
+          customStyle="!bg-greybutton h-[2.75rem] mt-[1.55rem]  rounded-[4.24px] text-textbutton"
+        />
+        <Input
+          placeholder="CVC"
+          customStyle="!bg-greybutton h-[2.75rem]  mt-[1.55rem] rounded-[4.24px] text-textbutton"
+        />
+        <TwoInput text="Expiry Data" />
         <div className="flex mt-[1.24rem]  items-center border-t-2 border-bordergrey pt-6">
           <div className="h-[1rem] w-[1rem]">
-            <input
-              className="h-[1rem] w-[1rem]"
-              type="checkbox"
-              id="vehicle1"
-              name="vehicle1"
-              value="Bike"
-            />
+            <label className="">
+              <input type="checkbox" />
+            </label>
           </div>
           <p className="text-black text-[14.18px] font-medium ml-[0.78rem]">
-            Save my details for donationq
+            Save my details for donation
           </p>
         </div>
-        <div className="flex justify-center">
+        <div className="flex justify-center ">
           <Button
             onClick={() => {}}
             title="Add donation"

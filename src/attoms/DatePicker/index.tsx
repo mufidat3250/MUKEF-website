@@ -1,16 +1,21 @@
-import { LocalizationProvider } from '@mui/x-date-pickers'
 import React, { ReactNode } from 'react';
-import { AdapterDayjs } from '@mui/x-date-pickers/AdapterDayjs';
+import { DatePicker } from 'antd';
+import 'antd/dist/antd.css';
 
 type props = {
     children:ReactNode
 }
 
-const DatePicker = ({children}:props) => {
+const Calender = () => {
   return (
-    <LocalizationProvider dateAdapter={AdapterDayjs}
-    >{children}</LocalizationProvider>
+    <div>
+      <DatePicker style={{width:'100%', height:'100%', border:'none', outline:'none', backgroundColor:'#f5f5f5', borderRadius:'5px'}} 
+       format={'DD MMM, YYYY'}
+       autoFocus={false}
+       placeholder='Year'
+      />
+    </div>
   )
 }
 
-export default DatePicker
+export default Calender

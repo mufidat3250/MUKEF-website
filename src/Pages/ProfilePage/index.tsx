@@ -13,8 +13,9 @@ import Modal from "../../molecules/Modal";
 import EditProfile from "../../molecules/EditProfileForm";
 import { useNavigate } from "react-router-dom";
 import NotificationChange from "../../molecules/NotificationChange";
-import LogOutMessage from "../../molecules/LogoutMessage";
 import AddDonation from "../../molecules/AddDonation";
+import { useContent } from "../../utils/Context/Context";
+
 
 const ProfilePage = () => {
   const [toggleIcon, setToggleIcon] = useState(false);
@@ -24,7 +25,11 @@ const ProfilePage = () => {
   const ref = useRef(null);
   useClickAway(ref, () => setToggleIcon(false));
   const navigate = useNavigate();
-  const [stage, setStage] = useState("edit" );
+  const [stage, setStage] = useState("edit");
+  const [selected, setselected] = useState(0)
+
+  const {state, dispatch} = useContent()
+        console.log(state)
   const projectSupportHeading = [
     {
       name: "Project",
@@ -79,43 +84,48 @@ const ProfilePage = () => {
       width: "5rem",
     },
   ];
-  const projectTableData = projectSupportData.map((data, index) => ({
-    project: data.project,
-    supportAmount: data.supportAccount,
-    paidAmount: data.paidAmount,
-    remainingAmount: data.remainingAmount,
-    date: data.date,
-    action: <BookIcon />,
-  }));
+  const projectTableData = projectSupportData.map((data, index) => {
+    return {
+      project: data.project,
+      supportAmount: data.supportAccount,
+      paidAmount: data.paidAmount,
+      remainingAmount: data.remainingAmount,
+      date: data.date,
+      action: <BookIcon />,
+    }
+  });
 
-  const donationTableData = projectSupportData.map((data, index) => ({
-    project: data.project,
-    supportAmount: data.supportAccount,
-    paidAmount: data.paidAmount,
-    remainingAmount: data.remainingAmount,
-    date: data.date,
-    action: (
-      <div
-        className=" flex flex-col"
-        onClick={() => {
-          setValue(index);
-          setToggleIcon(!toggleIcon);
-        }}
-      >
-        {toggleIcon && index == value ? <SubtractIcon /> : <AddIcon />}
-
-        <div ref={ref}>
-          {toggleIcon && index == value ? (
-            <div className=" z-50  shadow-2xl w-[50rem] absolute right-0">
-              {<DropDown />}
-            </div>
-          ) : (
-            ""
-          )}
+  const donationTableData = projectSupportData.map((data, index) => {
+    // setselected(index)
+    return {
+      project: data.project,
+      supportAmount: data.supportAccount,
+      paidAmount: data.paidAmount,
+      remainingAmount: data.remainingAmount,
+      date: data.date,
+      action: (
+        <div
+          className=" flex flex-col"
+          onClick={() => {
+            setValue(index);
+            setToggleIcon(!toggleIcon);
+          }}
+        >
+         <span onClick={()=>dispatch('show')}> {state.dropDown ? <SubtractIcon /> : <AddIcon />}</span>
+  
+          {/* <div ref={ref}> */}
+            {/* {toggleIcon && index == value ? (
+              <div className=" z-50  shadow-2xl w-[50rem] absolute right-0">
+                {<DropDown />}
+              </div>
+            ) : (
+              ""
+            )} */}
+          {/* </div> */}
         </div>
-      </div>
-    ),
-  }));
+      ),
+    }
+  });
 
   return (
     <DashboardLayout title="">
@@ -181,6 +191,7 @@ const ProfilePage = () => {
                 tdBg={true}
                 ClickRowAction={(index: any) => setValue(index)}
                 tableHeadstyle="bg-green-500"
+                rowAction={true}
               />
             </div>
 
@@ -208,7 +219,7 @@ const ProfilePage = () => {
        
         </Modal>
        <Modal HeaderText="Add donation" openModal={addDonation} closeModal={()=>setAddDonation(false)} 
-       width=''>
+       width='auto'>
          <AddDonation/>
        </Modal>
       </div>
