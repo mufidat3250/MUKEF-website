@@ -9,7 +9,7 @@ interface PropTypes {
   ClickRowAction?: Function;
   headings?: Array<{ name: any; key: string; width?: string }>;
   tableHeadstyle?: string;
-  tableDatastyle?: boolean;
+  tableDatastyle?: string;
   tdBg?: boolean;
   rowAction?:Boolean;
   selected?: Number,

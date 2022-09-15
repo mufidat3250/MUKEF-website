@@ -1,10 +1,10 @@
 .tableContainer{
-    @apply w-full flex-grow h-fit overflow-y-auto flex flex-col;
+    @apply w-full flex-grow h-full overflow-y-auto flex flex-col;
 
     .tableWrapper{
       @apply flex-grow  h-full overflow-x-auto md:w-full flex flex-col;
        table.table{
-            @apply flex-grow overflow-y-hidden w-full h-full grid grid-rows-[auto,1fr] overflow-x-auto;
+            @apply flex-grow overflow-y-hidden w-full h-fit grid grid-rows-[auto,1fr] overflow-x-auto;
         border-spacing:0;
 
         thead{
@@ -23,7 +23,7 @@
         @apply text-[#100C2A] w-[10rem];
     }
     td{
-        @apply py-4 text-[#565656] cursor-pointer w-[10rem];
+        @apply  text-[#565656] cursor-pointer w-[10rem];
         
     }
     }
