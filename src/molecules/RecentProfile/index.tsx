@@ -23,7 +23,7 @@ function RecentProfile({
       </div>
       <div className="flex flex-col items-center sm:items-start">
         <p className="profile--name">{name}</p>
-        <p className="profilr--desc">{desc}</p>
+        <p className="profile--desc">{desc}</p>
         <div className="flex mt-[1.03rem] sm:justify-start justify-center">
           <div className="icons-container">
             <p className="text-black font-bold text-[0.86rem]">Read More</p>
