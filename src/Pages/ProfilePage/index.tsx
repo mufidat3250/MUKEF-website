@@ -190,7 +190,7 @@ const ProfilePage = () => {
                 tableData={donationTableData}
                 tdBg={true}
                 ClickRowAction={(index: any) => setValue(index)}
-                tableHeadstyle="bg-green-500"
+                tableHeadstyle={true}
                 rowAction={true}
                 selected={selected}
                 setSelected={setselected}

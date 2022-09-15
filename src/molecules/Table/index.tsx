@@ -1,16 +1,15 @@
-import { useState } from "react";
 import ArrowDown from "../../attoms/Vectors/ArrowDown";
 import { paymentHistorydata } from "../../data";
 import { useContent } from "../../utils/Context/Context";
+import DonationSubTable from "../DonationSubtable";
 import "./Table.scss";
 interface PropTypes {
-  name?: string;
   tableData?: Array<Object>;
   clickRow?: Function;
   ClickRowAction?: Function;
   headings?: Array<{ name: any; key: string; width?: string }>;
   tableHeadstyle?: string;
-  tableDatastyle?: string;
+  tableDatastyle?: boolean;
   tdBg?: boolean;
   rowAction?:Boolean;
   selected?: Number,
@@ -133,7 +132,11 @@ const Table = ({
                   {
                     rowAction && <div>
                     {state.dropDown && rowIndex === selected ? (
-                      <div className="text-red-500"> thinking table</div>
+                    <div className="flex justify-end">
+                        <div className="max-w-[39rem]">
+                          <DonationSubTable tdBg={true} tableHeadStyle='!#0B8EC2'/>
+                      </div>
+                    </div>
                     ) : (
                       ""
                     )}
