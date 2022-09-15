@@ -93,7 +93,7 @@ const Table = ({
                     style={{ width: heading.width }}
                   >
                     <div className="flex items-center mx-4">
-                      <span className=" text-xs lg:text-base">
+                      <span className={`text-xs lg:text-base`}>
                         {heading.name}
                       </span>
                     </div>
@@ -134,7 +134,7 @@ const Table = ({
                     {state.dropDown && rowIndex === selected ? (
                     <div className="flex justify-end">
                         <div className="max-w-[39rem]">
-                          <DonationSubTable tdBg={true} tableHeadStyle='!#0B8EC2'/>
+                          <DonationSubTable tdBg={true} tableHeadstyle='!bg-[#0B8EC2] !text-white'/>
                       </div>
                     </div>
                     ) : (

@@ -25,6 +25,10 @@
     .copywrite--social--links{
         @apply flex justify-between items-center pb-[1.875rem];
 
+        & .copywrite{
+            @apply text-lighgray4 text-lg font-medium;
+        }
+
         .social--icon--wrapper{
             @apply flex gap-x-[0.625rem];
         }

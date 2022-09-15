@@ -9,9 +9,7 @@
 
         thead{
        @apply bg-[#0B8EC2] rounded-lg w-full h-12 flex  text-xs overflow-auto;
-
-     
-    }
+}
     tbody{
         @apply bg-white overflow-y-auto h-3/4 overflow-x-auto  lg:w-full;
     }

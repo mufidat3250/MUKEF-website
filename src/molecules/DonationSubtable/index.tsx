@@ -1,11 +1,10 @@
-import React from 'react'
-import {subDonationData} from '../../data'
+import {donationData, subDonationData} from '../../data'
 import './DodationTable.scss'
 
 type DonationTableProp = {
     headings?: Array<{name:any; key:string}>;
     tableData?: Array<object>;
-    tableHeadStyle: string;
+    tableHeadstyle: string;
     tdBg: boolean;
 
 }
@@ -32,11 +31,16 @@ const tableHeading = [
   const tData = subDonationData.map((donation, index) => ({
     date: donation.date,
     amountPaid: donation.amountPaid,
-    status: donation.status,
+    status: (
+      <div
+        className={`${donation.status.includes("Success") ? "success" : "failed"}`}
+      >
+        {donation.status}
+      </div>),
     totalPaid:donation.totalPaid
   }));
 
-const DonationSubTable = ({headings=tableHeading, tableData=tData, tableHeadStyle, tdBg}:DonationTableProp) => {
+const DonationSubTable = ({headings=tableHeading, tableData=tData, tableHeadstyle, tdBg}:DonationTableProp) => {
 
 
     return (
@@ -44,7 +48,7 @@ const DonationSubTable = ({headings=tableHeading, tableData=tData, tableHeadStyl
           <div className="tableWrapper">
             <div className="overflow-auto w-full">
               <table className="table">
-                <thead className={`${tableHeadStyle} text-xs`}>
+                <thead className={`${tableHeadstyle} text-xs bg-red-500`}>
                   <tr className="text-base">
                     {headings.map((heading, headingIndex) => (
                       <th
@@ -52,7 +56,7 @@ const DonationSubTable = ({headings=tableHeading, tableData=tData, tableHeadStyl
                         style={{}}
                       >
                         <div className="flex items-center mx-4">
-                          <span className=" text-xs lg:text-base">
+                          <span className=" text-xs lg:text-base text-white">
                             {heading.name}
                           </span>
                         </div>

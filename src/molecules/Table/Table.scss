@@ -1,5 +1,5 @@
 .tableContainer{
-    @apply w-full flex-grow h-full overflow-y-auto flex flex-col;
+    @apply w-full flex-grow h-fit overflow-y-auto flex flex-col;
 
     .tableWrapper{
       @apply flex-grow  h-full overflow-x-auto md:w-full flex flex-col;
