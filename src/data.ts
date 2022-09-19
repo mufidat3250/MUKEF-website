@@ -543,3 +543,37 @@ export const donationData = [
     date: "Jun 1 2022",
   },
 ];
+
+
+export const subDonationData = [
+  {
+    date:'June 2 2022',
+    amountPaid:'₦ 32,450,000',
+    status:'Success',
+    totalPaid:'₦ 32,450,000'
+  },
+  {
+    date:'June 2 2022',
+    amountPaid:'₦ 32,450,000',
+    status:'Failed',
+    totalPaid:'₦ 32,450,000'
+  },
+  {
+    date:'June 2 2022',
+    amountPaid:'₦ 32,450,000',
+    status:'Success',
+    totalPaid:'₦ 32,450,000'
+  },
+  {
+    date:'June 2 2022',
+    amountPaid:'₦ 32,450,000',
+    status:'Success',
+    totalPaid:'₦ 32,450,000'
+  },
+  {
+    date:'June 2 2022',
+    amountPaid:'₦ 32,450,000',
+    status:'Success',
+    totalPaid:'₦ 32,450,000'
+  }
+]

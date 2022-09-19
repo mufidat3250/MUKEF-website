@@ -11,16 +11,16 @@ function index() {
       <Select initial="Matercard" options={["Mastercard", "Visa", "PayPal"]} />
       <Input
         placeholder="Card number"
-        customStyle="!bg-greybutton h-[2.59rem] mt-[1.55rem]  rounded-[4.24px] text-textbutton"
+        customStyle=" h-[2.59rem] mt-[1.55rem]  rounded-[4.24px] text-textbutton"
       />
       <Input
         placeholder="Cardholder"
-        customStyle="!bg-greybutton h-[2.59rem]  mt-[1.55rem] rounded-[4.24px] text-textbutton"
+        customStyle=" h-[2.59rem]  mt-[1.55rem] rounded-[4.24px] text-textbutton"
       />
       <TwoInput text="Expiry" />
       <Input
         placeholder="CVC"
-        customStyle="!bg-greybutton h-[2.59rem]  mt-[1.55rem] rounded-[4.24px] text-textbutton"
+        customStyle=" h-[2.59rem]  mt-[1.55rem] rounded-[4.24px] text-textbutton"
       />
       <div className="flex mt-[2.24rem]  items-center">
         <div className="h-[1rem] w-[1rem]">
@@ -49,7 +49,7 @@ function index() {
       <p className="text-[11.06px] mt-[2.01rem] text-black">
         You can also pay directly to the platform bank account
       </p>
-      <p className="text-greybutton text-[11.06px] font-bold">Mukef projects</p>
+      <p className="text-grey1800 text-[11.06px] font-bold">Mukef projects</p>
       <div className="flex  ">
         <p className="text-black text-[11.06px] ">0134567890</p>
         <p className="text-black text-[11.06px] ml-[0.4rem]">GT Bank (GTB)</p>

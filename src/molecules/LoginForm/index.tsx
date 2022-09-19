@@ -28,10 +28,10 @@ function LoginForm() {
           />
         </div>
 
-        <p className="text-black font-bold ml-[0.78rem]   text-[15.1px]">
+        <p className="text-black font-bold ml-[0.78rem]   text-[14px]">
           Remeber Me
         </p>
-        <p className="text-black font-bold ml-[4.78rem]   text-[15.1px] ">
+        <p className="text-black font-bold ml-[4.78rem]   text-[14px] ">
           Forget password ?
         </p>
       </div>

@@ -19,11 +19,11 @@
 }
 
 .foundation--name {
-  @apply text-[1.5rem] md:text-[50px] font-bold sm:font-normal md:max-w-[650px] md:leading-none;
+  @apply text-[1.5rem] md:text-[50px] font-bold sm:font-normal md:max-w-[40.62rem] md:leading-none text-white;
 }
 
 .foundation--contents {
-  @apply px-4 text-center sm:max-w-[25.8125rem]  text-[1.375rem];
+  @apply px-4 text-center max-w-[25.8125rem]  text-[1.375rem] text-white opacity-[0.6] mt-32;
 }
 
 .button--container {

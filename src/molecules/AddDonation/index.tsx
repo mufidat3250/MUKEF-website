@@ -1,6 +1,6 @@
-import React from "react";
 import Button from "../../attoms/Button";
 import Checkbox from "../../attoms/CheckBox";
+import Calender from "../../attoms/DatePicker";
 import Input from "../../attoms/Input";
 import Select from "../../attoms/Select";
 import CalenderIcon from "../../attoms/Vectors/CalenderIcon";
@@ -16,7 +16,7 @@ const AddDonation = () => {
           customStyle="h-[2.7362rem]"
           prefixIcon={<span className="amount">₦</span>}
         />
-        <Input placeholder="Date picker" customStyle="h-[2.7362rem]" />
+       <Calender/>
       </div>
       <div className="checkbox">
         <Checkbox
@@ -56,7 +56,7 @@ const AddDonation = () => {
       <div className="line !MB-[1.5rem]"></div>
       <div className="space-x-[0.8456rem] flex justify-center items-center ">
         <ExcludeIcon />
-        <p className="max-w-[28rem] text-center text-[#858585]">
+        <p className="max-w-[25rem] md:max-w-[28rem] text-center text-[#858585]">
           Donation may be made at convenient time, but must be completed before
           or at the end of the year.
         </p>

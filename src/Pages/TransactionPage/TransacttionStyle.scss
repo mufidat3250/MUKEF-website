@@ -1,65 +1,65 @@
-.transaction--container{
-    @apply xl:mx-auto  xl:w-[80%] mt-[3rem] lg:h-screen overflow-auto pb-[3rem] px-4 lg:px-0 lg:mx-10;
+.transaction--container {
+  @apply xl:mx-auto  xl:w-[80%] mt-[3rem] lg:h-screen overflow-auto pb-[3rem] px-4 lg:px-0 lg:mx-10;
 
-    .title{
-        @apply text-center font-[600] text-[#100C2A] text-[2rem] mb-[4.375rem];
+  .title {
+    @apply text-center font-[600] text-[#100C2A] text-[2rem] mb-[4.375rem];
+  }
+  .Transaction--widget--wrapper {
+    @apply grid grid-rows-[auto,1fr] gap-y-[4.375rem];
+
+    .transaction-card {
+      @apply flex flex-col gap-4 lg:grid lg:grid-cols-[1fr,1fr] gap-x-[3.625rem];
     }
-    .Transaction--widget--wrapper{
-        @apply grid grid-rows-[auto,1fr] gap-y-[4.375rem];
-
-        .transaction-card{
-            @apply flex flex-col gap-4 lg:grid lg:grid-cols-[1fr,1fr] gap-x-[3.625rem];
-        }
-        & .card-wrapper{
-            @apply bg-gray600 pt-6 pl-4 lg:pl-10 space-y-6 pb-10 rounded-[0.625rem];
-        }
-        & .transaction--payment{
-            @apply bg-[rgba(7,_6,_13,_0.08)] py-2 px-3 w-fit rounded-[5px] font-[500];
-        }
-        & .transaction--amount{
-            @apply text-[#100C2A] text-2xl font-[700];
-        }
+    & .card-wrapper {
+      @apply bg-gray600 pt-6 pl-4 lg:pl-10 space-y-6 pb-10 rounded-[0.625rem];
     }
+    & .transaction--payment {
+      @apply bg-[rgba(7,_6,_13,_0.08)] py-2 px-3 w-fit rounded-[5px] font-[500];
+    }
+    & .transaction--amount {
+      @apply text-[#100C2A] text-2xl font-[700];
+    }
+  }
 
-    .transaction--chart--wrapper{
-        @apply bg-gray600 px-4 lg:px-10 pt-[1.375rem] mb-[4.375rem];
-        
-        .payment--mode{
-            @apply flex flex-col lg:flex-row lg:justify-between mb-[1.875rem];
+  .transaction--chart--wrapper {
+    @apply bg-gray600 px-4 lg:px-10 pt-[1.375rem] mb-[4.375rem];
 
-            & .payment--info{
-                @apply font-[500] text-2xl text-gray1200;
-            }
-            & .year{
-                @apply text-lg font-normal text-[#2E2E2E];
-            }
+    .payment--mode {
+      @apply flex flex-col lg:flex-row lg:justify-between mb-[1.875rem];
 
-            .target-payment--container{
-                @apply flex  flex-col items-end;
+      & .payment--info {
+        @apply font-[500] text-2xl text-gray1200;
+      }
+      & .year {
+        @apply text-lg font-normal text-[#2E2E2E];
+      }
 
-                & .payment{
-                    @apply text-gray1600 text-2xl font-[500];
-                }
-                & .amount{
-                    @apply font-[500] text-5xl text-mainblack leading-[2.5rem] mt-2;
-                }
-            }
+      .target-payment--container {
+        @apply flex  flex-col items-end;
+
+        & .payment {
+          @apply text-gray1600 text-2xl font-[500];
         }
-
-        .chart{
-            @apply flex lg:space-x-[3.125rem] flex-col lg:flex-row items-center lg:items-end;
-
-            .transaction--detail{
-                @apply flex mb-12 space-x-[7.375rem] self-center lg:self-end;
-            }
+        & .amount {
+          @apply font-[500] text-5xl text-black100 leading-[2.5rem] mt-2;
         }
+      }
     }
 
-    .payment--history{
-        @apply flex justify-between px-4 lg:px-0 pb-[2.8125rem] items-center;
+    .chart {
+      @apply flex lg:space-x-[3.125rem] flex-col lg:flex-row items-center lg:items-end;
 
-        & .title{
-            @apply  text-xl font-semibold text-[#100C2A];
-        }
+      .transaction--detail {
+        @apply flex mb-12 space-x-[7.375rem] self-center lg:self-end;
+      }
     }
+  }
+
+  .payment--history {
+    @apply flex justify-between px-4 lg:px-0 pb-[2.8125rem] items-center;
+
+    & .title {
+      @apply text-xl font-semibold text-[#100C2A];
+    }
+  }
 }

@@ -9,12 +9,12 @@ const TwoInput = ({ text }: { text: string }) => {
       <div className="flex justify-between items-center w-[8rem]">
         <Input
           placeholder="M"
-          customStyle="!bg-textbutton  h-[1.63rem] w-[2.68rem] rounded-[4.2px] flex  items-center !pl-0"
+          customStyle="!bg-grey1800  h-[1.63rem] w-[2.68rem] rounded-[4.2px] flex  items-center !pl-0"
         />
         <Stroke />
         <Input
           placeholder="Y"
-          customStyle="!bg-textbutton h-[1.63rem] w-[2.68rem] rounded-[4.2px]  items-center"
+          customStyle="!bg-grey1800 h-[1.63rem] w-[2.68rem] rounded-[4.2px]  items-center"
         />
       </div>
     </div>

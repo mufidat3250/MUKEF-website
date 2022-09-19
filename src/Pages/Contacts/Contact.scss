@@ -6,10 +6,10 @@
 .contact--us{
     @apply max-w-[70%] mx-auto;
     .contact--title{
-        @apply text-[3rem] font-[700] mt-[2rem] mb-[2.375rem];
+        @apply text-[3rem] font-[700] mt-[2rem] mb-[2.375rem] text-[#b9b6b6];
     }
     .contact-desc{
-        @apply flex space-x-[1.1562rem] justify-start items-start;
+        @apply flex space-x-[1.1562rem] justify-start items-start text-[#D4D4D4];
         & .img{
             @apply w-[20px] h-[20px] md:w-[30px] md:h-[30px];
         }

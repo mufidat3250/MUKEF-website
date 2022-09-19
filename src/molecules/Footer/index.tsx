@@ -6,7 +6,7 @@ const Footer = () => {
       <div className="footer-wrapper">
         <div className="footer--content">
           <div className="footer--logo">
-            <img src="/public/images/Mukef Logo.png" alt=""/>
+            <img src="/images/Mukef Logo.png" alt=""/>
           </div>
           <div className="activities">
             <div>
@@ -53,7 +53,7 @@ const Footer = () => {
         </div>
         <div className=" mx-auto h-[1px] bg-lighgray2 my-[1.875rem]"></div>
         <div className="copywrite--social--links">
-          <p>Copyright © 2020</p>
+          <p className="copywrite">Copyright © 2020</p>
           <div className="social--icon--wrapper">
             {socialIcon.map(({ icon: Icon }, index) => (
               <div

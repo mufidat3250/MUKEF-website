@@ -1,5 +1,5 @@
 .tableContainer{
-    @apply w-full flex-grow h-fit overflow-y-auto flex flex-col;
+    @apply w-full flex-grow h-full overflow-y-auto flex flex-col;
 
     .tableWrapper{
       @apply flex-grow  h-full overflow-x-auto md:w-full flex flex-col;
@@ -8,10 +8,8 @@
         border-spacing:0;
 
         thead{
-       @apply bg-gray600 rounded-lg w-full h-12 flex  text-xs overflow-auto;
-
-     
-    }
+       @apply bg-[#0B8EC2] rounded-lg w-full h-12 flex  text-xs overflow-auto;
+}
     tbody{
         @apply bg-white overflow-y-auto h-3/4 overflow-x-auto  lg:w-full;
     }

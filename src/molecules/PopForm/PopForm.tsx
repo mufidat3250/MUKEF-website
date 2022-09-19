@@ -2,9 +2,9 @@ import "./PopForm.scss";
 import Input from "../../attoms/Input";
 import Button from "../../attoms/Button";
 import Select from "../../attoms/Select";
-import {useNavigate} from 'react-router-dom'
+import { useNavigate } from "react-router-dom";
 function PopForm({ signUp }: { signUp: Function }) {
-  const navigate = useNavigate()
+  const navigate = useNavigate();
   return (
     <form>
       <div className="flex justify-center items-center">
@@ -16,13 +16,13 @@ function PopForm({ signUp }: { signUp: Function }) {
         </div>
         <Input
           placeholder="Other title"
-          customStyle="!bg-greybutton h-[2.59rem] w-[13.90rem] rounded-[4.24px] text-textbutton ml-[1.01rem]"
+          customStyle=" h-[2.59rem] w-[13.90rem] rounded-[4.24px] text-textbutton ml-[1.01rem]"
         />
       </div>
       <div className="grid--input">
         <Input
           placeholder="Full name"
-          customStyle="!bg-greybutton h-[2.59rem]   rounded-[4.24px] text-textbutton"
+          customStyle="h-[2.59rem]   rounded-[4.24px] text-textbutton"
         />
         <Input
           placeholder="Email"
@@ -30,15 +30,15 @@ function PopForm({ signUp }: { signUp: Function }) {
         />
         <Input
           placeholder="Phone number"
-          customStyle="!bg-greybutton h-[2.59rem]  mt-[1.55rem] rounded-[4.24px] text-textbutton"
+          customStyle=" h-[2.59rem]  mt-[1.55rem] rounded-[4.24px] text-textbutton"
         />
         <Input
           placeholder="Password"
-          customStyle="!bg-greybutton h-[2.59rem] mt-[1.55rem]  rounded-[4.24px] text-textbutton"
+          customStyle=" h-[2.59rem] mt-[1.55rem]  rounded-[4.24px] text-textbutton"
         />
         <Input
           placeholder="Confirm Password"
-          customStyle="!bg-greybutton h-[2.59rem]  mt-[1.55rem] rounded-[4.24px] text-textbutton"
+          customStyle=" h-[2.59rem]  mt-[1.55rem] rounded-[4.24px] text-textbutton"
         />
       </div>
       <div className="flex mt-[2.24rem]  items-center">
@@ -57,7 +57,7 @@ function PopForm({ signUp }: { signUp: Function }) {
       </div>
       <div className="flex justify-center">
         <Button
-          onClick={() => navigate('/dashboard/profile') }
+          onClick={() => navigate("/dashboard/profile")}
           title="Subscribe"
           customStyle="bg-black mt-[1.48rem] w-[13.95rem] h-[2.6rem] rounded-[4.16px] font-bold text-white"
         />

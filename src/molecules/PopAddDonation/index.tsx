@@ -38,32 +38,17 @@ function PopAddDonation() {
         />
         <Input
           placeholder="Cardholder"
-          customStyle="!bg-greybutton h-[2.75rem]  mt-[1.55rem] rounded-[4.24px] text-textbutton"
+          customStyle=" h-[2.75rem]  mt-[1.55rem] rounded-[4.24px] text-textbutton"
         />
         <Input
           placeholder="Card number"
-          customStyle="!bg-greybutton h-[2.75rem] mt-[1.55rem]  rounded-[4.24px] text-textbutton"
+          customStyle=" h-[2.75rem] mt-[1.55rem]  rounded-[4.24px] text-textbutton"
         />
         <Input
           placeholder="CVC"
-          customStyle="!bg-greybutton h-[2.75rem]  mt-[1.55rem] rounded-[4.24px] text-textbutton"
+          customStyle=" h-[2.75rem]  mt-[1.55rem] rounded-[4.24px] text-textbutton"
         />
-        {/* <div className="expiry--input--container">
-          <p className="text-textbutton">Expiry</p>
-          <div className="flex justify-between items-center w-[8rem]">
-            <Input
-              placeholder="M"
-              customStyle="!bg-textbutton  h-[1.63rem] w-[2.68rem] rounded-[4.2px] flex  items-center !pl-0"
-            />
-            <Stroke />
-            <Input
-              placeholder="Y"
-              customStyle="!bg-textbutton h-[1.63rem] w-[2.68rem] rounded-[4.2px]  items-center"
-            />
-          </div> */}
         <TwoInput text="Expiry Data" />
-        {/* </div> */}
-
         <div className="flex mt-[1.24rem]  items-center border-t-2 border-bordergrey pt-6">
           <div className="h-[1rem] w-[1rem]">
             <label className="">

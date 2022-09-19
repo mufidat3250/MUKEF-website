@@ -1,7 +1,7 @@
 import { ReactNode } from "react";
 import SearchIcon from "../Vectors/SearchIcon";
 import "./Input.scss";
-type inputProp = {
+type Prop = {
   placeholder: string;
   customStyle?: string;
   sufixIcon?:boolean;
@@ -10,8 +10,8 @@ type inputProp = {
   title?:string;
   prefixIcon?:ReactNode
   
-};
-const Input = ({ placeholder, onChange,customStyle, sufixIcon, value, title , prefixIcon}: inputProp) => {
+}& React.InputHTMLAttributes<HTMLInputElement>;
+const Input = ({ placeholder, onChange,customStyle, sufixIcon, value, title , prefixIcon}: Prop) => {
   return (
     <div className={`Input--wrapper`}>
     {title && <span className="input--title">{title}</span>}
@@ -20,8 +20,7 @@ const Input = ({ placeholder, onChange,customStyle, sufixIcon, value, title , pr
      {sufixIcon ? <span className="search--icon"><SearchIcon/></span>:''}     
      </div>
       <input type="text"  className={`${!sufixIcon && 'pl-5'} text-[#222222]`} placeholder={placeholder} value={value} onChange={onChange}/>
-    {prefixIcon && <span className="">{prefixIcon}</span>}
-
+    {prefixIcon && <span className="mr-4">{prefixIcon}</span>}
     </div>
     </div>
   );
