@@ -37,11 +37,11 @@
       .target-payment--container {
         @apply flex  flex-col items-end;
 
-        & .payment {
+        &.payment {
           @apply text-gray1600 text-2xl font-[500];
         }
         & .amount {
-          @apply font-[500] text-5xl text-black100 leading-[2.5rem] mt-2;
+          @apply font-[500] text-5xl text-black leading-[2.5rem] mt-2;
         }
       }
     }

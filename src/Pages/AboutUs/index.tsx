@@ -11,7 +11,7 @@ const AboutUs = () => {
       <NavTabs tabs={navData} tabIndex={3} color="white" />
       
 
-        <h1 className="title">About Mukef</h1>
+        <h1 className="title text-white">About Mukef</h1>
       </div>;
       <div className="prospect">
         {prospects.map(({ img, title, subtext }, index) => {
