@@ -1,7 +1,7 @@
 .first--pagee {
-  @apply flex flex-col sm:w-[20.39rem] h-[35.37rem] border-r-[3px] border-transparent sm:border-bordergrey pr-5;
+  @apply flex flex-col sm:w-[20.39rem] h-[35.37rem] border-r-[3px] border-transparent sm:border-gray200 pr-5;
 }
 
 .expiry--input--container {
-  @apply h-[2.63rem] mt-[1.55rem] rounded-[4.24px] bg-greybutton flex justify-between items-center pl-5 pr-5;
+  @apply h-[2.63rem] mt-[1.55rem] rounded-[4.24px] bg-[#D0D0D0] flex justify-between items-center pl-5 pr-5;
 }
