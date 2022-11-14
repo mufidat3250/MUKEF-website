@@ -9,11 +9,11 @@ function LoginForm() {
     <>
       <div className="grid--input">
         <Input
-          placeholder="Payment method"
+          placeholder="Email  or UserName"
           customStyle="!bg-greybutton bg-red-500 h-[2.59rem]  mt-[1.55rem] rounded-[4.24px] text-textbutton"
         />
         <Input
-          placeholder="Card number"
+          placeholder="Password"
           customStyle="!bg-greybutton h-[2.59rem] mt-[1.55rem]  rounded-[4.24px] text-textbutton"
         />
       </div>
