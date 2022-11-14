@@ -9,9 +9,10 @@ type Prop = {
   onChange?:(value:any)=>void;
   title?:string;
   prefixIcon?:ReactNode
+  type?:string
   
 }& React.InputHTMLAttributes<HTMLInputElement>;
-const Input = ({ placeholder, onChange,customStyle, sufixIcon, value, title , prefixIcon}: Prop) => {
+const Input = ({ placeholder, onChange,customStyle, sufixIcon, value, title , prefixIcon, type}: Prop) => {
   return (
     <div className={`Input--wrapper`}>
     {title && <span className="input--title">{title}</span>}
@@ -19,7 +20,7 @@ const Input = ({ placeholder, onChange,customStyle, sufixIcon, value, title , pr
     <div className="flex">       
      {sufixIcon ? <span className="search--icon"><SearchIcon/></span>:''}     
      </div>
-      <input type="text"  className={`${!sufixIcon && 'pl-5'} text-[#222222]`} placeholder={placeholder} value={value} onChange={onChange}/>
+      <input type={type}  className={`${!sufixIcon && 'pl-5'} text-[#222222]`} placeholder={placeholder} value={value} onChange={onChange}/>
     {prefixIcon && <span className="mr-4">{prefixIcon}</span>}
     </div>
     </div>

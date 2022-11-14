@@ -2,7 +2,7 @@ import Button from '../../attoms/Button'
 import NotificationIcon from '../../attoms/Vectors/Notification'
 import './NotificationChange.scss'
 
-const NotificationChange = () => {
+const NotificationChange = ({closeModal}:{closeModal:()=>{}}) => {
   return (
   <div className='NotificationChange'>
         <div className='notificattion--container'>
@@ -14,7 +14,7 @@ const NotificationChange = () => {
             <Button title={'Discard changes'} customStyle={'text-[#1D2319] font-[700] bg-white text-[1rem]'} onClick={()=>{}}/>
         </div>
         <div className='w-[6.115rem]'>
-            <Button title={'Save'} customStyle={'text-white bg-black  font-[700] rounded-[5px]'} onClick={()=>{}}/>
+            <Button title={'Save'} customStyle={'text-white bg-black  font-[700] rounded-[5px]'} onClick={closeModal}/>
         </div>
     </div>
   </div>

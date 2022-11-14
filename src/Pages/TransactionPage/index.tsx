@@ -36,7 +36,7 @@ const TransactionPage = () => {
   return (
     <DashboardLayout>
       <div className="transaction--container">
-        <h1 className="title">Transaction History</h1>
+        <h1 className="title ">Transaction History</h1>
         <div className="Transaction--widget--wrapper">
           <div className="transaction-card">
             {transactiondata.map((transaction, index) => (

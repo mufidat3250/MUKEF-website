@@ -9,6 +9,7 @@ function LoginForm() {
     <>
       <div className="grid--input">
         <Input
+        type="password"
           placeholder="Email or UserName"
           customStyle="!bg-greybutton bg-red-500 h-[2.59rem]  mt-[1.55rem] rounded-[4.24px] text-textbutton"
         />

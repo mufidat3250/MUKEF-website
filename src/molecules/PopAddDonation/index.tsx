@@ -15,7 +15,7 @@ function PopAddDonation() {
         <div className="h-[14.12rem] rounded-[10px] mt-[12px]">
           <img
             className=" h-full w-full"
-            src="/public/images/ongoingProject1.png"
+            src="/images/ongoingProject1.png"
             alt="ongoingProject"
           />
         </div>
